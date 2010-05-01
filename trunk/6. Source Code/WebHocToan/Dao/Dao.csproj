@@ -46,6 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDAO.cs" />
+    <Compile Include="BaiHocDAO.cs" />
+    <Compile Include="BaiTapChuongDAO.cs" />
+    <Compile Include="BaiTapCuaBaiHocDAO.cs" />
+    <Compile Include="CauHoiBTBaiHocDAO.cs" />
+    <Compile Include="CauHoiBTChuongDAO.cs" />
+    <Compile Include="ChuongDAO.cs" />
+    <Compile Include="CommentBaiHocDAO.cs" />
+    <Compile Include="CommentBaiTapBaiHocDAO.cs" />
+    <Compile Include="CommentBaiTapChuongDAO.cs" />
+    <Compile Include="CommentChuongDAO.cs" />
+    <Compile Include="LoaiAccDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

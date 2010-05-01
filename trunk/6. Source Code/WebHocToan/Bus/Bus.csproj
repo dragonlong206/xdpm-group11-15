@@ -46,6 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountBUS.cs" />
+    <Compile Include="BaiHocBUS.cs" />
+    <Compile Include="BaiTapChuongBUS.cs" />
+    <Compile Include="BaiTapCuaBaiHocBUS.cs" />
+    <Compile Include="CauHoiBTBaiHocBUS.cs" />
+    <Compile Include="CauHoiBTChuongBUS.cs" />
+    <Compile Include="ChuongBUS.cs" />
+    <Compile Include="CommentBaiHocBUS.cs" />
+    <Compile Include="CommentBaiTapBaiHocBUS.cs" />
+    <Compile Include="CommentBaiTapChuongBUS.cs" />
+    <Compile Include="CommentChuongBUS.cs" />
+    <Compile Include="LoaiAccBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

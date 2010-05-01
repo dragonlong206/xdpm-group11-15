@@ -8,3 +8,8 @@ C:\Users\Thanh\Desktop\WebHocToan\Util\bin\Debug\Util.pdb
 C:\Users\Thanh\Desktop\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Thanh\Desktop\WebHocToan\Util\obj\Debug\Util.dll
 C:\Users\Thanh\Desktop\WebHocToan\Util\obj\Debug\Util.pdb
+E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Util\bin\Debug\Util.dll
+E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Util\bin\Debug\Util.pdb
+E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
+E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Util\obj\Debug\Util.dll
+E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Util\obj\Debug\Util.pdb

@@ -46,6 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountDTO.cs" />
+    <Compile Include="BaiHocDTO.cs" />
+    <Compile Include="BaiTapChuongDTO.cs" />
+    <Compile Include="BaiTapCuaBaiHocDTO.cs" />
+    <Compile Include="CauHoiBTBaiHocDTO.cs" />
+    <Compile Include="CauHoiBTChuongDTO.cs" />
+    <Compile Include="ChuongDTO.cs" />
+    <Compile Include="CommentBaiHocDTO.cs" />
+    <Compile Include="CommentBaiTapBaiHocDTO.cs" />
+    <Compile Include="CommentBaiTapChuongDTO.cs" />
+    <Compile Include="CommentChuongDTO.cs" />
+    <Compile Include="LoaiAccDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

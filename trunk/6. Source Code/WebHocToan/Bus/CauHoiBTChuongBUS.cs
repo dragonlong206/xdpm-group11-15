@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using Dao;
+using Dto;
+
+namespace Bus
+{
+    public class CauHoiBTChuongBUS
+    {
+        public static Boolean insertCauHoiBTChuong(CauHoiBTChuongDTO chbtChuongDto)
+        {
+            Boolean result = false;
+            result = CauHoiBTChuongDAO.insertCauHoiBTChuong(chbtChuongDto);
+            return result;
+        }
+
+        public static Boolean deleteCauHoiBTChuong(string IDChuong)
+        {
+            Boolean result = false;
+            result = CauHoiBTChuongDAO.deleteCauHoiBTChuong(IDChuong);
+            return result;
+        }
+
+        public static Boolean updateCauHoiBTChuong(CauHoiBTChuongDTO chbtChuongDto)
+        {
+            Boolean result = false;
+            result = CauHoiBTChuongDAO.updateCauHoiBTChuong(chbtChuongDto);
+            return result;
+        }
+
+        public static ArrayList selectAllChuong()
+        {
+            return CauHoiBTChuongDAO.selectAllCauHoiBTChuong();
+        }
+
+        public static ArrayList selectCauHoiBTChuongByIDChuong(int IDChuong)
+        {
+            return CauHoiBTChuongDAO.selectCauHoiBTChuongByIDChuong(IDChuong);
+        }
+
+        public static CauHoiBTChuongDTO selectCauHoiBTChuongByIDCauHoi(int IDCauHoi)
+        {
+            return CauHoiBTChuongDAO.selectCauHoiBTChuongByIDCauHoi(IDCauHoi);
+        }
+
+    }
+}
