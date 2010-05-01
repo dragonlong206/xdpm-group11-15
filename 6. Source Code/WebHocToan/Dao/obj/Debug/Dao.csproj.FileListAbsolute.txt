@@ -1,0 +1,18 @@
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\bin\Debug\Dao.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\bin\Debug\Dao.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\obj\Debug\Dao.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\obj\Debug\Dao.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\bin\Debug\Dto.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\bin\Debug\Dto.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\bin\Debug\Util.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Dao\bin\Debug\Util.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Dao\bin\Debug\Dao.dll
+C:\Users\Thanh\Desktop\WebHocToan\Dao\bin\Debug\Dao.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Dao\bin\Debug\Dto.dll
+C:\Users\Thanh\Desktop\WebHocToan\Dao\bin\Debug\Util.dll
+C:\Users\Thanh\Desktop\WebHocToan\Dao\bin\Debug\Dto.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Dao\bin\Debug\Util.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thanh\Desktop\WebHocToan\Dao\obj\Debug\Dao.dll
+C:\Users\Thanh\Desktop\WebHocToan\Dao\obj\Debug\Dao.pdb
