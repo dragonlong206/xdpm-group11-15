@@ -1,0 +1,22 @@
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Bus.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Bus.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\obj\Debug\Bus.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\obj\Debug\Bus.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Dao.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Dto.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Dao.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Dto.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Util.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Bus\bin\Debug\Util.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Bus.dll
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Bus.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Dao.dll
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Dto.dll
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Util.dll
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Dao.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Dto.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Bus\bin\Debug\Util.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thanh\Desktop\WebHocToan\Bus\obj\Debug\Bus.dll
+C:\Users\Thanh\Desktop\WebHocToan\Bus\obj\Debug\Bus.pdb

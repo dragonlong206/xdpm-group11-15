@@ -1,0 +1,10 @@
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Util\bin\Debug\Util.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Util\bin\Debug\Util.pdb
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Util\obj\Debug\Util.dll
+C:\Users\Thanh\Documents\Visual Studio 2008\Projects\WebHocToan\Util\obj\Debug\Util.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Util\bin\Debug\Util.dll
+C:\Users\Thanh\Desktop\WebHocToan\Util\bin\Debug\Util.pdb
+C:\Users\Thanh\Desktop\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thanh\Desktop\WebHocToan\Util\obj\Debug\Util.dll
+C:\Users\Thanh\Desktop\WebHocToan\Util\obj\Debug\Util.pdb
