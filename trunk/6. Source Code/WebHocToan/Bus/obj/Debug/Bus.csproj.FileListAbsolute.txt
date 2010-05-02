@@ -31,3 +31,14 @@ E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan
 E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
 E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
 E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Util.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\Debug\Util.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
