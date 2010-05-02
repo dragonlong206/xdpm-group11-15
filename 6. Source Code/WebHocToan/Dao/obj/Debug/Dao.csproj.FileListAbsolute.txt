@@ -25,3 +25,12 @@ E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan
 E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
 E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.dll
 E:\Study\Hoc Ky 8(2009-2010)\Xay Dung Phan Mem\DA XDPM\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\Debug\Dao.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\Debug\Dao.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\Debug\Dto.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\Debug\Util.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\Debug\Dto.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\Debug\Util.pdb
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.dll
+E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.pdb
