@@ -1,6 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="VIEW_MasterPage" %>
 
-<%@ Register src="../../CONTROL/LeftMenu.ascx" tagname="LeftMenu" tagprefix="uc1" %>
+<%@ Register src="../../../CONTROL/ADMIN/adminLeftMenu.ascx" tagname="adminLeftMenu" tagprefix="uc1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -47,30 +47,8 @@
 
 	<div id="templatemo_content_column_one">
 	
-        <uc1:LeftMenu ID="LeftMenu1" runat="server" />
-	
-    	
-        
-        <div class="column_one_section">
-        	<h1>Đăng Nhập</h1>
-            Chức Năng Đăng Nhập                 
-        </div>
-        
-        <div class="cleaner_with_divider">&nbsp;</div>
-        
-        <div class="column_one_section">
-        	<h1>Tìm Kiếm</h1>
-            Chức Năng Tìm Kiếm                
-        </div>
-        
-        <div class="cleaner_with_divider">&nbsp;</div>
-        
-        <div class="column_one_section">
-        	<h1>Hỗ Trợ</h1>
-            Chức Năng Hỗ Trợ                 
-        </div>
-        
-        <div class="cleaner_with_divider">&nbsp;</div>
+        <uc1:adminLeftMenu ID="adminLeftMenu1" runat="server" />
+
         
         
     </div> <!-- end of column one -->
