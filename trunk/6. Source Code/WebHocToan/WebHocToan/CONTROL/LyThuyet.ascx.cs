@@ -20,10 +20,11 @@ public partial class CONTROL_LyThuyet : System.Web.UI.UserControl
     protected void Page_Load(object sender, EventArgs e)
     {
         IDBaiHoc = Request.QueryString["IDBaiHoc"];
-        if (IDBaiHoc != null)
-        {
-            int iIDBaiHoc = int.Parse(IDBaiHoc);
+        int iIDBaiHoc;
+        Boolean result = int.TryParse(IDBaiHoc, out iIDBaiHoc);
 
+        if (result)
+        {
             BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
 
             ltrTenBai.Text = bhDTO.TenBaiHoc;
