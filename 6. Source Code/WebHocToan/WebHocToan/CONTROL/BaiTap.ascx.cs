@@ -21,12 +21,17 @@ public partial class CONTROL_BaiTap : System.Web.UI.UserControl
     {     
 
         IDBaiHoc = Request.QueryString["IDBaiHoc"];
-        int iIDBaiHoc = int.Parse(IDBaiHoc);
+        if (IDBaiHoc != null)
+        {
+            int iIDBaiHoc = int.Parse(IDBaiHoc);
 
-        BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
+            BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
 
-        ltrTenBai.Text = bhDTO.TenBaiHoc;
-        ltrNoiDung.Text = "<p>" + bhDTO.NoiDung + "</p>";
+            ltrTenBai.Text = bhDTO.TenBaiHoc;
+            ltrNoiDung.Text = "<p>" + bhDTO.NoiDung + "</p>";
+ 
+        }
+
 
     }
     
