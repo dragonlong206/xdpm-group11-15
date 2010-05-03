@@ -5,26 +5,26 @@
             <ul id="red" class="treeview-red">
                 <li><span>Quản Lý Account</span>
                 	<ul>
-                        <li><a href="#">Xem Danh Sách Account</a></li>
-                        <li><a href="#">Thêm Account</a></li>
+                        <li><a href="?ava=DanhSachAccount">Danh Sách Account</a></li>
+                        <li><a href="?ava=ThemAccount">Thêm Account</a></li>
            			 </ul> 
                 </li>
                 <li><span>Quản Lý Bài Giảng</span>
                 	<ul>
-                        <li><a href="#">Xem Danh Sách Bài Giảng</a></li>
-                        <li><a href="#">Thêm Bài Giảng</a></li>
+                        <li><a href="?ava=DanhSachBaiGiang">Danh Sách Bài Giảng</a></li>
+                        <li><a href="?ava=ThemBaiGiang">Thêm Bài Giảng</a></li>
            			</ul> 
                 </li>
                 <li><span>Quản Lý Bài Tập</span>
                 	<ul>
-                        <li><a href="#">Xem Danh Sách Bài Tập</a></li>
-                        <li><a href="#">Thêm Bài Tập</a></li>
+                        <li><a href="?ava=DanhSachBaiTap">Danh Sách Bài Tập</a></li>
+                        <li><a href="?ava=ThemBaiTap">Thêm Bài Tập</a></li>
            			</ul> 
                 </li>
                 	
                 <li><span>Quản Lý Comment</span>
                 	<ul>
-                        <li><a href="#">Xem Danh Sách Comment</a></li>
+                        <li><a href="?ava=DanhSachComment">Danh Sách Comment</a></li>
            			</ul> 
                 </li>
 

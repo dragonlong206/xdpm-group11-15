@@ -146,13 +146,13 @@ p {
 
 #templatemo_content {
 	clear: both;
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 #templatemo_content_column_one {
 	float: left;
-	width: 238px;
+	width: 15%;
 	border: 1px solid #846f34;
 	margin: 0 0 0 10px;
 	padding: 10px 0 10px 0;
@@ -162,7 +162,6 @@ p {
 
 #templatemo_content_column_two {
 	float: left;
-	width: 460px;
 	margin: 0 0 0 10px;
 	padding: 0;	
 }
@@ -178,7 +177,7 @@ p {
 
 #templatemo_content_column_four {
 	float: left;
-	width: 690px;
+	width: 80%;
 	margin: 0 0 0 10px;
 	padding: 0;	
 	border: 1px solid #CCCCCC;
@@ -283,7 +282,6 @@ p {
 
 #templatemo_content_column_two .column_two_section {
 	clear: both;
-	width: 418px;
 	padding: 20px;	
 	margin-bottom: 10px;
 	border: 1px solid #312f2b;
@@ -457,7 +455,7 @@ p {
 
 /* for bottom palen */
 #templatemo_bottom_panel{
-	width: 960px;
+	width: 100%;
 	margin: 10px auto 0 auto;
 	padding: 20px 0;
 	border: 1px solid #CCCCCC;
