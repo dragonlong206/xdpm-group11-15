@@ -20,12 +20,16 @@ public partial class CONTROL_LyThuyet : System.Web.UI.UserControl
     protected void Page_Load(object sender, EventArgs e)
     {
         IDBaiHoc = Request.QueryString["IDBaiHoc"];
-        int iIDBaiHoc = int.Parse(IDBaiHoc);
+        if (IDBaiHoc != null)
+        {
+            int iIDBaiHoc = int.Parse(IDBaiHoc);
 
-        BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
+            BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
 
-        ltrTenBai.Text = bhDTO.TenBaiHoc;
-        ltrNoiDung.Text = "<p>" + bhDTO.NoiDung + "</p>";
+            ltrTenBai.Text = bhDTO.TenBaiHoc;
+            ltrNoiDung.Text = "<p>" + bhDTO.NoiDung + "</p>";
+
+        }
 
     }
 }
