@@ -28,6 +28,14 @@ public partial class VIEW_index : System.Web.UI.Page
         switch (ava)
         {
             case "BaiTap":
+
+                if (!QuanLySessionCookie.CheckLoggedin())
+                {
+                    LimitAccess1.Visible = true;
+                    break;
+                }
+
+
                 if (result)
                 {
                     BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
@@ -45,7 +53,14 @@ public partial class VIEW_index : System.Web.UI.Page
                     Error1.Visible = true;
                 }
                 break;
-            case "LyThuyet":              
+            case "LyThuyet":
+
+                if (!QuanLySessionCookie.CheckLoggedin())
+                {
+                    LimitAccess1.Visible = true;
+                    break;
+                }
+
                 if (result)
                 {
                     BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
@@ -63,6 +78,11 @@ public partial class VIEW_index : System.Web.UI.Page
                     Error1.Visible = true;
                 }
                 break;
+
+            case "DangKy":
+                DangKy1.Visible = true;
+                break;
+
             default:
                 Welcome1.Visible = true;
                 break;
