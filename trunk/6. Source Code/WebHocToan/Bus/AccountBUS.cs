@@ -40,7 +40,7 @@ namespace Bus
         {
             return AccountDAO.selectAccountByLAC(MaLoaiacc);
         }
-        public static AccountDTO selectAccountByIDAC(int IDAcc)
+        public static AccountDTO selectAccountByIDAC(string IDAcc)
         {
             return AccountDAO.selectAccountByIDAC(IDAcc);
         }

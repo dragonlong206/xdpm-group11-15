@@ -205,7 +205,7 @@ namespace Dao
         }
 
         //lay account theo ID account
-        public static AccountDTO selectAccountByIDAC(int IDAcc)
+        public static AccountDTO selectAccountByIDAC(string IDAcc)
         {
             AccountDTO accDTO = new AccountDTO();
             try
@@ -217,7 +217,7 @@ namespace Dao
                 string SQLqurey = "Select * from Account Where IDAcc = @IDAcc";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
-                cmd.Parameters.Add("@IDAcc", SqlDbType.Int);
+                cmd.Parameters.Add("@IDAcc", SqlDbType.NVarChar);
                 cmd.Parameters["@IDAcc"].Value = IDAcc;
 
                 SqlDataReader dr;
