@@ -12,6 +12,7 @@
                 <li><span>Quản Lý Bài Giảng</span>
                 	<ul>
                         <li><a href="?ava=DanhSachBaiGiang">Danh Sách Bài Giảng</a></li>
+                        <li><a href="?ava=CapNhatBaiGiang">Cập Nhật Bài Giảng</a></li>
                         <li><a href="?ava=ThemBaiGiang">Thêm Bài Giảng</a></li>
            			</ul> 
                 </li>

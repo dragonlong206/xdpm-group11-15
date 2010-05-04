@@ -133,14 +133,14 @@ namespace Dao
 
         public static Boolean updateBaiHoc(BaiHocDTO bh)
         {
-            Boolean result = true;
+            Boolean result = false;
             try
             {
                 SqlConnection connection;
                 // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
-                string SQLqurey = "update BaiHoc Set TenBaiHoc = @TenBaiHoc, NoiDungBaiHoc = @NoiDungBaiHoc, IDChuong = @Chuong Where IDBaiHoc = @IDBaiHoc";
+                string SQLqurey = "update BaiHoc Set TenBaiHoc = @TenBaiHoc, NoiDungBaiHoc = @NoiDungBaiHoc, IDChuong = @IDChuong Where IDBaiHoc = @IDBaiHoc";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
                 
                 cmd.Parameters.Add("@TenBaiHoc", SqlDbType.NVarChar);
@@ -154,9 +154,9 @@ namespace Dao
                 cmd.Parameters["@IDBaiHoc"].Value = bh.IDBaiHoc;
 
                 int n = cmd.ExecuteNonQuery();
-                if (n == 0)
+                if (n != 0)
                 {
-                    result = false;
+                    result = true;
                 }
 
                 // B5: Dong ket noi CSDL
