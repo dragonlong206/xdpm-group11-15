@@ -204,6 +204,43 @@ namespace Dao
             return List;
         }
 
+        //lay account theo ID account
+        public static AccountDTO selectAccountByIDAC(int IDAcc)
+        {
+            AccountDTO accDTO = new AccountDTO();
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from Account Where IDAcc = @IDAcc";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
+                cmd.Parameters.Add("@IDAcc", SqlDbType.Int);
+                cmd.Parameters["@IDAcc"].Value = IDAcc;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    accDTO.IDAcc = (string)dr["IDAcc"];
+                    accDTO.Pass = (string)dr["Pass"];
+                    accDTO.IDLoaiAcc = (int)dr["IDLoaiAcc"];
+                    accDTO.TrangThai = (Boolean)dr["TrangThai"];                
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return accDTO;
+        }
     }
 }
