@@ -2,6 +2,8 @@
 
 <%@ Register src="../../CONTROL/LeftMenu.ascx" tagname="LeftMenu" tagprefix="uc1" %>
 
+<%@ Register src="../../CONTROL/Login/Login.ascx" tagname="Login" tagprefix="uc2" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -47,16 +49,17 @@
 
 	<div id="templatemo_content_column_one">
 	
+        
+	
         <uc1:LeftMenu ID="LeftMenu1" runat="server" />
+        
+        <uc2:Login ID="Login1" runat="server" />
 	
     	
         
-        <div class="column_one_section">
-        	<h1>Đăng Nhập</h1>
-            Chức Năng Đăng Nhập                 
-        </div>
+
         
-        <div class="cleaner_with_divider">&nbsp;</div>
+
         
         <div class="column_one_section">
         	<h1>Tìm Kiếm</h1>
