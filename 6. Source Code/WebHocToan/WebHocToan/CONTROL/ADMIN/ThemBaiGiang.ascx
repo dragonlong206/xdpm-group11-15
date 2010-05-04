@@ -32,7 +32,7 @@
     <CE:Editor ID="Editor1" runat="server" Height="800px">
     </CE:Editor>
             <br />
-    <asp:Button ID="btnThem" runat="server" Text="Thêm" onclick="btnThem_Click" style="padding-left=100px" />
+    <asp:Button ID="btnThem" runat="server" Text="Thêm" onclick="btnThem_Click" />
 </div>
 <cc1:msgBox ID="msgBox1" runat="server" />
 

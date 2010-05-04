@@ -8,10 +8,11 @@
 <%@ Register src="../../CONTROL/ADMIN/ThemAccount.ascx" tagname="ThemAccount" tagprefix="uc6" %>
 <%@ Register src="../../CONTROL/ADMIN/ThemBaiGiang.ascx" tagname="ThemBaiGiang" tagprefix="uc7" %>
 <%@ Register src="../../CONTROL/ADMIN/ThemBaiTap.ascx" tagname="ThemBaiTap" tagprefix="uc8" %>
+<%@ Register Src="../../CONTROL/ADMIN/CapNhatBaiGiang.ascx" TagName="CapNhatBaiGiang" TagPrefix="uc9" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cpRight" Runat="Server">
 
-
+    <uc9:CapNhatBaiGiang ID="CapNhatBaiGiang1" runat="server" Visible="false" />
     <uc8:ThemBaiTap ID="ThemBaiTap1" runat="server" Visible=false />
     <uc7:ThemBaiGiang ID="ThemBaiGiang1" runat="server" Visible=false />
     <uc6:ThemAccount ID="ThemAccount1" runat="server" Visible=false />

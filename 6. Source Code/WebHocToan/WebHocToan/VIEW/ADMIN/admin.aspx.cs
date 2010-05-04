@@ -31,6 +31,9 @@ public partial class VIEW_ADMIN_admin : System.Web.UI.Page
             case "DanhSachBaiGiang":
                 DanhSachBaiGiang1.Visible = true;
                 break;
+            case "CapNhatBaiGiang":
+                CapNhatBaiGiang1.Visible = true;
+                break;
             case "ThemBaiGiang":
                 ThemBaiGiang1.Visible = true;
                 break;

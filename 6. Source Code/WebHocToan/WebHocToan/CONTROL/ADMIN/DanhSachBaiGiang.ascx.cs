@@ -21,9 +21,8 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
 {
     #region  Bind GridView
 
-    private void BindGridView()
+    private void BindGridView(int index)
     {
-        int index = Int32.Parse(drlChuong.SelectedItem.Value);
         ArrayList List = new ArrayList();
 
         List = BaiHocBUS.selectBaiHocByIDChuong(index);
@@ -36,17 +35,13 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
     {
         if(!IsPostBack)
         {
-            int index = 1;  
-            ArrayList List = new ArrayList();
-
-            List = BaiHocBUS.selectBaiHocByIDChuong(index);
-            grvBaiHoc.DataSource = List;
-            grvBaiHoc.DataBind();
+            BindGridView(1);
         }
     }
     protected void drlChuong_SelectedIndexChanged(object sender, EventArgs e)
     {
-        BindGridView();
+        int index = Int32.Parse(drlChuong.SelectedItem.Value);
+        BindGridView(index);
     }
     protected void grvBaiHoc_RowDeleting(object sender, GridViewDeleteEventArgs e)
     {
@@ -55,8 +50,8 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
         result = BaiHocBUS.deleteBaiHoc(grvBaiHoc.Rows[e.RowIndex].Cells[1].Text);
         drlChuong.SelectedIndex = Int32.Parse(grvBaiHoc.Rows[e.RowIndex].Cells[4].Text) - 1;
         string text = grvBaiHoc.Rows[e.RowIndex].Cells[1].Text;
-
-        BindGridView();
+        int index = Int32.Parse(drlChuong.SelectedItem.Value);
+        BindGridView(index);
  
         if (result == true)
         {
@@ -66,5 +61,12 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
         {
             msgBox1.alert("Xóa IDBaiGiang" + text + " Thất Bại ");
         }
+    }
+    protected void grvBaiHoc_RowEditing(object sender, GridViewEditEventArgs e)
+    {
+        int index = Int32.Parse(drlChuong.SelectedItem.Value);
+        string text = grvBaiHoc.Rows[e.NewEditIndex].Cells[1].Text;
+        string url = "admin.aspx?ava=CapNhatBaiGiang&IDBaiHoc=" + text + "&IDChuong=" + index;
+        Response.Redirect(url);
     }
 }
