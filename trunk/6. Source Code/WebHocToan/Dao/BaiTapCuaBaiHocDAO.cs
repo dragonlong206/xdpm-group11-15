@@ -26,15 +26,17 @@ namespace Dao
                 // B3: Tao chuoi strSQL thao tac CSDL
                 //Tam thoi lam the nay, le ra phai dung Store procedure va IDBaiTap auto increament
                 //Cai nay se update sau
-                string SQLqurey = "insert into BaiTapCuaBaiHoc(IDBaiTap, TenBaiTap, IDBaiHoc) values (@IDBaiTap, @TenBaiTap, @IDBaiHoc)";
+                string SQLqurey = "insert into BaiTapCuaBaiHoc(IDBaiTap, TenBaiTap, NoiDungBaiTap, IDBaiHoc) values (@IDBaiTap, @TenBaiTap, @NoiDungBaiTap, @IDBaiHoc)";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
                 cmd.Parameters.Add("@TenBaiTap", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@NoiDungBaiTap", SqlDbType.NText);
                 cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
 
                 cmd.Parameters["@IDBaiTap"].Value = btcbhDto.IDBaiTap;
                 cmd.Parameters["@TenBaiTap"].Value = btcbhDto.TenBaiTap;
+                cmd.Parameters["@NoiDungBaiTap"].Value = btcbhDto.NoiDungBaiTap;
                 cmd.Parameters["@IDBaiHoc"].Value = btcbhDto.IDBaiHoc;
 
 
@@ -96,17 +98,19 @@ namespace Dao
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
 
-                string SQLqurey = "update BaiTapCuaBaiHoc Set TenBaiTap = @TenBaiTap, IDBaiHoc = @IDBaiHoc Where IDBaiTap = @IDBaiTap";
+                string SQLqurey = "update BaiTapCuaBaiHoc Set TenBaiTap = @TenBaiTap, NoiDungBaiTap = @NoiDungBaiTap, IDBaiHoc = @IDBaiHoc Where IDBaiTap = @IDBaiTap";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
 
                 cmd.Parameters.Add("@TenBaiTap", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@NoiDungBaiTap", SqlDbType.NText);
                 cmd.Parameters.Add("@Chuong", SqlDbType.Int);
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
 
 
                 cmd.Parameters["@IDBaiTap"].Value = btcbhDto.IDBaiTap;
                 cmd.Parameters["@IDBaiHoc"].Value = btcbhDto.IDBaiHoc;
+                cmd.Parameters["@NoiDungBaiTap"].Value = btcbhDto.NoiDungBaiTap;
                 cmd.Parameters["@TenBaiTap"].Value = btcbhDto.TenBaiTap;
 
                 int n = cmd.ExecuteNonQuery();
@@ -146,6 +150,7 @@ namespace Dao
 
                     btcbhDto.IDBaiTap = (int)dr["IDBaiTap"];
                     btcbhDto.TenBaiTap = (string)dr["TenBaiTap"];
+                    btcbhDto.NoiDungBaiTap = (string)dr["NoiDungBaiTap"];
                     btcbhDto.IDBaiHoc = (int)dr["IDBaiHoc"];
 
 
@@ -190,6 +195,7 @@ namespace Dao
                 {
                     btcbhDto.IDBaiTap = (int)dr["IDBaiTap"];
                     btcbhDto.TenBaiTap = (string)dr["TenBaiTap"];
+                    btcbhDto.NoiDungBaiTap = (string)dr["NoiDungBaiTap"];
                     btcbhDto.IDBaiHoc = (int)dr["IDBaiHoc"];
                 }
                 // B5: Dong ket noi CSDL
@@ -209,7 +215,50 @@ namespace Dao
         }
 
 
+        public static ArrayList selectAllBaiTapCuaBaiHocByIDBaiHoc(int ID)
+        {
+            ArrayList List = new ArrayList();
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from BaiTapCuaBaiHoc where IDBaiHoc = @IDBaiHoc";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
+                cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
+                cmd.Parameters["@IDBaiHoc"].Value = ID;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    BaiTapCuaBaiHocDTO btcbhDto = new BaiTapCuaBaiHocDTO();
+
+                    btcbhDto.IDBaiTap = (int)dr["IDBaiTap"];
+                    btcbhDto.TenBaiTap = (string)dr["TenBaiTap"];
+                    btcbhDto.NoiDungBaiTap = (string)dr["NoiDungBaiTap"];
+                    btcbhDto.IDBaiHoc = (int)dr["IDBaiHoc"];
+
+
+                    List.Add(btcbhDto);
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
+
+
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return List;
+        }
 
     }
 }
