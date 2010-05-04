@@ -55,6 +55,50 @@ namespace Dao
             return result;
         }
 
+        public static Boolean insertBaiHocAutoIncrease(BaiHocDTO bh)
+        {
+            Boolean result = true;
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+
+                // B3: Tao chuoi strSQL thao tac CSDL
+                //Tam thoi lam the nay, le ra phai dung Store procedure va IDBaiHoc auto increament
+                //Cai nay se update sau
+                //string SQLqurey = "insert into BaiHoc(IDBaiHoc, TenBaiHoc, NoiDungBaiHoc, IDChuong) values (@IDBaiHoc, @TenBaiHoc, @NoiDungBaiHoc, @IDChuong)";
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = connection;
+                cmd.CommandText = "insertBaiHoc";
+
+                //cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
+                cmd.Parameters.Add("@TenBaiHoc", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@NoiDungBaiHoc", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@IDChuong", SqlDbType.Int);
+
+                //cmd.Parameters["@IDBaiHoc"].Value = bh.IDBaiHoc;
+                cmd.Parameters["@TenBaiHoc"].Value = bh.TenBaiHoc;
+                cmd.Parameters["@NoiDungBaiHoc"].Value = bh.NoiDung;
+                cmd.Parameters["@IDChuong"].Value = bh.IDChuong;
+
+                int n = cmd.ExecuteNonQuery();
+                if (n == 0)
+                {
+                    result = false;
+                }
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+            return result;
+        }
+
         public static Boolean deleteBaiHoc(string IDBaiHoc)
         {
             Boolean result = true;
@@ -64,11 +108,11 @@ namespace Dao
                 // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
-                string SQLqurey = "delete from BaiHoc Where IDBaiHoc = @IDBaiHoc";
-                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+                string SQLquery = "delete from BaiHoc Where IDBaiHoc = @IDBaiHoc";
+                SqlCommand cmd = new SqlCommand(SQLquery, connection);
 
                 cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
-                cmd.Parameters["@IDABaiHoc"].Value = IDBaiHoc;
+                cmd.Parameters["@IDBaiHoc"].Value = Int32.Parse(IDBaiHoc);
 
 
                 int n = cmd.ExecuteNonQuery();

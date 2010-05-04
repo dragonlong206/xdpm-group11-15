@@ -17,7 +17,7 @@ namespace Bus
             return result;
         }
 
-        public static Boolean deleteBaiTapChuong(string IDBaiTapChuong)
+        public static Boolean deleteBaiTapChuong(int IDBaiTapChuong)
         {
             Boolean result = false;
             result = BaiTapChuongDAO.deleteBaiTapChuong(IDBaiTapChuong);
