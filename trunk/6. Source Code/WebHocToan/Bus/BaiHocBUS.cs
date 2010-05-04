@@ -17,6 +17,13 @@ namespace Bus
             return result;
         }
 
+        public static Boolean insertBaiHocAutoIncrease(BaiHocDTO bhDto)
+        {
+            Boolean result = false;
+            result = BaiHocDAO.insertBaiHocAutoIncrease(bhDto);
+            return result;
+        }
+
         public static Boolean deleteBaiHoc(string IDBaiHoc)
         {
             Boolean result = false;

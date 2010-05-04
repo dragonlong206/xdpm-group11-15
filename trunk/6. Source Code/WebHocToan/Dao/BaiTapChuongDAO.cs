@@ -54,7 +54,7 @@ namespace Dao
             return result;
         }
 
-        public static Boolean deleteBaiTapChuong(string IDBaiTap)
+        public static Boolean deleteBaiTapChuong(int IDBaiTap)
         {
             Boolean result = true;
             try
