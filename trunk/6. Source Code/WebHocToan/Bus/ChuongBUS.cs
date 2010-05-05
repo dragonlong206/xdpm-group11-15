@@ -42,6 +42,9 @@ namespace Bus
         {
             return ChuongDAO.selectChuongByIDChuong(IDChuong);
         }
-
+        public static ArrayList selectChuongByIDMonHoc(int IDMonHoc)
+        {
+            return ChuongDAO.selectChuongByIDMonHoc(IDMonHoc);
+        }
     }
 }
