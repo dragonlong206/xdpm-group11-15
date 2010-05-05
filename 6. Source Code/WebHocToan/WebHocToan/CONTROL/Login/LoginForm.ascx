@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LoginForm.ascx.cs" Inherits="CONTROL_Login_LoginForm" %>
 <asp:ScriptManager ID="ScriptManager1" runat="server">
 </asp:ScriptManager>
-
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
 

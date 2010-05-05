@@ -1,4 +1,14 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LeftMenu.ascx.cs" Inherits="CONTROL_LeftMenu" %>
+<div class="column_one_section">
+    <h1>Danh Mục Môn Học</h1>
+    <asp:DropDownList ID="drMonHoc" runat="server" 
+        style=" margin-left:5px; width:169px" AutoPostBack="True">
+        <asp:ListItem>1</asp:ListItem>
+        <asp:ListItem>2</asp:ListItem>
+        <asp:ListItem>3</asp:ListItem>
+    </asp:DropDownList>
+</div>
+<div class="cleaner_with_divider">&nbsp;</div>
 
 <div class="column_one_section">
         	<h1>Danh Mục Bài Giảng</h1>
@@ -32,3 +42,7 @@
         </div>
         
         <div class="cleaner_with_divider">&nbsp;</div>
+
+
+
+
