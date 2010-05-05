@@ -20,8 +20,13 @@ public partial class CONTROL_LeftMenu : System.Web.UI.UserControl
     {
         if (!IsPostBack)
         {
-            rptChuong.DataSource = ChuongBUS.selectAllChuong();
+
+            LoadMonHoc();
+
+            rptChuong.DataSource = ChuongBUS.selectChuongByIDMonHoc(int.Parse(drMonHoc.SelectedValue));
             rptChuong.DataBind();
+
+
         }
     }
     protected void rptChuong_ItemDataBound(object sender, RepeaterItemEventArgs e)
@@ -35,5 +40,63 @@ public partial class CONTROL_LeftMenu : System.Web.UI.UserControl
             rptBai.DataBind();
             
         }
+    }
+
+    public void LoadMonHoc()
+    {
+        
+        drMonHoc.DataSource = MonHocBUS.selectAllMonHoc();
+        drMonHoc.DataTextField = "TenMonHoc";
+        drMonHoc.DataValueField = "IDMonHoc";
+        drMonHoc.DataBind();
+
+
+        string IDMonHoc = Request.QueryString["IDMonHoc"];
+        if (IDMonHoc != null)
+        {
+            int iIDMonHoc;
+            bool result = int.TryParse(IDMonHoc, out iIDMonHoc);
+            if (result)
+            {
+                for (int i = 0; i < drMonHoc.Items.Count; i++)
+                {
+                    if (drMonHoc.Items[i].Value == iIDMonHoc.ToString())
+                    {
+                        drMonHoc.SelectedIndex = i;
+                        return;
+                    }
+
+                }
+            }
+
+        }
+
+
+        string IDBaiHoc = Request.QueryString["IDBaiHoc"];
+        int iIDBaiHoc;
+
+
+       if (int.TryParse(IDBaiHoc, out iIDBaiHoc))
+        {
+            BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
+            ChuongDTO chDTO = ChuongBUS.selectChuongByIDChuong(bhDTO.IDChuong);
+
+
+            for (int i = 0; i < drMonHoc.Items.Count; i++)
+            {
+                if (drMonHoc.Items[i].Value == chDTO.IDMonHoc.ToString())
+                {
+                    drMonHoc.SelectedIndex = i;
+                    return;
+                }
+
+            }
+        }
+
+    }
+    protected void drMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        string url = "index.aspx?IDMonHoc=" + drMonHoc.SelectedValue;
+        Response.Redirect(url);
     }
 }

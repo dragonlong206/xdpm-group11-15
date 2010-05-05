@@ -21,7 +21,7 @@ public partial class CONTROL_Login_LoginInfo : System.Web.UI.UserControl
     protected void Button1_Click(object sender, EventArgs e)
     {
         QuanLySessionCookie.ClearSessionCookies();
-        Response.Redirect(Page.Request.Url.ToString(), true);
+        Response.Redirect("index.aspx", true);
     }
 }
 
