@@ -12,6 +12,7 @@ namespace Dto
         private string mIDAcc;
         private string mPass;
         private int mIDLoaiAcc;
+        private string mEmail;
         private Boolean mTrangThai;
 
         #endregion Attributes
@@ -36,7 +37,11 @@ namespace Dto
             set { mIDLoaiAcc = value; }
             get { return mIDLoaiAcc; }
         }
-
+        public string Email
+        {
+            set { mEmail = value; }
+            get { return mEmail; }
+        }
         public Boolean TrangThai
         {
             set { mTrangThai = value; }

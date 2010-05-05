@@ -57,6 +57,7 @@
     <Compile Include="CommentBaiTapChuongDAO.cs" />
     <Compile Include="CommentChuongDAO.cs" />
     <Compile Include="LoaiAccDAO.cs" />
+    <Compile Include="MonHocDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
