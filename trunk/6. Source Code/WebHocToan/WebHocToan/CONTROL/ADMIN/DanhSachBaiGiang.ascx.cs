@@ -68,5 +68,6 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
         string text = grvBaiHoc.Rows[e.NewEditIndex].Cells[1].Text;
         string url = "admin.aspx?ava=CapNhatBaiGiang&IDBaiHoc=" + text + "&IDChuong=" + index;
         Response.Redirect(url);
+        //this is comment
     }
 }
