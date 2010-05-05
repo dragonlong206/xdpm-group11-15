@@ -57,6 +57,7 @@
     <Compile Include="CommentBaiTapChuongBUS.cs" />
     <Compile Include="CommentChuongBUS.cs" />
     <Compile Include="LoaiAccBUS.cs" />
+    <Compile Include="MonHocBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
