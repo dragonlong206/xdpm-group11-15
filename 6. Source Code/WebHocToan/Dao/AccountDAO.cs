@@ -22,17 +22,19 @@ namespace Dao
                 // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
-                string SQLqurey = "insert into Account(IDAcc, Pass, IDLoaiAcc, TrangThai) values (@IDAcc, @Pass, @IDLoaiAcc, @TrangThai)";
+                string SQLqurey = "insert into Account(IDAcc, Pass, IDLoaiAcc,Email, TrangThai) values (@IDAcc, @Pass, @IDLoaiAcc, @Email, @TrangThai)";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@IDAcc", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@Pass", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@IDLoaiAcc", SqlDbType.Int);
+                cmd.Parameters.Add("@Email", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@TrangThai", SqlDbType.Bit);
 
                 cmd.Parameters["@IDAcc"].Value = acc.IDAcc;
                 cmd.Parameters["@Pass"].Value = acc.Pass;
                 cmd.Parameters["@IDLoaiAcc"].Value = acc.IDLoaiAcc;
+                cmd.Parameters["@Email"].Value = acc.Email;
                 cmd.Parameters["@TrangThai"].Value = acc.TrangThai;
 
                 int n = cmd.ExecuteNonQuery();
@@ -92,17 +94,19 @@ namespace Dao
                 // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
-                string SQLqurey = "update Account Set Pass = @Pass, IDLoaiAcc = @IDLoaiAcc, TrangThai = @TrangThai Where IDAcc = @IDAcc";
+                string SQLqurey = "update Account Set Pass = @Pass, IDLoaiAcc = @IDLoaiAcc, Email = @Email, TrangThai = @TrangThai Where IDAcc = @IDAcc";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@Pass", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@IDLoaiAcc", SqlDbType.Int);
                 cmd.Parameters.Add("@TrangThai", SqlDbType.Bit);
+                cmd.Parameters.Add("@Email", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@IDAcc", SqlDbType.NVarChar);
 
                 cmd.Parameters["@Pass"].Value = acc.Pass;
                 cmd.Parameters["@IDLoaiAcc"].Value = acc.IDLoaiAcc;
                 cmd.Parameters["@TrangThai"].Value = acc.TrangThai;
+                cmd.Parameters["@Email"].Value = acc.Email;
                 cmd.Parameters["@IDAcc"].Value = acc.IDAcc;
 
                 int n = cmd.ExecuteNonQuery();
@@ -142,6 +146,7 @@ namespace Dao
                     accDTO.IDAcc = (string)dr["IDAcc"];
                     accDTO.Pass = (string)dr["Pass"];
                     accDTO.IDLoaiAcc = (int)dr["IDLoaiAcc"];
+                    accDTO.Email = (string)dr["Email"];
                     accDTO.TrangThai = (Boolean)dr["TrangThai"];
 
                     List.Add(accDTO);
@@ -158,7 +163,7 @@ namespace Dao
             {
 
             }
-            
+
             return List;
         }
 
@@ -186,6 +191,7 @@ namespace Dao
                     accDTO.IDAcc = (string)dr["IDAcc"];
                     accDTO.Pass = (string)dr["Pass"];
                     accDTO.IDLoaiAcc = (int)dr["IDLoaiAcc"];
+                    accDTO.Email = (string)dr["Email"];
                     accDTO.TrangThai = (Boolean)dr["TrangThai"];
 
                     List.Add(accDTO);
@@ -227,7 +233,47 @@ namespace Dao
                     accDTO.IDAcc = (string)dr["IDAcc"];
                     accDTO.Pass = (string)dr["Pass"];
                     accDTO.IDLoaiAcc = (int)dr["IDLoaiAcc"];
-                    accDTO.TrangThai = (Boolean)dr["TrangThai"];                
+                    accDTO.Email = (string)dr["Email"];
+                    accDTO.TrangThai = (Boolean)dr["TrangThai"];
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return accDTO;
+        }
+        //lay account theo Email
+        public static AccountDTO selectAccountByEmail(string Email)
+        {
+            AccountDTO accDTO = new AccountDTO();
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from Account Where Email = @Email";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+
+                cmd.Parameters.Add("@Email", SqlDbType.NVarChar);
+                cmd.Parameters["@Email"].Value = Email;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    accDTO.IDAcc = (string)dr["IDAcc"];
+                    accDTO.Pass = (string)dr["Pass"];
+                    accDTO.IDLoaiAcc = (int)dr["IDLoaiAcc"];
+                    accDTO.Email = (string)dr["Email"];
+                    accDTO.TrangThai = (Boolean)dr["TrangThai"];
                 }
                 // B5: Dong ket noi CSDL
                 dr.Close();

@@ -11,7 +11,7 @@ namespace Dto
 
         private int mIDChuong;
         private string mTenChuong;
-
+        private int mIDMonHoc;
 
         #endregion Attributes
 
@@ -29,7 +29,11 @@ namespace Dto
             get { return mTenChuong; }
         }
 
-
+        public int IDMonHoc
+        {
+            set { mIDMonHoc = value; }
+            get { return mIDMonHoc; }
+        }
 
 
 

@@ -44,5 +44,9 @@ namespace Bus
         {
             return AccountDAO.selectAccountByIDAC(IDAcc);
         }
+        public static AccountDTO selectAccountByEmail(string Email)
+        {
+            return AccountDAO.selectAccountByEmail(Email);
+        }
     }
 }
