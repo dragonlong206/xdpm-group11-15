@@ -1,5 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="LyThuyet.ascx.cs" Inherits="CONTROL_LyThuyet" %>
 
+
+
  <div class="column_four_section">
 			<h1><a href="#" target="_parent"><asp:Literal ID="ltrTenBai" runat="server"></asp:Literal> - Lý Thuyết</a></h1>
        

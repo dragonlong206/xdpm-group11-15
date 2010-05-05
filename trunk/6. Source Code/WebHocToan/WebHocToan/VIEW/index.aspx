@@ -10,6 +10,9 @@
 
 <%@ Register src="../CONTROL/DangKy.ascx" tagname="DangKy" tagprefix="uc6" %>
 
+
+
+
 <%-- Add content controls here --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="cpRight" Runat="Server">
 
