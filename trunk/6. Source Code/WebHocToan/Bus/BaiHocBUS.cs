@@ -55,5 +55,9 @@ namespace Bus
         {
             return BaiHocDAO.selectBaiHocByIDChuong(IDChuong);
         }
+        public static ArrayList selectIDvaTenBaiHocByIDChuong(int IDChuong)
+        {
+            return BaiHocDAO.selectIDvaTenBaiHocByIDChuong(IDChuong);
+        }
     }
 }

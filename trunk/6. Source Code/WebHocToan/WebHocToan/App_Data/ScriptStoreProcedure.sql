@@ -143,25 +143,26 @@ GO
 --4. insertCauHoiBTBaiHoc-------------
 ------------------------------
 
-CREATE PROCEDURE insertCauHoiBTBaiHoc
-			(	@CauHoiA nText, @NoiDungBaiTap ntext,@IDBaiHoc int)
+Create PROCEDURE [dbo].[insertCauHoiBTBaiHoc]
+			(	@CauHoiA nText,@CauHoiB nText, @CauHoiC nText, @CauHoiD nText, @CauTraLoi nchar(1),@IDBaiTap int)
 AS
 Begin
-	Declare @DS_BaiTap cursor
-	Set @DS_BaiTap = cursor for select IDBaiHoc, TenBaiTap from BAITAPCUABAIHOC
-	Declare @mIDBaiTap int, @mTenBaiTap nvarchar(50)
+--Xac dinh ma cau hoi them vao
+	Declare @DS_CauHoi cursor
+	Set @DS_CauHoi  = cursor for select IDCauHoi from CauHoiBTBaiHoc
+	Declare @mIDCauHoi int
 	Declare @ViTri int, @TimDuoc int
 	Set @ViTri = 1 --Vị trí sẽ thêm môn học mới vào
 	Set @TimDuoc = 0  --Flag = 0 Không tìm được 
-	Open @DS_BaiTap
+	Open @DS_CauHoi
 
-	fetch next from @DS_BaiTap into @mIDBaiTap, @mTenBaiTap
+	fetch next from @DS_CauHoi into @mIDCauHoi
 	While @@fetch_status = 0
 	Begin
 		if @TimDuoc = 0  
 		Begin
 
-			if @ViTri != @mIDBaiTap
+			if @ViTri != @mIDCauHoi
 			Begin
 				set @TimDuoc = 1
 			End
@@ -171,16 +172,115 @@ Begin
 			End
 		End
 
-		if @TenBaiTap = @mTenBaiTap
+			Fetch next From @DS_CauHoi into  @mIDCauHoi
+	End
+	Close @DS_CauHoi
+--Xav dinh cho them moi cua IDBaiTap trong truong hop IDBaiTap = 0	
+	if @IDBaiTap = 0
+	Begin 
+		Declare @DS_BaiTap cursor
+		Set @DS_BaiTap  = cursor for select IDBaiTap from BaiTapCuaBaiHoc
+		Declare @mIDBaiTap int
+		Declare @ViTri2 int, @TimDuoc2 int
+		Set @ViTri2 = 1 --V? trí s? thêm môn h?c m?i vào
+		Set @TimDuoc2 = 0  --Flag = 0 Không tìm du?c 
+		Open @DS_BaiTap
+
+		fetch next from @DS_BaiTap into @mIDBaiTap
+		While @@fetch_status = 0
 		Begin
-			Print N'Đã Có Bài Học Này Bạn Hãy Nhập Topic khác'
-			Return 
+			if @TimDuoc2 = 0  
+			Begin
+
+				if @ViTri2 != @mIDBaiTap
+				Begin
+					set @TimDuoc2 = 1
+				End
+				Else
+				Begin
+					set @ViTri2 = @ViTri2 + 1
+				End
+			End
+
+				Fetch next From @DS_BaiTap into  @mIDBaiTap
+		End
+		Close @DS_BaiTap
+		set @IDBaiTap = @ViTri2 - 1
+	End
+	Insert into CauHoiBTBaiHoc values(@ViTri,@CauHoiA,@CauHoiB, @CauHoiC, @CauHoiD, @CauTraLoi,@IDBaiTap)
+End
+
+go 
+
+
+
+-----------------------------
+--5. insertCauHoiBTChuong-------------
+------------------------------
+
+Alter PROCEDURE [dbo].[insertCauHoiBTChuong]
+			(	@CauHoiA nText,@CauHoiB nText, @CauHoiC nText, @CauHoiD nText, @CauTraLoi nchar(1),@IDBaiTap int)
+AS
+Begin
+--Xac dinh ma cau hoi them vao
+	Declare @DS_CauHoi cursor
+	Set @DS_CauHoi  = cursor for select IDCauHoi from CauHoiBTChuong
+	Declare @mIDCauHoi int
+	Declare @ViTri int, @TimDuoc int
+	Set @ViTri = 1 --Vị trí sẽ thêm môn học mới vào
+	Set @TimDuoc = 0  --Flag = 0 Không tìm được 
+	Open @DS_CauHoi
+
+	fetch next from @DS_CauHoi into @mIDCauHoi
+	While @@fetch_status = 0
+	Begin
+		if @TimDuoc = 0  
+		Begin
+
+			if @ViTri != @mIDCauHoi
+			Begin
+				set @TimDuoc = 1
+			End
+			Else
+			Begin
+				set @ViTri = @ViTri + 1
+			End
 		End
 
-			Fetch next From @DS_BaiTap into  @mIDBaiTap, @mTenBaiTap
+			Fetch next From @DS_CauHoi into  @mIDCauHoi
 	End
-	Close @DS_BaiTap
+	Close @DS_CauHoi
+--Xav dinh cho them moi cua IDChuong trong truong hop IDChuong = 0	
+	if @IDBaiTap = 0
+	Begin 
+		Declare @DS_Chuong cursor
+		Set @DS_Chuong  = cursor for select IDBaiTap from BaiTapChuong
+		Declare @mIDBaiTap int
+		Declare @ViTri2 int, @TimDuoc2 int
+		Set @ViTri2 = 1 --Vị trí sẽ thêm môn học mới vào
+		Set @TimDuoc2 = 0  --Flag = 0 Không tìm được 
+		Open @DS_Chuong
 
-	Insert into BAITap values(@ViTri, @TenBaiTap, @NoiDungBaiTap , @IDBaiHoc)
+		fetch next from @DS_Chuong into @mIDBaiTap
+		While @@fetch_status = 0
+		Begin
+			if @TimDuoc2 = 0  
+			Begin
+
+				if @ViTri2 != @mIDBaiTap
+				Begin
+					set @TimDuoc2 = 1
+				End
+				Else
+				Begin
+					set @ViTri2 = @ViTri2 + 1
+				End
+			End
+
+				Fetch next From @DS_Chuong into  @mIDBaiTap
+		End
+		Close @DS_Chuong
+		set @IDBaiTap = @ViTri2 - 1
+	End
+	Insert into CauHoiBTChuong values(@ViTri,@CauHoiA,@CauHoiB, @CauHoiC, @CauHoiD, @CauTraLoi,@IDBaiTap)
 End
-GO 

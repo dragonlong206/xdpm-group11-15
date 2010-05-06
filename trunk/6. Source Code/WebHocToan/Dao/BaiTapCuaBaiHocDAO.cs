@@ -26,15 +26,20 @@ namespace Dao
                 // B3: Tao chuoi strSQL thao tac CSDL
                 //Tam thoi lam the nay, le ra phai dung Store procedure va IDBaiTap auto increament
                 //Cai nay se update sau
-                string SQLqurey = "insert into BaiTapCuaBaiHoc(IDBaiTap, TenBaiTap, NoiDungBaiTap, IDBaiHoc) values (@IDBaiTap, @TenBaiTap, @NoiDungBaiTap, @IDBaiHoc)";
-                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+                //string SQLqurey = "insert into BaiTapCuaBaiHoc(IDBaiTap, TenBaiTap, NoiDungBaiTap, IDBaiHoc) values (@IDBaiTap, @TenBaiTap, @NoiDungBaiTap, @IDBaiHoc)";
+                //SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
-                cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = connection;
+                cmd.CommandText = "insertBaiTapBaiHoc";
+
+                //cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
                 cmd.Parameters.Add("@TenBaiTap", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@NoiDungBaiTap", SqlDbType.NText);
                 cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
 
-                cmd.Parameters["@IDBaiTap"].Value = btcbhDto.IDBaiTap;
+                //cmd.Parameters["@IDBaiTap"].Value = btcbhDto.IDBaiTap;
                 cmd.Parameters["@TenBaiTap"].Value = btcbhDto.TenBaiTap;
                 cmd.Parameters["@NoiDungBaiTap"].Value = btcbhDto.NoiDungBaiTap;
                 cmd.Parameters["@IDBaiHoc"].Value = btcbhDto.IDBaiHoc;
@@ -210,6 +215,52 @@ namespace Dao
             }
 
             return btcbhDto;
+            //Khi lap trinh chung ta kiem tra co duoc thay du lieu hay khong bang cach 
+            // So sanh neu ID != 0 hay NoiDungBaiTap!=Null (ham tao) de kiem tra
+        }
+
+        //lay BaiTapCuaBaiHoc theo loai IDBaiTapCuaBaiHoc
+        public static ArrayList selectBaiTapCuaBaiHocByIDBaiHoc(int IDBaiHoc)
+        {
+            ArrayList List = new ArrayList();
+          
+
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from BaiTapCuaBaiHoc Where IDBaiHoc = @IDBaiHoc";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+
+                cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
+                cmd.Parameters["@IDBaiHoc"].Value = IDBaiHoc;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    BaiTapCuaBaiHocDTO btcbhDto = new BaiTapCuaBaiHocDTO();
+                    btcbhDto.IDBaiTap = (int)dr["IDBaiTap"];
+                    btcbhDto.TenBaiTap = (string)dr["TenBaiTap"];
+                    btcbhDto.NoiDungBaiTap = (string)dr["NoiDungBaiTap"];
+                    btcbhDto.IDBaiHoc = (int)dr["IDBaiHoc"];
+
+                    List.Add(btcbhDto);
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return List ;
             //Khi lap trinh chung ta kiem tra co duoc thay du lieu hay khong bang cach 
             // So sanh neu ID != 0 hay NoiDungBaiTap!=Null (ham tao) de kiem tra
         }
