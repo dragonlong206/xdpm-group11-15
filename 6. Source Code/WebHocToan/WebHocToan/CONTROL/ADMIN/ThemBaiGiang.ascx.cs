@@ -18,7 +18,16 @@ public partial class CONTROL_ADMIN_ThemBaiGiang : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (!IsPostBack)
+        {
+            ArrayList list = new ArrayList();
+            list = ChuongBUS.selectChuongByIDMonHoc(1);
 
+            drlChuong.DataTextField = "TenChuong";
+            drlChuong.DataValueField = "IDChuong";
+            drlChuong.DataSource = list;
+            drlChuong.DataBind();
+        }
     }
     protected void btnThem_Click(object sender, EventArgs e)
     {
@@ -45,5 +54,15 @@ public partial class CONTROL_ADMIN_ThemBaiGiang : System.Web.UI.UserControl
         {
             msgBox1.alert("Thêm Bài Giảng Thất Bại");
         }
+    }
+    protected void drlMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ArrayList list = new ArrayList();
+        list = ChuongBUS.selectChuongByIDMonHoc(Int32.Parse(drlMonHoc.SelectedItem.Value.ToString()));
+
+        drlChuong.DataTextField = "TenChuong";
+        drlChuong.DataValueField = "IDChuong";
+        drlChuong.DataSource = list;
+        drlChuong.DataBind();
     }
 }

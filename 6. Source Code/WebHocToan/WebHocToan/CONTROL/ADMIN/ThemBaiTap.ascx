@@ -4,10 +4,20 @@
 
 <div class="column_four_section">
 			<h1><a href="#" target="_parent">Thêm Bài Tập</a></h1>
-            <p>Administrator Pages.</p>    
+            <p>Administrator Pages.</p>  
+       <br />
+              Chọn Môn Học: 
+    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" 
+                DataSourceID="SqlDataMonHoc" DataTextField="TenMonHoc" 
+                DataValueField="IDMonHoc" 
+                onselectedindexchanged="drlMonHoc_SelectedIndexChanged">
+    </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataMonHoc" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                SelectCommand="SELECT * FROM [MonHoc]"></asp:SqlDataSource>
+            <br />   
             Chọn Chương: 
-    <asp:DropDownList ID="drlChuong" runat="server" AutoPostBack="True" 
-                DataSourceID="SqlDataChuong" DataTextField="TenChuong" 
+    <asp:DropDownList ID="drlChuong" runat="server" AutoPostBack="True" DataTextField="TenChuong" 
                 DataValueField="IDChuong" 
                 onselectedindexchanged="drlChuong_SelectedIndexChanged">
     </asp:DropDownList>
@@ -38,10 +48,9 @@
             </asp:DropDownList>
             <br />
 
-            <asp:Label ID="lblTenBaiTap" runat="server" Text="Nhập Tên Bài Tập : " 
-                Visible="False"></asp:Label>
+            <asp:Label ID="lblTenBaiTap" runat="server" Text="Nhập Tên Bài Tập : "></asp:Label>
 
-            <asp:TextBox ID="txtTenBaiTap" runat="server" Visible="False" Width="372px"></asp:TextBox>
+            <asp:TextBox ID="txtTenBaiTap" runat="server" Width="372px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                 ControlToValidate="txtTenBaiTap" ErrorMessage="RequiredFieldValidator">Tên 
             Bài tập không null</asp:RequiredFieldValidator>

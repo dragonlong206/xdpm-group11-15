@@ -42,6 +42,10 @@ namespace Bus
         {
             return BaiTapChuongDAO.selectBaiTapChuongByID(IDBaiTapChuong);
         }
+        public static ArrayList selectBaiTapChuongByIDChuong(int ID)
+        {
+            return BaiTapChuongDAO.selectBaiTapChuongByIDChuong(ID);
+        }
 
     }
 }

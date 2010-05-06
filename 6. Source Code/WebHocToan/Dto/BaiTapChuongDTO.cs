@@ -11,6 +11,7 @@ namespace Dto
 
         private int mIDBaiTap;
         private string mTenBaiTap;
+        private string mNoiDungBaiTap;
         private int mIDChuong;
 
 
@@ -29,7 +30,11 @@ namespace Dto
             set { mTenBaiTap = value; }
             get { return mTenBaiTap; }
         }
-
+        public string NoiDungBaiTap
+        {
+            set { mNoiDungBaiTap = value; }
+            get { return mNoiDungBaiTap; }
+        }
         public int IDChuong
         {
             set { mIDChuong = value; }
@@ -46,6 +51,7 @@ namespace Dto
         {
             mIDBaiTap = 0;
             mTenBaiTap = "";
+            mNoiDungBaiTap = "";
             mIDChuong = 0;
         }
 

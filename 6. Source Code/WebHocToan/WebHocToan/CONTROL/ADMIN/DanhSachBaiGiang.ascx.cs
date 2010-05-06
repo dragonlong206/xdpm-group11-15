@@ -25,7 +25,7 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
     {
         ArrayList List = new ArrayList();
 
-        List = BaiHocBUS.selectBaiHocByIDChuong(index);
+        List = BaiHocBUS.selectIDvaTenBaiHocByIDChuong(index);
         grvBaiHoc.DataSource = List;
         grvBaiHoc.DataBind();       
     }

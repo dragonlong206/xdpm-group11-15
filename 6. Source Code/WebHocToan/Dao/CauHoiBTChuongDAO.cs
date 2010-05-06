@@ -26,11 +26,17 @@ namespace Dao
                 // B3: Tao chuoi strSQL thao tac CSDL
                 //Tam thoi lam the nay, le ra phai dung Store procedure va IDChuong auto increament
                 //Cai nay se update sau
-                string SQLqurey = "insert into CauHoiBTChuong(IDCauHoi, CauHoiA, CauHoiB, CauHoiC, CauHoiD, CauTraLoi, IDBaiTap) values (@IDCauHoi, @CauHoiA, @CauHoiB, @CauHoiC, @CauHoiD, @IDBaiTap)";
-                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+                //string SQLqurey = "insert into CauHoiBTChuong(IDCauHoi, CauHoiA, CauHoiB, CauHoiC, CauHoiD, CauTraLoi, IDBaiTap) values (@IDCauHoi, @CauHoiA, @CauHoiB, @CauHoiC, @CauHoiD, @IDBaiTap)";
+                //SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
-                cmd.Parameters.Add("@IDCauHoi", SqlDbType.Int);
-                cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Connection = connection;
+                cmd.CommandText = "insertCauHoiBTChuong";
+
+
+                //cmd.Parameters.Add("@IDCauHoi", SqlDbType.Int);
+                //cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
                 cmd.Parameters.Add("@CauHoiA", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@CauHoiB", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@CauHoiC", SqlDbType.NVarChar);
@@ -38,7 +44,7 @@ namespace Dao
                 cmd.Parameters.Add("@CauTraLoi", SqlDbType.NChar);
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
 
-                cmd.Parameters["@IDCauHoi"].Value = chbtChuongDto.IDCauHoi;
+               // cmd.Parameters["@IDCauHoi"].Value = chbtChuongDto.IDCauHoi;
                 cmd.Parameters["@CauHoiA"].Value = chbtChuongDto.CauHoiA;
                 cmd.Parameters["@CauHoiB"].Value = chbtChuongDto.CauHoiB;
                 cmd.Parameters["@CauHoiC"].Value = chbtChuongDto.CauHoiC;

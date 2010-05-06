@@ -47,5 +47,9 @@ namespace Bus
         {
             return BaiTapCuaBaiHocDAO.selectAllBaiTapCuaBaiHocByIDBaiHoc(ID);
         }
+        public static ArrayList selectBaiTapCuaBaiHocByIDBaiHoc(int IDBaiTap)
+        {
+            return BaiTapCuaBaiHocDAO.selectAllBaiTapCuaBaiHocByIDBaiHoc(IDBaiTap);
+        }
     }
 }

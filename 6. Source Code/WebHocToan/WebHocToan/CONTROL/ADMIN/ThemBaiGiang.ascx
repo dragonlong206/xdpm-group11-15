@@ -9,10 +9,23 @@
 <div class="column_four_section">
 			<h1><a href="#" target="_parent">Thêm Bài Giảng</a></h1>
             <p>Administrator Pages.</p>  
+              
+            <br />
+                   Chọn Môn Học: 
+    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" 
+                DataSourceID="SqlDataMonHoc" DataTextField="TenMonHoc" 
+                DataValueField="IDMonHoc" 
+                onselectedindexchanged="drlMonHoc_SelectedIndexChanged">
+    </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataMonHoc" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                SelectCommand="SELECT * FROM [MonHoc]"></asp:SqlDataSource>
+            <br /> 
+            <br />
             
               
             Chọn Chương:<asp:DropDownList ID="drlChuong" 
-                runat="server" DataSourceID="SqlDataSourceChuong" DataTextField="TenChuong" 
+                runat="server" DataTextField="TenChuong" 
                 DataValueField="IDChuong">
             </asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSourceChuong" runat="server" 

@@ -299,6 +299,49 @@ namespace Dao
 
         }
 
+        //lay IDBaiHoc va TenBaiHoc theo loai IDChuong
+        public static ArrayList selectIDvaTenBaiHocByIDChuong(int IDChuong)
+        {
+            ArrayList List = new ArrayList();
 
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from BaiHoc Where IDChuong = @IDChuong";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+
+                cmd.Parameters.Add("@IDChuong", SqlDbType.Int);
+                cmd.Parameters["@IDChuong"].Value = IDChuong;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    BaiHocDTO bhDTO = new BaiHocDTO();
+
+                    bhDTO.IDBaiHoc = (int)dr["IDBaiHoc"];
+                    bhDTO.TenBaiHoc = (string)dr["TenBaiHoc"];
+                    bhDTO.NoiDung = "";
+                    bhDTO.IDChuong = (int)dr["IDChuong"];
+
+                    List.Add(bhDTO);
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return List;
+
+        }
     }
 }
