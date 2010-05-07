@@ -61,7 +61,7 @@ namespace Dao
             return result;
         }
 
-        public static Boolean deleteBaiTapCuaBaiHoc(string IDBaiTap)
+        public static Boolean deleteBaiTapCuaBaiHoc(int IDBaiTap)
         {
             Boolean result = true;
             try
@@ -74,7 +74,7 @@ namespace Dao
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
-                cmd.Parameters["@IDABaiTap"].Value = IDBaiTap;
+                cmd.Parameters["@IDBaiTap"].Value = IDBaiTap;
 
 
                 int n = cmd.ExecuteNonQuery();
@@ -265,6 +265,51 @@ namespace Dao
             // So sanh neu ID != 0 hay NoiDungBaiTap!=Null (ham tao) de kiem tra
         }
 
+        //lay BaiTapCuaBaiHoc theo loai IDBaiTapCuaBaiHoc
+        public static ArrayList selectBaiTapCuaBaiHocByIDBaiHoc2(int IDBaiHoc)
+        {
+            ArrayList List = new ArrayList();
+
+
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from BaiTapCuaBaiHoc Where IDBaiHoc = @IDBaiHoc";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+
+                cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
+                cmd.Parameters["@IDBaiHoc"].Value = IDBaiHoc;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    BaiTapCuaBaiHocDTO btcbhDto = new BaiTapCuaBaiHocDTO();
+                    btcbhDto.IDBaiTap = (int)dr["IDBaiTap"];
+                    btcbhDto.TenBaiTap = (string)dr["TenBaiTap"];
+                    btcbhDto.NoiDungBaiTap = "";
+                    btcbhDto.IDBaiHoc = (int)dr["IDBaiHoc"];
+
+                    List.Add(btcbhDto);
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return List;
+            //Khi lap trinh chung ta kiem tra co duoc thay du lieu hay khong bang cach 
+            // So sanh neu ID != 0 hay NoiDungBaiTap!=Null (ham tao) de kiem tra
+        }
 
         public static ArrayList selectAllBaiTapCuaBaiHocByIDBaiHoc(int ID)
         {

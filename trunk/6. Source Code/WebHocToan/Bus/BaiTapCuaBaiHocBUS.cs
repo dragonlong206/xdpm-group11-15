@@ -17,7 +17,7 @@ namespace Bus
             return result;
         }
 
-        public static Boolean deleteBaiTapCuaBaiHoc(string IDBaiTapCuaBaiHoc)
+        public static Boolean deleteBaiTapCuaBaiHoc(int IDBaiTapCuaBaiHoc)
         {
             Boolean result = false;
             result = BaiTapCuaBaiHocDAO.deleteBaiTapCuaBaiHoc(IDBaiTapCuaBaiHoc);
@@ -50,6 +50,10 @@ namespace Bus
         public static ArrayList selectBaiTapCuaBaiHocByIDBaiHoc(int IDBaiTap)
         {
             return BaiTapCuaBaiHocDAO.selectAllBaiTapCuaBaiHocByIDBaiHoc(IDBaiTap);
+        }
+        public static ArrayList selectBaiTapCuaBaiHocByIDBaiHoc2(int IDBaiTap)
+        {
+            return BaiTapCuaBaiHocDAO.selectBaiTapCuaBaiHocByIDBaiHoc2(IDBaiTap);
         }
     }
 }

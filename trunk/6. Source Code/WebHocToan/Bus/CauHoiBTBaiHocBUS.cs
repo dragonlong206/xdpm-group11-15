@@ -17,13 +17,18 @@ namespace Bus
             return result;
         }
 
-        public static Boolean deleteCauHoiBTBaiHoc(string IDBaiHoc)
+        public static Boolean deleteCauHoiBTBaiHoc(int IDBaiHoc)
         {
             Boolean result = false;
             result = CauHoiBTBaiHocDAO.deleteCauHoiBTBaiHoc(IDBaiHoc);
             return result;
         }
-
+        public static Boolean deleteCauHoiBTBaiHocByIDBaiTap(int IDBaiTap)
+        {
+            Boolean result = false;
+            result = CauHoiBTBaiHocDAO.deleteCauHoiBTBaiHocByIDBaiTap(IDBaiTap);
+            return result;
+        }
         public static Boolean updateCauHoiBTBaiHoc(CauHoiBTBaiHocDTO chbtBaiHocDto)
         {
             Boolean result = false;

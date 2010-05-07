@@ -19,6 +19,7 @@
                 <li><span>Quản Lý Bài Tập</span>
                 	<ul>
                         <li><a href="?ava=DanhSachBaiTap">Danh Sách Bài Tập</a></li>
+                        <li><a href="?ava=CapNhatBaiTap">Câp Nhật Bài Tập</a></li>
                         <li><a href="?ava=ThemBaiTap">Thêm Bài Tập</a></li>
            			</ul> 
                 </li>
