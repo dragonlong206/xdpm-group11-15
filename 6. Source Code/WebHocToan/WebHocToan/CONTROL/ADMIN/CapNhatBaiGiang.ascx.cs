@@ -25,6 +25,14 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
         idChuong = Request.QueryString["IDChuong"];
         if (!IsPostBack)
         {
+            ArrayList list1 = new ArrayList();
+            list1 = MonHocBUS.selectAllMonHoc();
+
+            drlMonHoc.DataTextField = "TenMonHoc";
+            drlMonHoc.DataValueField = "IDMonHoc";
+            drlMonHoc.DataSource = list1;
+            drlMonHoc.DataBind();
+
             if (idChuong != null)
             {
                 FillDropDownListChuong(Int32.Parse(idChuong.ToString()));

@@ -20,6 +20,14 @@ public partial class CONTROL_ADMIN_DanhSachBaiTap : System.Web.UI.UserControl
     {
         if (!IsPostBack)
         {
+            ArrayList list1 = new ArrayList();
+            list1 = MonHocBUS.selectAllMonHoc();
+
+            drlMonHoc.DataTextField = "TenMonHoc";
+            drlMonHoc.DataValueField = "IDMonHoc";
+            drlMonHoc.DataSource = list1;
+            drlMonHoc.DataBind();
+
             ArrayList list = new ArrayList();
             list = ChuongBUS.selectChuongByIDMonHoc(1);
 
