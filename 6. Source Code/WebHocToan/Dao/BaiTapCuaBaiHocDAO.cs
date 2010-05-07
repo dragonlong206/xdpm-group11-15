@@ -14,7 +14,7 @@ namespace Dao
 {
     public class BaiTapCuaBaiHocDAO
     {
-        public static Boolean insertBaiTapCuaBaiHoc(BaiTapCuaBaiHocDTO btcbhDto)
+        public static Boolean insertBaiTapCuaBaiHoc(BaiTapCuaBaiHocDTO btcbhDto,ref int IDBaiTapBaiHoc)
         {
             Boolean result = true;
             try
@@ -34,18 +34,20 @@ namespace Dao
                 cmd.Connection = connection;
                 cmd.CommandText = "insertBaiTapBaiHoc";
 
-                //cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
+              
                 cmd.Parameters.Add("@TenBaiTap", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@NoiDungBaiTap", SqlDbType.NText);
                 cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
 
-                //cmd.Parameters["@IDBaiTap"].Value = btcbhDto.IDBaiTap;
+               
                 cmd.Parameters["@TenBaiTap"].Value = btcbhDto.TenBaiTap;
                 cmd.Parameters["@NoiDungBaiTap"].Value = btcbhDto.NoiDungBaiTap;
                 cmd.Parameters["@IDBaiHoc"].Value = btcbhDto.IDBaiHoc;
-
+                //cmd.Parameters["@IDBaiTapBaiHoc"].Value = IDBaiTapBaiHoc;\
+                cmd.Parameters.Add("@IDBaiTapBaiHoc", SqlDbType.Int).Direction = ParameterDirection.Output;
 
                 int n = cmd.ExecuteNonQuery();
+                IDBaiTapBaiHoc = Int32.Parse(cmd.Parameters["@IDBaiTapBaiHoc"].Value.ToString());
                 if (n == 0)
                 {
                     result = false;
@@ -103,18 +105,18 @@ namespace Dao
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
 
-                string SQLqurey = "update BaiTapCuaBaiHoc Set TenBaiTap = @TenBaiTap, NoiDungBaiTap = @NoiDungBaiTap, IDBaiHoc = @IDBaiHoc Where IDBaiTap = @IDBaiTap";
+                string SQLqurey = "update BaiTapCuaBaiHoc Set TenBaiTap = @TenBaiTap, NoiDungBaiTap = @NoiDungBaiTap Where IDBaiTap = @IDBaiTap";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
 
                 cmd.Parameters.Add("@TenBaiTap", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@NoiDungBaiTap", SqlDbType.NText);
-                cmd.Parameters.Add("@Chuong", SqlDbType.Int);
+                //cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
 
 
                 cmd.Parameters["@IDBaiTap"].Value = btcbhDto.IDBaiTap;
-                cmd.Parameters["@IDBaiHoc"].Value = btcbhDto.IDBaiHoc;
+                //cmd.Parameters["@IDBaiHoc"].Value = btcbhDto.IDBaiHoc;
                 cmd.Parameters["@NoiDungBaiTap"].Value = btcbhDto.NoiDungBaiTap;
                 cmd.Parameters["@TenBaiTap"].Value = btcbhDto.TenBaiTap;
 

@@ -41,9 +41,9 @@ namespace Bus
             return CauHoiBTBaiHocDAO.selectAllCauHoiBTBaiHoc();
         }
 
-        public static ArrayList selectCauHoiBTBaiHocByIDBaiHoc(int IDBaiHoc)
+        public static CauHoiBTBaiHocDTO selectCauHoiBTBaiHocByIDBaiTap(int IDBaiTap)
         {
-            return CauHoiBTBaiHocDAO.selectCauHoiBTBaiHocByIDBaiHoc(IDBaiHoc);
+            return CauHoiBTBaiHocDAO.selectCauHoiBTBaiHocByIDBaiTap(IDBaiTap);
         }
 
         public static CauHoiBTBaiHocDTO selectCauHoiBTBaiHocByIDCauHoi(int IDCauHoi)

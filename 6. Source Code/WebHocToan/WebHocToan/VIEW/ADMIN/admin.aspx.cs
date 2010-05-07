@@ -43,6 +43,9 @@ public partial class VIEW_ADMIN_admin : System.Web.UI.Page
             case "ThemBaiTap":
                 ThemBaiTap1.Visible = true;
                 break;
+            case "CapNhatBaiTap":
+                CapNhatBaiTap1.Visible = true;
+                break;
             case "DanhSachComment":
                 DanhSachComment1.Visible = true;
                 break;

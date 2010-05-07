@@ -28,17 +28,7 @@
     <asp:DropDownList ID="drlBaiHoc" runat="server" Visible="False" 
                 onselectedindexchanged="drlBaiHoc_SelectedIndexChanged">
     </asp:DropDownList>
-    <br />
-    <br />
-    <asp:CheckBox ID="chbNoiDung" runat="server" 
-                Text="Câu hỏi của bài tập đã có (Checked: Đã có nội dung bài tập)" 
-                AutoPostBack="True" oncheckedchanged="cbtNoiDung_CheckedChanged" />
             <br />
-            <br />
-            <asp:Label ID="lblBaiTap" runat="server" Text="Chọn Bài Tập: " Visible="False"></asp:Label>
-            <asp:DropDownList ID="drlNoiDung" runat="server" AutoPostBack="True" 
-                Visible="False" onselectedindexchanged="drlNoiDung_SelectedIndexChanged">
-            </asp:DropDownList>
             <br />
 
             <asp:Label ID="lblTenBaiTap" runat="server" Text="Nhập Tên Bài Tập : "></asp:Label>

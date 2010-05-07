@@ -10,10 +10,10 @@ namespace Bus
 {
     public class BaiTapCuaBaiHocBUS
     {
-        public static Boolean insertBaiTapCuaBaiHoc(BaiTapCuaBaiHocDTO btcbhDto)
+        public static Boolean insertBaiTapCuaBaiHoc(BaiTapCuaBaiHocDTO btcbhDto,ref int IDBaiTapBaiHoc)
         {
             Boolean result = false;
-            result = BaiTapCuaBaiHocDAO.insertBaiTapCuaBaiHoc(btcbhDto);
+            result = BaiTapCuaBaiHocDAO.insertBaiTapCuaBaiHoc(btcbhDto, ref  IDBaiTapBaiHoc);
             return result;
         }
 

@@ -143,6 +143,27 @@ public partial class CONTROL_ADMIN_DanhSachBaiTap : System.Web.UI.UserControl
     }
     protected void grvBaiTap_RowEditing(object sender, GridViewEditEventArgs e)
     {
+        int chuong = Int32.Parse(drlChuong.SelectedItem.Value);
+        int monhoc = Int32.Parse(drlMonHoc.SelectedItem.Value);
+        int status = 0;
+        string ID = grvBaiTap.Rows[e.NewEditIndex].Cells[1].Text;
+        string IDBaiTapBaiHoc = "";
+        string IDBaiTapChuong = "";
+        string baihoc = "";
 
+        if (chbBaiTap.Checked == true)
+        {
+            status = 1;
+            IDBaiTapBaiHoc = ID;
+            baihoc = drlBaiHoc.SelectedItem.Value.ToString();
+        }
+        else
+        {
+            IDBaiTapChuong = ID;
+        }
+        string url = "admin.aspx?ava=CapNhatBaiTap&chuong="+chuong+"&monhoc="+monhoc+"&baihoc="+baihoc+"&status="+status+"&IDBaiTapBaiHoc="
+                        +IDBaiTapBaiHoc+"&IDBaiTapChuong="+IDBaiTapChuong;
+        Response.Redirect(url);
+        //this is comment
     }
 }
