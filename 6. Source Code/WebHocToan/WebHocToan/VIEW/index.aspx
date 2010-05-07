@@ -8,7 +8,7 @@
 
 <%@ Register src="../CONTROL/Error.ascx" tagname="Error" tagprefix="uc5" %>
 
-<%@ Register src="../CONTROL/DangKy.ascx" tagname="DangKy" tagprefix="uc6" %>
+<%@ Register src="../CONTROL/DangKy/DangKy.ascx" tagname="DangKy" tagprefix="uc6" %>
 
 
 

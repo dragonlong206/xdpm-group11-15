@@ -14,8 +14,10 @@
             <asp:TextBox ID="txtPassword" runat="server" Width="100px" TextMode="Password" style="margin-bottom:5px"></asp:TextBox>
             <p>
             <asp:CheckBox ID="chkRemember" Text="Remember Me" runat="server" AutoPostBack="True" style="margin-left:2px" />
-            <asp:Button ID="btnLogin" runat="server" Text="Log In" Width="67px" 
-                    onclick="btnLogin_Click" style="height: 26px" />
+            <asp:Button ID="btnLogin" runat="server" Text="Log In"  
+                    onclick="btnLogin_Click" style="margin-bottom:5px" />
+                    
+            <p style="margin-left:5px"><a href="?ava=DangKy">Đăng ký</a> nếu chưa có tài khoản.</p>
 
 </div>
 <div class="cleaner_with_divider">&nbsp;</div>

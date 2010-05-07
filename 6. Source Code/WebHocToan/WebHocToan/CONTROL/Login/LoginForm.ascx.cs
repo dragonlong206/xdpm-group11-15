@@ -15,6 +15,10 @@ public partial class CONTROL_Login_LoginForm : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (IsPostBack)
+        {
+            txtPassword.Attributes["value"] = txtPassword.Text;
+        }
 
     }
     protected void btnLogin_Click(object sender, EventArgs e)

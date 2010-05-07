@@ -15,6 +15,13 @@ public partial class CONTROL_DangKy : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (QuanLySessionCookie.CheckLoggedin())
+        {
+            DangKyError1.Visible = true;
+        }
+        else
+        {
+            DangKyForm1.Visible = true;
+        }
     }
 }
