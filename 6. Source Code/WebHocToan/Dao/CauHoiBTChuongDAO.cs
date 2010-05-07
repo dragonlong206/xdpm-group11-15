@@ -69,7 +69,7 @@ namespace Dao
             return result;
         }
 
-        public static Boolean deleteCauHoiBTChuong(string IDCauHoi)
+        public static Boolean deleteCauHoiBTChuong(int IDCauHoi)
         {
             Boolean result = true;
             try
@@ -83,6 +83,38 @@ namespace Dao
 
                 cmd.Parameters.Add("@IDCauHoi", SqlDbType.Int);
                 cmd.Parameters["@IDCauHoi"].Value = IDCauHoi;
+
+
+                int n = cmd.ExecuteNonQuery();
+                if (n == 0)
+                {
+                    result = false;
+                }
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+            return result;
+        }
+
+        public static Boolean deleteCauHoiBTChuongByIDBaiTap(int IDBaiTap)
+        {
+            Boolean result = true;
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "delete from CauHoiBTChuong Where IDBaiTap = @IDBaiTap";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+
+                cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
+                cmd.Parameters["@IDBaiTap"].Value = IDBaiTap;
 
 
                 int n = cmd.ExecuteNonQuery();

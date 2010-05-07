@@ -33,8 +33,16 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
     #endregion
     protected void Page_Load(object sender, EventArgs e)
     {
-        if(!IsPostBack)
+        if (!IsPostBack)
         {
+            ArrayList list = new ArrayList();
+            list = ChuongBUS.selectChuongByIDMonHoc(1);
+
+            drlChuong.DataTextField = "TenChuong";
+            drlChuong.DataValueField = "IDChuong";
+            drlChuong.DataSource = list;
+            drlChuong.DataBind();
+
             BindGridView(1);
         }
     }
@@ -69,5 +77,17 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
         string url = "admin.aspx?ava=CapNhatBaiGiang&IDBaiHoc=" + text + "&IDChuong=" + index;
         Response.Redirect(url);
         //this is comment
+    }
+    protected void drlMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ArrayList list = new ArrayList();
+        list = ChuongBUS.selectChuongByIDMonHoc(Int32.Parse(drlMonHoc.SelectedItem.Value.ToString()));
+
+        drlChuong.DataTextField = "TenChuong";
+        drlChuong.DataValueField = "IDChuong";
+        drlChuong.DataSource = list;
+        drlChuong.DataBind();
+
+        BindGridView(1);
     }
 }

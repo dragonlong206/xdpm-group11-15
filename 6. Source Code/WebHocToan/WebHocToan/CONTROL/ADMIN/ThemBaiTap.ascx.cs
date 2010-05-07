@@ -120,6 +120,8 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
                 BaiTapChuongDTO btChuongDto = new BaiTapChuongDTO();
                 btChuongDto = BaiTapChuongBUS.selectBaiTapChuongByID(Int32.Parse(drlNoiDung.SelectedItem.Value.ToString()));
                 txtTenBaiTap.Text = btChuongDto.TenBaiTap.ToString();
+                txtNoiDung.Text = btChuongDto.NoiDungBaiTap.ToString();
+                txtNoiDung.Enabled = false;
             }
                 //neu la bai tap bai hoc thi select bai tap bai hoc theo id roi dien vao txt noi dung 
             else
@@ -127,6 +129,8 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
                 BaiTapCuaBaiHocDTO btbhDto = new BaiTapCuaBaiHocDTO();
                 btbhDto = BaiTapCuaBaiHocBUS.selectBaiTapCuaBaiHocByID(Int32.Parse(drlNoiDung.SelectedItem.Value.ToString()));
                 txtTenBaiTap.Text = btbhDto.TenBaiTap.ToString();
+                txtNoiDung.Text = btbhDto.NoiDungBaiTap.ToString();
+                txtNoiDung.Enabled = false;
             }
             //txtTenBaiTap.Text = 
             txtTenBaiTap.Text = "'Baì tập này đã có'";
@@ -140,6 +144,7 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
             drlNoiDung.Visible = false;
             txtTenBaiTap.Text = "Bạn nhập tên bài tập vào đây";
             txtTenBaiTap.Enabled = true;
+            txtNoiDung.Enabled = true;
         }
     }
 

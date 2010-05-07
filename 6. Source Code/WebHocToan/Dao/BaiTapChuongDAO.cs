@@ -75,7 +75,7 @@ namespace Dao
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
-                cmd.Parameters["@IDABaiTap"].Value = IDBaiTap;
+                cmd.Parameters["@IDBaiTap"].Value = IDBaiTap;
 
 
                 int n = cmd.ExecuteNonQuery();
