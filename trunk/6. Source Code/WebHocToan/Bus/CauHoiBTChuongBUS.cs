@@ -48,6 +48,10 @@ namespace Bus
             return CauHoiBTChuongDAO.selectCauHoiBTChuongByIDChuong(IDChuong);
         }
 
+        public static CauHoiBTChuongDTO selectCauHoiBTChuongByIDBaiTap(int IDBaiTap)
+        {
+            return CauHoiBTChuongDAO.selectCauHoiBTChuongByIDBaiTap(IDBaiTap);
+        }
         public static CauHoiBTChuongDTO selectCauHoiBTChuongByIDCauHoi(int IDCauHoi)
         {
             return CauHoiBTChuongDAO.selectCauHoiBTChuongByIDCauHoi(IDCauHoi);

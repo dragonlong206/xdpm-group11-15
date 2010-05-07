@@ -43,7 +43,7 @@ namespace Dao
                 cmd.Parameters.Add("@CauHoiB", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@CauHoiC", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@CauHoiD", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@CauTraLoi", SqlDbType.NChar);
+                cmd.Parameters.Add("@CauTraLoi", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
 
                 //cmd.Parameters["@IDCauHoi"].Value = chbtBaiHocDto.IDCauHoi;
@@ -153,7 +153,7 @@ namespace Dao
                 cmd.Parameters.Add("@CauHoiB", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@CauHoiC", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@CauHoiD", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@CauTraLoi", SqlDbType.NChar);
+                cmd.Parameters.Add("@CauTraLoi", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
                 cmd.Parameters.Add("@IDCauHoi", SqlDbType.Int);
 
@@ -207,7 +207,7 @@ namespace Dao
                     chbtBaiHocDto.CauHoiB = (string)dr["CauHoiB"];
                     chbtBaiHocDto.CauHoiC = (string)dr["CauHoiC"];
                     chbtBaiHocDto.CauHoiD = (string)dr["CauHoiD"];
-                    chbtBaiHocDto.CauTraLoi = (char)dr["CauTraLoi"];
+                    chbtBaiHocDto.CauTraLoi = (string)dr["CauTraLoi"];
                     chbtBaiHocDto.IDBaiTap = (int)dr["IDBaiTap"];
 
 
@@ -255,7 +255,7 @@ namespace Dao
                     chbtBaiHocDto.CauHoiB = (string)dr["CauHoiB"];
                     chbtBaiHocDto.CauHoiC = (string)dr["CauHoiC"];
                     chbtBaiHocDto.CauHoiD = (string)dr["CauHoiD"];
-                    chbtBaiHocDto.CauTraLoi = (char)dr["CauTraLoi"];
+                    chbtBaiHocDto.CauTraLoi = (string)dr["CauTraLoi"];
                     chbtBaiHocDto.IDBaiTap = (int)dr["IDBaiTap"];
                 }
                 // B5: Dong ket noi CSDL
@@ -275,9 +275,10 @@ namespace Dao
         }
 
         //lay danh sach cau hoi BaiHoc theo IDBaiHoc
-        public static ArrayList selectCauHoiBTBaiHocByIDBaiHoc(int IDBaiHoc)
+        public static CauHoiBTBaiHocDTO selectCauHoiBTBaiHocByIDBaiTap(int IDBaiTap)
         {
-            ArrayList List = new ArrayList();
+            //ArrayList List = new ArrayList();
+            CauHoiBTBaiHocDTO chbtBaiHocDto = new CauHoiBTBaiHocDTO();
             try
             {
                 SqlConnection connection;
@@ -288,24 +289,24 @@ namespace Dao
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@IDBaiTap", SqlDbType.Int);
-                cmd.Parameters["@IDBaiTap"].Value = IDBaiHoc;
+                cmd.Parameters["@IDBaiTap"].Value = IDBaiTap;
 
                 SqlDataReader dr;
                 dr = cmd.ExecuteReader();
-                while (dr.Read())
+                if(dr.Read())
                 {
-                    CauHoiBTBaiHocDTO chbtBaiHocDto = new CauHoiBTBaiHocDTO();
+                   
 
                     chbtBaiHocDto.IDCauHoi = (int)dr["IDCauHoi"];
                     chbtBaiHocDto.CauHoiA = (string)dr["CauHoiA"];
                     chbtBaiHocDto.CauHoiB = (string)dr["CauHoiB"];
                     chbtBaiHocDto.CauHoiC = (string)dr["CauHoiC"];
                     chbtBaiHocDto.CauHoiD = (string)dr["CauHoiD"];
-                    chbtBaiHocDto.CauTraLoi = (char)dr["CauTraLoi"];
+                    chbtBaiHocDto.CauTraLoi = (string)dr["CauTraLoi"];
                     chbtBaiHocDto.IDBaiTap = (int)dr["IDBaiTap"];
 
 
-                    List.Add(chbtBaiHocDto);
+                   // List.Add(chbtBaiHocDto);
                 }
                 // B5: Dong ket noi CSDL
                 dr.Close();
@@ -320,8 +321,8 @@ namespace Dao
 
             }
 
-            return List;
+            return chbtBaiHocDto;
         }
-
+       
     }
 }

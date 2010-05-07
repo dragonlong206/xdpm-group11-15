@@ -14,7 +14,7 @@ namespace Dto
         private string mCauHoiB;
         private string mCauHoiC;
         private string mCauHoiD;
-        private char mCauTraLoi;
+        private string mCauTraLoi;
         private int mIDBaiTap;
 
         #endregion Attributes
@@ -55,7 +55,7 @@ namespace Dto
         }
 
 
-        public char CauTraLoi
+        public string CauTraLoi
         {
             set { mCauTraLoi = value; }
             get { return mCauTraLoi; }
@@ -79,7 +79,7 @@ namespace Dto
             mCauHoiB = "";
             mCauHoiC = "";
             mCauHoiD = "";
-            mCauTraLoi = 'A';
+            mCauTraLoi = "A";
             mIDBaiTap = 0;
         }
 

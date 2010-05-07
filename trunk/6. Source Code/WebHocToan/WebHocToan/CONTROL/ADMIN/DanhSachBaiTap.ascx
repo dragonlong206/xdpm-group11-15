@@ -25,7 +25,8 @@
     <br />
     <asp:Label ID="lblBaiHoc" runat="server" Text="    Bài Học:" Visible="False"></asp:Label>
     <asp:DropDownList ID="drlBaiHoc" runat="server" Visible="False" 
-                onselectedindexchanged="drlBaiHoc_SelectedIndexChanged">
+                onselectedindexchanged="drlBaiHoc_SelectedIndexChanged" 
+                AutoPostBack="True">
     </asp:DropDownList>
     <br />
     <br />
