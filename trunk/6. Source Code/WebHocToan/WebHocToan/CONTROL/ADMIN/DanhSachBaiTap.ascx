@@ -6,14 +6,10 @@
 			<h1><a href="#" target="_parent">Danh Sách Bài Tập</a></h1>
             <p>Administrator Pages.</p>    
                          Chọn Môn Học: 
-    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" 
-                DataSourceID="SqlDataMonHoc" DataTextField="TenMonHoc" 
+    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" DataTextField="TenMonHoc" 
                 DataValueField="IDMonHoc" 
                 onselectedindexchanged="drlMonHoc_SelectedIndexChanged">
     </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataMonHoc" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-                SelectCommand="SELECT * FROM [MonHoc]"></asp:SqlDataSource>
             <br />   
             Chọn Chương: 
     <asp:DropDownList ID="drlChuong" runat="server" AutoPostBack="True" DataTextField="TenChuong" 

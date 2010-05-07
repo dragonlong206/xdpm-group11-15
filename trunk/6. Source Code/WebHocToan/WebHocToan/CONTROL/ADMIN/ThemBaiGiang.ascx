@@ -12,14 +12,10 @@
               
             <br />
                    Chọn Môn Học: 
-    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" 
-                DataSourceID="SqlDataMonHoc" DataTextField="TenMonHoc" 
+    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" DataTextField="TenMonHoc" 
                 DataValueField="IDMonHoc" 
                 onselectedindexchanged="drlMonHoc_SelectedIndexChanged">
     </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataMonHoc" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-                SelectCommand="SELECT * FROM [MonHoc]"></asp:SqlDataSource>
             <br /> 
             <br />
             
@@ -28,9 +24,6 @@
                 runat="server" DataTextField="TenChuong" 
                 DataValueField="IDChuong">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSourceChuong" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-                SelectCommand="SELECT * FROM [Chuong]"></asp:SqlDataSource>
             <br />
             <br />
             Tựa Đề:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

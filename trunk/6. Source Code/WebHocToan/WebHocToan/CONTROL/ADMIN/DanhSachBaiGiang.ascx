@@ -7,23 +7,16 @@
             <p>Administrator Pages.</p>   
         <br />
               Chọn Môn Học: 
-    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" 
-                DataSourceID="SqlDataMonHoc" DataTextField="TenMonHoc" 
+    <asp:DropDownList ID="drlMonHoc" runat="server" AutoPostBack="True" DataTextField="TenMonHoc" 
                 DataValueField="IDMonHoc" 
                 onselectedindexchanged="drlMonHoc_SelectedIndexChanged">
     </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataMonHoc" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-                SelectCommand="SELECT * FROM [MonHoc]"></asp:SqlDataSource>
             <br />   
             Chọn Chương: 
     <asp:DropDownList ID="drlChuong" runat="server" AutoPostBack="True" DataTextField="TenChuong" 
                 DataValueField="IDChuong" 
                 onselectedindexchanged="drlChuong_SelectedIndexChanged">
     </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSourceChuong" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-                SelectCommand="SELECT * FROM [Chuong]"></asp:SqlDataSource>
              <br/>   
              Các Bài Học Trong Chương: 
              <br />
