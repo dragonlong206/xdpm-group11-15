@@ -1,0 +1,10 @@
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\DTOTest.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\DTOTest.pdb
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\Dto.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\nunit.framework.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\nunit.mocks.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\Dto.pdb
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Release\nunit.framework.xml
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\obj\Release\DTOTest.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\obj\Release\DTOTest.pdb
