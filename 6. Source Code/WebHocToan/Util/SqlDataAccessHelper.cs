@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace Util
 {
@@ -14,7 +15,8 @@ namespace Util
         {
             try
             {
-                connectionString = "Server=.;Database=WebHocToan;uid=sa;pwd=";
+                connectionString = ConfigurationManager.ConnectionStrings["cnnWebHocToan"].ToString();
+                //connectionString = "Server=.;Database=WebHocToan;uid=sa;pwd=";
             }
             catch (Exception ex)
             {

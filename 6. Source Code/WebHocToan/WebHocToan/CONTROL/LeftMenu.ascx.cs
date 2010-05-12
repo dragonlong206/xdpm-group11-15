@@ -24,6 +24,7 @@ public partial class CONTROL_LeftMenu : System.Web.UI.UserControl
             LoadMonHoc();
 
             rptChuong.DataSource = ChuongBUS.selectChuongByIDMonHoc(int.Parse(drMonHoc.SelectedValue));
+            //rptChuong.DataSource = ChuongBUS.selectChuongByIDMonHoc(1);
             rptChuong.DataBind();
 
 
