@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="E:\HCMUS Learning\Software Construction\UnitTest\UnitTestGroup14\DLL\DTOTest.dll" total="104" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-05-12" time="23:54:40">
+  <environment nunit-version="2.5.4.10098" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="E:\HCMUS Learning\Software Construction\UnitTest\UnitTestGroup14\DLL" machine-name="DARK-KNIGHT" user="Thành Long Giang" user-domain="DARK-KNIGHT" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="E:\HCMUS Learning\Software Construction\UnitTest\UnitTestGroup14\DLL\DTOTest.dll" executed="True" result="Success" success="True" time="0.495" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="UnitTestGroup14" executed="True" result="Success" success="True" time="0.486" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="AccountDTOTest" executed="True" result="Success" success="True" time="0.114" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.AccountDTOTest.get_IDAccTest" executed="True" result="Success" success="True" time="0.013" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.get_IDLoaiAccTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.get_PassTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.get_TrangThaiTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.set_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.set_IDLoaiAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.set_PassTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.AccountDTOTest.set_TrangThaiTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BaiHocDTOTest" executed="True" result="Success" success="True" time="0.005" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.get_IDBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.get_IDChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.get_NoiDungTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.get_TenBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.set_IDBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.set_IDChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.set_NoiDungTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiHocDTOTest.set_TenBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BaiTapChuongDTOTest" executed="True" result="Success" success="True" time="0.003" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.BaiTapChuongDTOTest.get_IDBaiTapTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapChuongDTOTest.get_IDChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapChuongDTOTest.get_TenBaiTapTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapChuongDTOTest.set_IDBaiTapTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapChuongDTOTest.set_IDChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapChuongDTOTest.set_TenBaiTapTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BaiTapCuaBaiHocDTOTest" executed="True" result="Success" success="True" time="0.078" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.BaiTapCuaBaiHocDTOTest.get_IDBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapCuaBaiHocDTOTest.get_IDBaiTapTest" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapCuaBaiHocDTOTest.get_TenBaiTapTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapCuaBaiHocDTOTest.set_IDBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapCuaBaiHocDTOTest.set_IDBaiTapTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.BaiTapCuaBaiHocDTOTest.set_TenBaiTapTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CauHoiBTBaiHocDTOTest" executed="True" result="Success" success="True" time="0.054" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_CauHoiATest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_CauHoiBTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_CauHoiCTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_CauHoiDTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_CauTraLoiTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_IDBaiTapTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.get_IDCauHoiTest" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_CauHoiATest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_CauHoiBTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_CauHoiCTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_CauHoiDTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_CauTraLoiTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_IDBaiTapTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTBaiHocDTOTest.set_IDCauHoiTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CauHoiBTChuongDTOTest" executed="True" result="Success" success="True" time="0.038" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_CauHoiATest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_CauHoiBTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_CauHoiCTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_CauHoiDTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_CauTraLoiTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_IDBaiTapTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.get_IDCauHoiTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_CauHoiATest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_CauHoiBTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_CauHoiCTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_CauHoiDTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_CauTraLoiTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_IDBaiTapTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CauHoiBTChuongDTOTest.set_IDCauHoiTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="ChuongDTOTest" executed="True" result="Success" success="True" time="0.011" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.ChuongDTOTest.get_IDChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.ChuongDTOTest.get_TenChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.ChuongDTOTest.set_IDChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.ChuongDTOTest.set_TenChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentBaiHocDTOTest" executed="True" result="Success" success="True" time="0.034" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.get_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.get_IDBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.get_IDCommentTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.get_NgayGioTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.get_NoiDungTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.set_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.set_IDBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.set_IDCommentTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.set_NgayGioTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiHocDTOTest.set_NoiDungTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentBaiTapBaiHocDTOTest" executed="True" result="Success" success="True" time="0.032" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.get_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.get_IDBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.get_IDCommentTest" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.get_NgayGioTest" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.get_NoiDungTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.set_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.set_IDBTBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.set_IDCommentTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.set_NgayGioTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapBaiHocDTOTest.set_NoiDungTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentBaiTapChuongDTOTest" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.get_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.get_IDBTChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.get_IDCommentTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.get_NgayGioTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.get_NoiDungTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.set_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.set_IDBTChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.set_IDCommentTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.set_NgayGioTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentBaiTapChuongDTOTest.set_NoiDungTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentChuongDTOTest" executed="True" result="Success" success="True" time="0.029" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.get_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.get_IDChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.get_IDCommentTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.get_NgayGioTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.get_NoiDungTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.set_IDAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.set_IDChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.set_IDCommentTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.set_NgayGioTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.CommentChuongDTOTest.set_NoiDungTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="LoaiAccDTOTest" executed="True" result="Success" success="True" time="0.008" asserts="0">
+            <results>
+              <test-case name="UnitTestGroup14.LoaiAccDTOTest.get_IDLoaiAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="UnitTestGroup14.LoaiAccDTOTest.get_TenLoaiAccTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.LoaiAccDTOTest.set_IDLoaiAccTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="UnitTestGroup14.LoaiAccDTOTest.set_TenLoaiAccTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

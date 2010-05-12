@@ -1,0 +1,10 @@
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\DTOTest.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\DTOTest.pdb
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\Dto.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\nunit.framework.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\nunit.mocks.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\Dto.pdb
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\bin\Debug\nunit.framework.xml
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\obj\Debug\DTOTest.dll
+C:\Users\Win7\Documents\Visual Studio 2008\Projects\UnitTestGroup14\DTOTest\obj\Debug\DTOTest.pdb
