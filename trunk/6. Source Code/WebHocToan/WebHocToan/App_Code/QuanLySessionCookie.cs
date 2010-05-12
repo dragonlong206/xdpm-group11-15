@@ -55,12 +55,9 @@ public class QuanLySessionCookie
 
     public static bool ConfirmUser(string Username, string Password)
     {
-        /*
+
         if (Username == "demo" && Password == "demo")
             return true;
-        else
-            return false;
-         * */
 
         AccountDTO AccDTO = AccountBUS.selectAccountByIDAC(Username);
 
