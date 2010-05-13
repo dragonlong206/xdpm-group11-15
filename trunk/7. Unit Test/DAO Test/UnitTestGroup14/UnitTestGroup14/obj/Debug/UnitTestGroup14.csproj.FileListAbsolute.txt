@@ -1,0 +1,7 @@
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\bin\Debug\UnitTestGroup14.dll
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\bin\Debug\UnitTestGroup14.pdb
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\bin\Debug\nunit.framework.dll
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\bin\Debug\nunit.framework.xml
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\obj\Debug\UnitTestGroup14.dll
+D:\TRAINING_MANUAL\12 Quan Ly Quy Trinh Phan Mem\New folder\UnitTestGroup14\UnitTestGroup14\obj\Debug\UnitTestGroup14.pdb
