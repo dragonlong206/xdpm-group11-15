@@ -3,12 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
+using System.Data.SqlClient;
 
 namespace UnitTestGroup14
 {
     [TestFixture]
     public class BaiHocDAOTests
     {
+        SqlConnection cn;
+
+        [SetUp]
+        public void iNit()
+        {
+            cn = new SqlConnection();
+            cn.Open();
+        }
+        [TearDown]
+        public void cleanup()
+        {
+            cn.Close();
+        }
+
 
         [Test]
         public void insertBaiHocTest()
