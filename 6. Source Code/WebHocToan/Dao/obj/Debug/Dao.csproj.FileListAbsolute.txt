@@ -34,3 +34,12 @@ E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\bin\De
 E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
 E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.dll
 E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Dao.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Dao.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Dto.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Util.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Dto.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Util.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.pdb

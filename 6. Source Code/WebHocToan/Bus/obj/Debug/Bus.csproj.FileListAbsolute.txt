@@ -42,3 +42,14 @@ E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\bin\De
 E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
 E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
 E:\Hoc Ky VIII\Xay Dung Phan Mem\googlecode\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Util.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Util.pdb
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
+D:\Document\XDPM\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
