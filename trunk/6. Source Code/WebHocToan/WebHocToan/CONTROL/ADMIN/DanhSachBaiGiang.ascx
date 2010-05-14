@@ -2,6 +2,11 @@
 
 <%@ Register assembly="msgBox" namespace="BunnyBear" tagprefix="cc1" %>
 
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+<ContentTemplate>
+
 <div class="column_four_section">
 			<h1><a href="#" target="_parent">Danh Sách Bài Giảng</a></h1>
             <p>Administrator Pages.</p>   
@@ -28,3 +33,8 @@
              
 </div>
 <cc1:msgBox ID="msgBox1" runat="server" />
+
+</ContentTemplate>
+
+</asp:UpdatePanel>
+

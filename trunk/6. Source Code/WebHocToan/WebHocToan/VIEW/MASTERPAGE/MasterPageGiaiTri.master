@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="VIEW_MasterPage" %>
+
+<%@ Register src="../../CONTROL/LeftMenu.ascx" tagname="LeftMenu" tagprefix="uc1" %>
+
+<%@ Register src="../../CONTROL/Login/Login.ascx" tagname="Login" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ToanLop10 online</title>
+<meta name="keywords" content="free design template, CSS template, HTML website" />
+<meta name="description" content="Free Design Template, Free CSS Website, XHTML CSS layout" />
+<link href="MASTERPAGE/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+	<script src="MASTERPAGE/lib/jquery.js" type="text/javascript"></script>
+	<script src="MASTERPAGE/lib/jquery.cookie.js" type="text/javascript"></script>
+	<script src="MASTERPAGE/jquery.treeview.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" src="MASTERPAGE/demo.js"></script>
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<!--  Download Free CSS Templates from www.templatemo.com  -->	
+<div id="templatemo_header_panel">
+	<div id="templatemo_header_section">
+    	<div id="templatemo_title_section">Học toán lớp 10</div>
+        <div id="tagline">nâng bước anh tài</div>
+    </div>
+</div> <!-- end of haeder -->
+
+<div id="templatemo_menu_panel">
+    <div id="templatemo_menu_section">
+        <ul>
+            <li><a href="index.aspx"  class="current">Home</a></li>
+            <li><a href="#">Luyện Thi</a></li>
+            <li><a href="#">Tutorials</a></li>            
+            <li><a href="#">Tài Liệu</a></li>
+            <li><a href="music.aspx">Nghe Nhạc</a></li>  
+            <li><a href="game.aspx">Game Relax</a></li> 
+            <li><a href="#">Hỏi Đáp</a></li> 
+            <li><a href="#" class="last">Liên Hệ</a></li>                     
+           
+        </ul> 
+    </div>
+</div> <!-- end of menu -->
+
+<div id="templatemo_content">
+    <center>   
+        <div class="cleaner">&nbsp;</div>
+           <asp:ContentPlaceHolder ID="cpRight" runat="server">
+           </asp:ContentPlaceHolder>	
+    
+        <div class="cleaner">&nbsp;</div>
+    </center>
+ 
+</div> <!-- end of content -->
+
+<div id="templatemo_bottom_panel">
+
+	<div class="bottom_panel_section">
+   	<a href="#">Home</a> | <a href="#">Gallery</a> | <a href="#"> Tutorials</a> | <a href="#">Freebies </a>| <a href="#">About Us</a> | <a href="#">Contact Us</a><br /><br />
+    Copyright © 2010 <a href="#"><strong>ToanLop10</strong></a> | Designed by <a href="http://www.google.com.vn" target="_parent">PhamTheHien</a>
+    
+
+    </div>
+    
+
+    <div class="cleaner">&nbsp;</div>
+</div> <!-- end of bottom panel -->
+<!--  Free CSS Template by TemplateMo.com  -->
+    </form>
+</body>
+</html>
+</html>

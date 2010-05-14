@@ -37,7 +37,9 @@
             <li><a href="index.aspx"  class="current">Home</a></li>
             <li><a href="#">Luyện Thi</a></li>
             <li><a href="#">Tutorials</a></li>            
-            <li><a href="#">Tài Liệu</a></li>  
+            <li><a href="#">Tài Liệu</a></li>
+            <li><a href="music.aspx">Nghe Nhạc</a></li>  
+            <li><a href="game.aspx">Game Relax</a></li> 
             <li><a href="#">Hỏi Đáp</a></li> 
             <li><a href="#" class="last">Liên Hệ</a></li>                     
            
