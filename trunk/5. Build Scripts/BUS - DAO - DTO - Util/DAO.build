@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProductVersion>9.0.21022</ProductVersion>
+		<SchemaVersion>2.0</SchemaVersion>
+		<ProjectGuid>{CA8EFDA1-7EF8-4AD5-88DD-1AFE647FA4C6}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>Dao</RootNamespace>
+		<AssemblyName>Dao</AssemblyName>
+		<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+	</PropertyGroup>
+  
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+  
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+  
+	<ItemGroup>
+	<Reference Include="System" />
+	<Reference Include="System.Core">
+		<RequiredTargetFramework>3.5</RequiredTargetFramework>
+	</Reference>
+	<Reference Include="System.Xml.Linq">
+		<RequiredTargetFramework>3.5</RequiredTargetFramework>
+	</Reference>
+	<Reference Include="System.Data.DataSetExtensions">
+		<RequiredTargetFramework>3.5</RequiredTargetFramework>
+	</Reference>
+	<Reference Include="System.Data" />
+	<Reference Include="System.Xml" />
+	</ItemGroup>
+  
+	<ItemGroup>
+		<Compile Include="AccountDAO.cs" />
+		<Compile Include="BaiHocDAO.cs" />
+		<Compile Include="BaiTapChuongDAO.cs" />
+		<Compile Include="BaiTapCuaBaiHocDAO.cs" />
+		<Compile Include="CauHoiBTBaiHocDAO.cs" />
+		<Compile Include="CauHoiBTChuongDAO.cs" />
+		<Compile Include="ChuongDAO.cs" />
+		<Compile Include="CommentBaiHocDAO.cs" />
+		<Compile Include="CommentBaiTapBaiHocDAO.cs" />
+		<Compile Include="CommentBaiTapChuongDAO.cs" />
+		<Compile Include="CommentChuongDAO.cs" />
+		<Compile Include="LoaiAccDAO.cs" />
+		<Compile Include="MonHocDAO.cs" />
+
+		<Compile Include="..\DTO\AccountDTO.cs" />
+		<Compile Include="..\DTO\BaiHocDTO.cs" />
+		<Compile Include="..\DTO\BaiTapChuongDTO.cs" />
+		<Compile Include="..\DTO\BaiTapCuaBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CauHoiBTBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CauHoiBTChuongDTO.cs" />
+		<Compile Include="..\DTO\ChuongDTO.cs" />
+		<Compile Include="..\DTO\CommentBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CommentBaiTapBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CommentBaiTapChuongDTO.cs" />
+		<Compile Include="..\DTO\CommentChuongDTO.cs" />
+		<Compile Include="..\DTO\LoaiAccDTO.cs" />
+		<Compile Include="..\DTO\MonHocDTO.cs" />
+
+		<Compile Include="..\Util\SqlDataAccessHelper.cs" />
+	</ItemGroup>
+
+	<ItemGroup>  
+		<ProjectReference Include="..\Dto\Dto.csproj">
+			<Project>{BC5F3E9F-6F40-4EE0-A90B-F3EF90287DBE}</Project>
+			<Name>Dto</Name>
+		</ProjectReference>
+
+		<ProjectReference Include="..\Util\Util.csproj">
+			<Project>{EDFAC656-1355-433C-9CEF-7A2E2BD4B84E}</Project>
+			<Name>Util</Name>
+		</ProjectReference>
+	</ItemGroup>
+  
+	<Target Name="Build">
+		<CSC
+			Sources="
+				AccountDAO.cs;BaiHocDAO.cs;BaiTapChuongDAO.cs;
+				BaiTapCuaBaiHocDAO.cs;CauHoiBTBaiHocDAO.cs;CauHoiBTChuongDAO.cs;
+				ChuongDAO.cs;CommentBaiHocDAO.cs;CommentBaiTapBaiHocDAO.cs;
+				CommentBaiTapChuongDAO.cs;CommentChuongDAO.cs;LoaiAccDAO.cs;
+				MonHocDAO.cs;
+		
+				..\Dto\AccountDTO.cs;..\Dto\BaiHocDTO.cs;..\Dto\BaiTapChuongDTO.cs;
+				..\Dto\BaiTapCuaBaiHocDTO.cs;..\Dto\CauHoiBTBaiHocDTO.cs;..\Dto\CauHoiBTChuongDTO.cs;
+				..\Dto\ChuongDTO.cs;..\Dto\CommentBaiHocDTO.cs;..\Dto\CommentBaiTapBaiHocDTO.cs;
+				..\Dto\CommentBaiTapChuongDTO.cs;..\Dto\CommentChuongDTO.cs;..\Dto\LoaiAccDTO.cs;
+				..\Dto\MonHocDTO.cs;
+			
+				..\Util\SqlDataAccessHelper.cs"
+					
+			TargetType="library" 
+			OutputAssembly="DAO.DLL" 
+			EmitDebugInformation="true" 
+		/>
+	</Target>
+  
+	<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+
+</Project>
