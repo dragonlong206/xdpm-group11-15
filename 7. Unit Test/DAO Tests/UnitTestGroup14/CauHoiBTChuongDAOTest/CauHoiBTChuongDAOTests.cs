@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using NUnit.Mocks;
 using NUnit.Framework;
 
-namespace CauHoiBTChuongDAOTest
+namespace UnitTestGroup14
 {
     [TestFixture]
     public class CauHoiBTChuongDAOTests
