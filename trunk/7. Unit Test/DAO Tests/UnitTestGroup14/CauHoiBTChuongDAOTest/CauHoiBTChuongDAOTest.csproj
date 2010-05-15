@@ -31,17 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< .mine
-    <Reference Include="Dto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\DLL_DAO_Test\Dto.dll</HintPath>
-    </Reference>
-=======
     <Reference Include="Dto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.dll</HintPath>
     </Reference>
->>>>>>> .r128
     <Reference Include="nunit.framework, Version=2.5.4.10098, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="nunit.mocks, Version=2.5.4.10098, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
