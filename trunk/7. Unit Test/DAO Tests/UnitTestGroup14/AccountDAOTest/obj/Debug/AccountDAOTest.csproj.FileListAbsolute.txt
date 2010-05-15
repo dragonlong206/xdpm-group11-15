@@ -1,0 +1,10 @@
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\AccountDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\AccountDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\obj\Debug\AccountDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\obj\Debug\AccountDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\Dto.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\Dto.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\nunit.framework.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\nunit.mocks.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\AccountDAOTest\bin\Debug\nunit.framework.xml

@@ -1,0 +1,8 @@
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\bin\Debug\CauHoiBTChuongDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\bin\Debug\CauHoiBTChuongDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\obj\Debug\CauHoiBTChuongDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\obj\Debug\CauHoiBTChuongDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\bin\Debug\nunit.framework.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\bin\Debug\nunit.mocks.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CauHoiBTChuongDAOTest\bin\Debug\nunit.framework.xml
