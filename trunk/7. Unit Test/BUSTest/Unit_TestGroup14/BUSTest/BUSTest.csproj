@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42C76FB9-3420-406F-87FF-7307B15834C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BUSTest</RootNamespace>
+    <AssemblyName>BUSTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Bus.dll</HintPath>
+    </Reference>
+    <Reference Include="Dao, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Dto, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.5.4.10098, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="nunit.mocks, Version=2.5.4.10098, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUSMock\AccountBUSMock.cs" />
+    <Compile Include="BUSMock\BaiHocBUSMock.cs" />
+    <Compile Include="BUSMock\BaiTapChuongBUSMock.cs" />
+    <Compile Include="BUSMock\BaiTapCuaBaiHocBUSMock.cs" />
+    <Compile Include="BUSMock\CauHoiBTBaiHocBUSMock.cs" />
+    <Compile Include="BUSMock\CauHoiBTChuongBUSMock.cs" />
+    <Compile Include="BUSMock\ChuongBUSMock.cs" />
+    <Compile Include="BUSMock\CommentBaiHocBUSMock.cs" />
+    <Compile Include="BUSMock\CommentBaiTapBaiHocBUSMock.cs" />
+    <Compile Include="BUSMock\CommentBaiTapChuongBUSMock.cs" />
+    <Compile Include="BUSMock\CommentChuongBUSMock.cs" />
+    <Compile Include="BUSMock\LoaiAccBUSMock.cs" />
+    <Compile Include="BUSMock\MonHocBUSMock.cs" />
+    <Compile Include="BUSTest\AccountBUSTests.cs" />
+    <Compile Include="BUSTest\BaiHocBUSTests.cs" />
+    <Compile Include="BUSTest\BaiTapChuongBUSTests.cs" />
+    <Compile Include="BUSTest\BaiTapCuaBaiHocBUSTests.cs" />
+    <Compile Include="BUSTest\CauHoiBTBaiHocBUSTests.cs" />
+    <Compile Include="BUSTest\CauHoiBTChuongBUSTests.cs" />
+    <Compile Include="BUSTest\ChuongBUSTests.cs" />
+    <Compile Include="BUSTest\CommentBaiHocBUSTests.cs" />
+    <Compile Include="BUSTest\CommentBaiTapBaiHocBUSTests.cs" />
+    <Compile Include="BUSTest\CommentBaiTapChuongBUSTests.cs" />
+    <Compile Include="BUSTest\CommentChuongBUSTests.cs" />
+    <Compile Include="BUSTest\LoaiAccBUSTests.cs" />
+    <Compile Include="BUSTest\MonHocBUSTests.cs" />
+    <Compile Include="DAOInterface\IAccountDAO.cs" />
+    <Compile Include="DAOInterface\IBaiHocDAO.cs" />
+    <Compile Include="DAOInterface\IBaiTapChuongDAO.cs" />
+    <Compile Include="DAOInterface\IBaiTapCuaBaiHocDAO.cs" />
+    <Compile Include="DAOInterface\ICauHoiBTBaiHocDAO.cs" />
+    <Compile Include="DAOInterface\ICauHoiBTChuongDAO.cs" />
+    <Compile Include="DAOInterface\IChuongDAO.cs" />
+    <Compile Include="DAOInterface\ICommentBaiHocDAO.cs" />
+    <Compile Include="DAOInterface\ICommentBaiTapBaiHocDAO.cs" />
+    <Compile Include="DAOInterface\ICommentBaiTapChuongDAO.cs" />
+    <Compile Include="DAOInterface\ICommentChuongDAO.cs" />
+    <Compile Include="DAOInterface\ILoaiAccDAO.cs" />
+    <Compile Include="DAOInterface\IMonHocDAO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

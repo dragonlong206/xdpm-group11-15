@@ -1,0 +1,16 @@
+﻿Thảo có 1 số ý kiến nè:
+- Đặc tả yêu cầu và lược đồ use case không khớp, có một số chức năng trong đặc tả yêu cầu có nói đến nhưng
+lược đồ use case ko thấy, ví dụ như chức năng tạo tài khoản
+và login nhưng trg lược đồ ko đề cập đến.
+- Theo PM nói với nhóm tụi Thảo ngày hôm qua là không làm ứng dụng web, nhưng ới những yêu cầu như trong bản 
+đặc tả thì thấy nó không giống chương trình hỗ trợ học toán mà giống một website hỗ trợ học toán hơn ^.^
+	+ có chức năng tạo tài khoản riêng
+	+ chức năng login
+	+ giáo viên có chức năng quản lý tài khoản của học sinh ( thêm xóa sửa ) ---> không phải web mà, quản lý
+	làm sao ta, đã cài chương trình rồi thì có hay ko cái tài khoản đó cũng có làm sao đâu.
+	+chức năng note lại các bài làm mà học sinh làm
+	--> Thảo đang thắc mắc là với một ứng dụng không phải là ứng dụng web thì làm sao có thể làm được những
+	chức năng đó "." ... giáo viên nhận xét xong rồi sao nữa, có lưu xuống cũng là lưu xuống cơ sở dữ liệu
+	... của chính giáo viên, học sinh không thể xem ( trong cái cơ sở dữ liệu của học sinh làm gì 
+	có mà xem ) vậy thì note làm gì, lên lớp nói lun cho khỏe. Trừ trường hợp là cả cô giáo và mấy chục học 
+	sinh trong lớp xài chung 1 cái máy tính >.<
