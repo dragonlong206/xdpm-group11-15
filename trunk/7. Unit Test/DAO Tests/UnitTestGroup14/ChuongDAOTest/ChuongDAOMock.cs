@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UnitTestGroup14
 {
-    public interface IChuongDAO
+    public interface IChuongDAOMock
     {
 
         System.Boolean insertChuong(Dto.ChuongDTO chuongDto);

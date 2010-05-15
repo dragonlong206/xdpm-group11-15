@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using NUnit.Framework;
+using Dto;
 
 
-namespace BaiTapChuongDAOTest
+namespace UnitTestGroup14
 {
     [TestFixture]
     public class BaiTapChuongDAOTests
@@ -29,16 +30,18 @@ namespace BaiTapChuongDAOTest
         public void insertBaiTapChuongTest()
         {
             //TODO Write this test
-
+           // Assert.That(BaiTapChuongDAOTestRewrite.insertBaiTapChuong(new BaiTapChuongDTO()), Is.True);
         }
 
         [Test]
         public void deleteBaiTapChuongTest()
         {
             //TODO Write this test
-
+            BaiTapChuongDTO obj = new BaiTapChuongDTO();
+            obj.IDBaiTap = 1;
+            Assert.That(BaiTapChuongDAOTestRewrite.deleteBaiTapChuong(obj.IDBaiTap), Is.True);
         }
-
+        
         [Test]
         public void updateBaiTapChuongTest()
         {

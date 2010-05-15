@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UnitTestGroup14
 {
-    public interface IBaiTapChuongDAO
+    public interface IBaiTapChuongDAOMock
     {
 
         System.Boolean insertBaiTapChuong(Dto.BaiTapChuongDTO btChuongDto);

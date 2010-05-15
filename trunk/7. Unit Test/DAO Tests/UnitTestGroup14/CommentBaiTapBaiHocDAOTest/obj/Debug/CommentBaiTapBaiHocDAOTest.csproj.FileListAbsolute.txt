@@ -3,3 +3,8 @@ D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup
 D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\obj\Debug\ResolveAssemblyReference.cache
 D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\obj\Debug\CommentBaiTapBaiHocDAOTest.dll
 D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Test\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\obj\Debug\CommentBaiTapBaiHocDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\bin\Debug\CommentBaiTapBaiHocDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\bin\Debug\CommentBaiTapBaiHocDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\obj\Debug\CommentBaiTapBaiHocDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentBaiTapBaiHocDAOTest\obj\Debug\CommentBaiTapBaiHocDAOTest.pdb

@@ -5,8 +5,9 @@ using System.Text;
 using System.Data.SqlClient;
 using NUnit.Framework;
 using NUnit.Mocks;
+using Dto;
 
-namespace BaiTapCuaBaiHocDAOTest
+namespace UnitTestGroup14
 {
     [TestFixture]
     public class BaiTapCuaBaiHocDAOTests
@@ -29,7 +30,7 @@ namespace BaiTapCuaBaiHocDAOTest
         [Test]
         public void insertBaiTapCuaBaiHocTest()
         {
-            //TODO Write this test
+           
 
         }
 

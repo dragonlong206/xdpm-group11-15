@@ -6,7 +6,7 @@ using System.Text;
 namespace UnitTestGroup14
 {
 
-    public interface IBaiTapCuaBaiHocDAO
+    public interface IBaiTapCuaBaiHocDAOMock
     {
 
         System.Boolean insertBaiTapCuaBaiHoc(Dto.BaiTapCuaBaiHocDTO btcbhDto);
