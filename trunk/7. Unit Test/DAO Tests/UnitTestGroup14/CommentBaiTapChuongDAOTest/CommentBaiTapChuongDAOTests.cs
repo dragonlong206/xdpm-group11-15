@@ -3,63 +3,50 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using System.Data.SqlClient;
 
 namespace UnitTestGroup14
 {
     [TestFixture]
-    public class ChuongDAOTests
+    public class CommentBaiTapChuongDAOTests
     {
-        SqlConnection cn;
 
-        [SetUp]
-        public void iNit()
-        {
-            cn = new SqlConnection();
-            cn.Open();
-        }
-        [TearDown]
-        public void cleanup()
-        {
-            cn.Close();
-        }
         [Test]
-        public void insertChuongTest()
+        public void insertCommentBaiTapChuongTest()
         {
             //TODO Write this test
 
         }
 
         [Test]
-        public void deleteChuongTest()
+        public void deleteCommentBaiTapChuongTest()
         {
             //TODO Write this test
 
         }
 
         [Test]
-        public void updateChuongTest()
+        public void updateCommentBaiTapChuongTest()
         {
             //TODO Write this test
 
         }
 
         [Test]
-        public void selectAllChuongTest()
+        public void selectAllCommentBaiTapChuongTest()
         {
             //TODO Write this test
 
         }
 
         [Test]
-        public void selectChuongByIDChuongTest()
+        public void selectCommentBaiTapChuongByIDCommentTest()
         {
             //TODO Write this test
 
         }
 
         [Test]
-        public void selectChuongByIDMonHocTest()
+        public void selectCommentBaiTapChuongByIDBTChuongTest()
         {
             //TODO Write this test
 
@@ -92,5 +79,5 @@ namespace UnitTestGroup14
             //TODO Write this test
 
         }
-    }	
+    }		
 }

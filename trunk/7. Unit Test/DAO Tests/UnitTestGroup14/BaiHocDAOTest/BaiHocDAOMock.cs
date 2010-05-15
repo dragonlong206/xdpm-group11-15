@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Dto;
+
 
 namespace UnitTestGroup14
+
 {
     public interface IBaiHocDAOMock
     {

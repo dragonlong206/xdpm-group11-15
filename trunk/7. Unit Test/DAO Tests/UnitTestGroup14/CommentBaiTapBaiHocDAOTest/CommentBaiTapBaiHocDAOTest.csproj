@@ -58,8 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentBaiTapBaiHocDAOMock.cs" />
-    <Compile Include="CommentBaiTapBaiHocDAOTest.cs" />
     <Compile Include="CommentBaiTapBaiHocDAOTestRewrite.cs" />
+    <Compile Include="CommentBaiTapBaiHocDAOTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
