@@ -9,28 +9,27 @@ using System.Collections;
 
 namespace UnitTestGroup14
 {
-    class CauHoiBTBaiHocDAOTestRewrite
+    public class CauHoiBTBaiHocDAOTestRewrite
     {
-        public static Boolean insertCauHoiBTBaiHoc(CauHoiBTBaiHocDTO chbtBaiHocDto)
+
+        public static Boolean insertCauHoiBTBaiHoc(Dto.CauHoiBTBaiHocDTO bh)
         {
             //Create mock object of DAO
             DynamicMock controller = new DynamicMock(typeof(ICauHoiBTBaiHocDAOMock));
             ICauHoiBTBaiHocDAOMock ILADobj = (ICauHoiBTBaiHocDAOMock)controller.MockInstance as ICauHoiBTBaiHocDAOMock;
             //Set return value is true
             controller.ExpectAndReturn("insertCauHoiBTBaiHoc", true, null);
-            return ILADobj.insertCauHoiBTBaiHoc(new CauHoiBTBaiHocDTO());
+            return ILADobj.insertCauHoiBTBaiHoc(bh);
         }
-        public static Boolean deleteCauHoiBTBaiHoc(String IDCauHoi)
+        public static Boolean deleteCauHoiBTBaiHoc(System.String IDCauHoiBTBaiHoc)
         {
-            //Create mock object of DAO
             DynamicMock controller = new DynamicMock(typeof(ICauHoiBTBaiHocDAOMock));
             ICauHoiBTBaiHocDAOMock ILADobj = (ICauHoiBTBaiHocDAOMock)controller.MockInstance as ICauHoiBTBaiHocDAOMock;
-            //Set return value is true
             controller.ExpectAndReturn("deleteCauHoiBTBaiHoc", true, null);
-            return ILADobj.deleteCauHoiBTBaiHoc(IDCauHoi);
+            return ILADobj.deleteCauHoiBTBaiHoc(IDCauHoiBTBaiHoc);
+
         }
-      
-        public static Boolean updateCauHoiBTBaiHoc(CauHoiBTBaiHocDTO chbtBaiHocDto)
+        public static Boolean updateCauHoiBTBaiHoc(Dto.CauHoiBTBaiHocDTO bh)
         {
             //Create mock object of DAO
             DynamicMock controller = new DynamicMock(typeof(ICauHoiBTBaiHocDAOMock));
@@ -48,15 +47,20 @@ namespace UnitTestGroup14
             controller.ExpectAndReturn("selectAllCauHoiBTBaiHoc", true, null);
             return ILADobj.selectAllCauHoiBTBaiHoc();
         }
-        public static CauHoiBTBaiHocDTO selectCauHoiBTBaiHocByIDCauHoi(int IDCauHoi)
+
+        public static CauHoiBTBaiHocDTO selectCauHoiBTBaiHocByIDCauHoi(System.Int32 IDCauHoiBTBaiHoc)
         {
-            //Create mock object of DAO
             DynamicMock controller = new DynamicMock(typeof(ICauHoiBTBaiHocDAOMock));
             ICauHoiBTBaiHocDAOMock ILADobj = (ICauHoiBTBaiHocDAOMock)controller.MockInstance as ICauHoiBTBaiHocDAOMock;
-            //Set return value is true
             controller.ExpectAndReturn("selectCauHoiBTBaiHocByIDCauHoi", true, null);
-            return ILADobj.selectCauHoiBTBaiHocByIDCauHoi(IDCauHoi);
+            return ILADobj.selectCauHoiBTBaiHocByIDCauHoi(IDCauHoiBTBaiHoc);
         }
- 
+        public static ArrayList selectCauHoiBTBaiHocByIDBaiHoc(System.Int32 IDCauHoiBTBaiHoc)
+        {
+            DynamicMock controller = new DynamicMock(typeof(ICauHoiBTBaiHocDAOMock));
+            ICauHoiBTBaiHocDAOMock ILADobj = (ICauHoiBTBaiHocDAOMock)controller.MockInstance as ICauHoiBTBaiHocDAOMock;
+            controller.ExpectAndReturn("selectCauHoiBTBaiHocByIDBaiHoc", true, null);
+            return ILADobj.selectCauHoiBTBaiHocByIDBaiHoc(IDCauHoiBTBaiHoc);
+        }
     }
 }

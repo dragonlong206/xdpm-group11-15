@@ -58,7 +58,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommentBaiHocDAOMock.cs" />
-    <Compile Include="CommentBaiHocDAOTest.cs" />
     <Compile Include="CommentBaiHocDAOTestRewrite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
