@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BaiHocDAOTest
+namespace UnitTestGroup14
 {
-    public interface IBaiHocDAO
+    public interface IBaiHocDAOMock
     {
 
         System.Boolean insertBaiHoc(Dto.BaiHocDTO bh);
-        System.Boolean deleteBaiHoc(System.String IDBaiHoc);
+        System.Boolean deleteBaiHoc(System.Int32 IDBaiHoc);
         System.Boolean updateBaiHoc(Dto.BaiHocDTO bh);
         System.Collections.ArrayList selectAllBaiHoc();
         Dto.BaiHocDTO selectBaiHocByIDBaiHoc(System.Int32 IDBaiHoc);

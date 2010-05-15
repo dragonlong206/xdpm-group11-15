@@ -5,7 +5,20 @@ using System.Text;
 
 namespace UnitTestGroup14
 {
-    class CauHoiBTChuongDAOMock
-    {
-    }
+
+        public interface ICauHoiBTChuongDAOMock
+        {
+
+            System.Boolean insertCauHoiBTChuong(Dto.CauHoiBTChuongDTO chbtChuongDto);
+            System.Boolean deleteCauHoiBTChuong(System.String IDCauHoi);
+            System.Boolean updateCauHoiBTChuong(Dto.CauHoiBTChuongDTO chbtChuongDto);
+            System.Collections.ArrayList selectAllCauHoiBTChuong();
+            Dto.CauHoiBTChuongDTO selectCauHoiBTChuongByIDCauHoi(System.Int32 IDCauHoi);
+            System.Collections.ArrayList selectCauHoiBTChuongByIDChuong(System.Int32 IDChuong);
+            System.String ToString();
+            System.Boolean Equals(System.Object obj);
+            System.Int32 GetHashCode();
+            System.Type GetType();
+        }
+    
 }

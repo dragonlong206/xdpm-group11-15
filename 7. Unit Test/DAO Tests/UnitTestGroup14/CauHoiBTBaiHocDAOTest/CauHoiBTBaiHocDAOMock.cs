@@ -6,7 +6,7 @@ using Dto;
 
 namespace UnitTestGroup14
 {
-    public interface ICauHoiBTBaiHocDAO
+    public interface ICauHoiBTBaiHocDAOMock
     {
 
         System.Boolean insertCauHoiBTBaiHoc(Dto.CauHoiBTBaiHocDTO chbtBaiHocDto);
