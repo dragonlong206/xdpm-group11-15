@@ -1,0 +1,32 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"> 
+  
+ <ItemGroup> 
+ 
+  <Source4Copy Include = "C:\demo1.proj"/> 
+  <ChildProject Include = "C:\demo1.proj"/> 
+ 
+ </ItemGroup> 
+ 
+ <Target Name="Demo"> 
+   
+  <MakeDir Directories="C:\demo"> 
+   <Output  
+    TaskParameter="DirectoriesCreated" 
+    ItemName="MyDirectories"/> 
+  </MakeDir> 
+ 
+  <Copy  
+   SourceFiles="@(Source4Copy)" 
+   DestinationFolder="@(MyDirectories)"/>  
+ 
+  <Exec Command="dir C:\demo"/> 
+   
+  <MSBuild Projects="@(ChildProject)"/> 
+ 
+  <Exec Command="WINWORD.exe" WorkingDirectory="C:\Program 
+Files\Microsoft Office\Office12"/> 
+ 
+  <Message Text="Chuong trinh demo ve MSBuildTask"/> 
+ </Target> 
+ 
+</Project> 
