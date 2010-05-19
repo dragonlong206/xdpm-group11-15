@@ -31,30 +31,30 @@
 		<Compile Include="LoaiAccDAO.cs" />
 		<Compile Include="MonHocDAO.cs" />
 
-		<Compile Include="DTO\AccountDTO.cs" />
-		<Compile Include="DTO\BaiHocDTO.cs" />
-		<Compile Include="DTO\BaiTapChuongDTO.cs" />
-		<Compile Include="DTO\BaiTapCuaBaiHocDTO.cs" />
-		<Compile Include="DTO\CauHoiBTBaiHocDTO.cs" />
-		<Compile Include="DTO\CauHoiBTChuongDTO.cs" />
-		<Compile Include="DTO\ChuongDTO.cs" />
-		<Compile Include="DTO\CommentBaiHocDTO.cs" />
-		<Compile Include="DTO\CommentBaiTapBaiHocDTO.cs" />
-		<Compile Include="DTO\CommentBaiTapChuongDTO.cs" />
-		<Compile Include="DTO\CommentChuongDTO.cs" />
-		<Compile Include="DTO\LoaiAccDTO.cs" />
-		<Compile Include="DTO\MonHocDTO.cs" />
+		<Compile Include="..\DTO\AccountDTO.cs" />
+		<Compile Include="..\DTO\BaiHocDTO.cs" />
+		<Compile Include="..\DTO\BaiTapChuongDTO.cs" />
+		<Compile Include="..\DTO\BaiTapCuaBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CauHoiBTBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CauHoiBTChuongDTO.cs" />
+		<Compile Include="..\DTO\ChuongDTO.cs" />
+		<Compile Include="..\DTO\CommentBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CommentBaiTapBaiHocDTO.cs" />
+		<Compile Include="..\DTO\CommentBaiTapChuongDTO.cs" />
+		<Compile Include="..\DTO\CommentChuongDTO.cs" />
+		<Compile Include="..\DTO\LoaiAccDTO.cs" />
+		<Compile Include="..\DTO\MonHocDTO.cs" />
 
-		<Compile Include="Util\SqlDataAccessHelper.cs" />
+		<Compile Include="..\Util\SqlDataAccessHelper.cs" />
 	</ItemGroup>
 
 	<ItemGroup>  
-		<ProjectReference Include="Dto\Dto.csproj">
+		<ProjectReference Include="..\Dto\Dto.csproj">
 			<Project>{BC5F3E9F-6F40-4EE0-A90B-F3EF90287DBE}</Project>
 			<Name>Dto</Name>
 		</ProjectReference>
 
-		<ProjectReference Include="Util\Util.csproj">
+		<ProjectReference Include="..\Util\Util.csproj">
 			<Project>{EDFAC656-1355-433C-9CEF-7A2E2BD4B84E}</Project>
 			<Name>Util</Name>
 		</ProjectReference>
@@ -69,13 +69,13 @@
 				CommentBaiTapChuongDAO.cs;CommentChuongDAO.cs;LoaiAccDAO.cs;
 				MonHocDAO.cs;
 		
-				Dto\AccountDTO.cs;Dto\BaiHocDTO.cs;Dto\BaiTapChuongDTO.cs;
-				Dto\BaiTapCuaBaiHocDTO.cs;Dto\CauHoiBTBaiHocDTO.cs;Dto\CauHoiBTChuongDTO.cs;
-				Dto\ChuongDTO.cs;Dto\CommentBaiHocDTO.cs;Dto\CommentBaiTapBaiHocDTO.cs;
-				Dto\CommentBaiTapChuongDTO.cs;Dto\CommentChuongDTO.cs;Dto\LoaiAccDTO.cs;
-				Dto\MonHocDTO.cs;
+				..\Dto\AccountDTO.cs;..\Dto\BaiHocDTO.cs;..\Dto\BaiTapChuongDTO.cs;
+				..\Dto\BaiTapCuaBaiHocDTO.cs;..\Dto\CauHoiBTBaiHocDTO.cs;..\Dto\CauHoiBTChuongDTO.cs;
+				..\Dto\ChuongDTO.cs;..\Dto\CommentBaiHocDTO.cs;..\Dto\CommentBaiTapBaiHocDTO.cs;
+				..\Dto\CommentBaiTapChuongDTO.cs;..\Dto\CommentChuongDTO.cs;..\Dto\LoaiAccDTO.cs;
+				..\Dto\MonHocDTO.cs;
 			
-				Util\SqlDataAccessHelper.cs"
+				..\Util\SqlDataAccessHelper.cs"
 					
 			TargetType="library" 
 			OutputAssembly="DAO.DLL" 
