@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
+using Dto;
 
 namespace UnitTestGroup14
 {
@@ -27,6 +28,7 @@ namespace UnitTestGroup14
         public void insertChuongTest()
         {
             //TODO Write this test
+            Assert.That(ChuongDAOTestRewrite.insertChuong(new ChuongDTO()), Is.True);
 
         }
 
@@ -34,6 +36,7 @@ namespace UnitTestGroup14
         public void deleteChuongTest()
         {
             //TODO Write this test
+            Assert.That(ChuongDAOTestRewrite.deleteChuong("IDChuong"), Is.True);
 
         }
 
@@ -41,6 +44,7 @@ namespace UnitTestGroup14
         public void updateChuongTest()
         {
             //TODO Write this test
+            Assert.That(ChuongDAOTestRewrite.updateChuong(new ChuongDTO()), Is.True);
 
         }
 
@@ -48,6 +52,7 @@ namespace UnitTestGroup14
         public void selectAllChuongTest()
         {
             //TODO Write this test
+            Assert.That(ChuongDAOTestRewrite.selectAllChuong(), Is.True);
 
         }
 
@@ -55,6 +60,9 @@ namespace UnitTestGroup14
         public void selectChuongByIDChuongTest()
         {
             //TODO Write this test
+            ChuongDTO obj = new ChuongDTO();
+            obj.IDChuong = 1;
+            Assert.That(ChuongDAOTestRewrite.selectChuongByIDChuong(obj.IDChuong), Is.True);
 
         }
 

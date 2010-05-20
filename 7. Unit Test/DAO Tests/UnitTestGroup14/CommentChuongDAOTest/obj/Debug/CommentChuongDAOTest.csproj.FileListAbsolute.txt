@@ -14,3 +14,11 @@ D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTe
 D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\ResolveAssemblyReference.cache
 D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.dll
 D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\CommentChuongTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\CommentChuongTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\Dto.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\nunit.framework.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\nunit.mocks.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.pdb

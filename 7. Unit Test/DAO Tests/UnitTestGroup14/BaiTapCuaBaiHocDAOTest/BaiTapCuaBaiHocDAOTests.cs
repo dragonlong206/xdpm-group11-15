@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
+using Dto;
 
 namespace UnitTestGroup14
 {
@@ -29,6 +30,7 @@ namespace UnitTestGroup14
         public void insertBaiTapCuaBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiTapCuaBaiHocDAOTestRewrite.insertBaiTapCuaBaiHoc(new BaiTapCuaBaiHocDTO()), Is.True);
 
         }
 
@@ -36,6 +38,7 @@ namespace UnitTestGroup14
         public void deleteBaiTapCuaBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiTapCuaBaiHocDAOTestRewrite.deleteBaiTapCuaBaiHoc("IDBaiTapCuaBaiHoc"), Is.True);
 
         }
 
@@ -43,6 +46,7 @@ namespace UnitTestGroup14
         public void updateBaiTapCuaBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiTapCuaBaiHocDAOTestRewrite.updateBaiTapCuaBaiHoc(new BaiTapCuaBaiHocDTO()), Is.True);
 
         }
 
@@ -50,6 +54,7 @@ namespace UnitTestGroup14
         public void selectAllBaiTapCuaBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiTapCuaBaiHocDAOTestRewrite.selectAllBaiTapCuaBaiHoc(), Is.True);
 
         }
 
@@ -57,6 +62,9 @@ namespace UnitTestGroup14
         public void selectBaiTapCuaBaiHocByIDTest()
         {
             //TODO Write this test
+            BaiTapCuaBaiHocDTO obj = new BaiTapCuaBaiHocDTO();
+            obj.IDBaiTap = 1;
+            Assert.That(BaiTapCuaBaiHocDAOTestRewrite.selectBaiTapCuaBaiHocByID(obj.IDBaiTap), Is.True);
 
         }
 

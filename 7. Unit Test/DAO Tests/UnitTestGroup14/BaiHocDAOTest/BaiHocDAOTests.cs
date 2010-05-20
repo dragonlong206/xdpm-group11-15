@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
+using Dto;
 
 namespace UnitTestGroup14
 {
@@ -29,6 +30,7 @@ namespace UnitTestGroup14
         public void insertBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiHocDAOTestRewrite.insertBaiHoc(new BaiHocDTO()), Is.True);
 
         }
 
@@ -43,6 +45,9 @@ namespace UnitTestGroup14
         public void deleteBaiHocTest()
         {
             //TODO Write this test
+            BaiHocDTO obj = new BaiHocDTO();
+            obj.IDBaiHoc = 1;
+            Assert.That(BaiHocDAOTestRewrite.deleteBaiHoc(obj.IDBaiHoc), Is.True);
 
         }
 
@@ -50,6 +55,7 @@ namespace UnitTestGroup14
         public void updateBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiHocDAOTestRewrite.updateBaiHoc(new BaiHocDTO()), Is.True);
 
         }
 
@@ -57,6 +63,7 @@ namespace UnitTestGroup14
         public void selectAllBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(BaiHocDAOTestRewrite.selectAllBaiHoc(), Is.True);
 
         }
 
@@ -64,6 +71,9 @@ namespace UnitTestGroup14
         public void selectBaiHocByIDBaiHocTest()
         {
             //TODO Write this test
+            BaiHocDTO obj = new BaiHocDTO();
+            obj.IDBaiHoc = 1;
+            Assert.That(BaiHocDAOTestRewrite.selectBaiHocByIDBaiHoc(obj.IDBaiHoc), Is.True);
 
         }
 
@@ -71,7 +81,10 @@ namespace UnitTestGroup14
         public void selectBaiHocByIDChuongTest()
         {
             //TODO Write this test
-
+            //TODO Write this test
+            BaiHocDTO obj = new BaiHocDTO();
+            obj.IDChuong = 1;
+            Assert.That(BaiHocDAOTestRewrite.selectBaiHocByIDBaiHoc(obj.IDChuong), Is.True);
         }
 
         [Test]

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
+using Dto;
 
 namespace UnitTestGroup14
 {
@@ -27,6 +28,7 @@ namespace UnitTestGroup14
         public void insertCauHoiBTChuongTest()
         {
             //TODO Write this test
+            Assert.That(CauHoiBTChuongDAOTestRewrite.insertCauHoiBTChuong( new CauHoiBTChuongDTO()), Is.True);
 
         }
 
@@ -34,6 +36,9 @@ namespace UnitTestGroup14
         public void deleteCauHoiBTChuongTest()
         {
             //TODO Write this test
+            CauHoiBTChuongDTO obj = new CauHoiBTChuongDTO();
+            obj.IDCauHoi = 1;
+            Assert.That(CauHoiBTChuongDAOTestRewrite.deleteCauHoiBTChuong(obj.IDCauHoi), Is.True);
 
         }
 
@@ -41,6 +46,10 @@ namespace UnitTestGroup14
         public void deleteCauHoiBTChuongByIDBaiTapTest()
         {
             //TODO Write this test
+            //TODO Write this test
+            CauHoiBTChuongDTO obj = new CauHoiBTChuongDTO();
+            obj.IDBaiTap = 1;
+            Assert.That(CauHoiBTChuongDAOTestRewrite.deleteCauHoiBTChuongByIDBaiTap(obj.IDBaiTap), Is.True);
 
         }
 
@@ -48,13 +57,15 @@ namespace UnitTestGroup14
         public void updateCauHoiBTChuongTest()
         {
             //TODO Write this test
-
+            Assert.That(CauHoiBTChuongDAOTestRewrite.updateCauHoiBTChuong(new CauHoiBTChuongDTO()), Is.True);
+           
         }
 
         [Test]
         public void selectAllCauHoiBTChuongTest()
         {
             //TODO Write this test
+            Assert.That(CauHoiBTChuongDAOTestRewrite.selectAllCauHoiBTChuong(), Is.True);
 
         }
 
@@ -69,6 +80,9 @@ namespace UnitTestGroup14
         public void selectCauHoiBTChuongByIDChuongTest()
         {
             //TODO Write this test
+            CauHoiBTChuongDTO obj = new CauHoiBTChuongDTO();
+            obj.IDCauHoi = 1;
+            Assert.That(CauHoiBTChuongDAOTestRewrite.selectCauHoiBTChuongByIDChuong(obj.IDCauHoi), Is.True);
 
         }
 
@@ -76,6 +90,9 @@ namespace UnitTestGroup14
         public void selectCauHoiBTChuongByIDBaiTapTest()
         {
             //TODO Write this test
+            CauHoiBTChuongDTO obj = new CauHoiBTChuongDTO();
+            obj.IDCauHoi = 1;
+            Assert.That(CauHoiBTChuongDAOTestRewrite.selectCauHoiBTChuongByIDBaiTap(obj.IDCauHoi), Is.True);
 
         }
 

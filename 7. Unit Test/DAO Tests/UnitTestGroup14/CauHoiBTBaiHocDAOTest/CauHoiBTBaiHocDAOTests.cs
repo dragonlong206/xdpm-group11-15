@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using System.Data.SqlClient;
+using Dto;
 
 namespace UnitTestGroup14
 {
@@ -28,6 +29,7 @@ namespace UnitTestGroup14
         public void insertCauHoiBTBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(CauHoiBTBaiHocDAOTestRewrite.insertCauHoiBTBaiHoc(new CauHoiBTBaiHocDTO()), Is.True);
 
         }
 
@@ -35,6 +37,7 @@ namespace UnitTestGroup14
         public void deleteCauHoiBTBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(CauHoiBTBaiHocDAOTestRewrite.deleteCauHoiBTBaiHoc("IDCauHoiBTBaiHoc"), Is.True);
 
         }
 
@@ -49,6 +52,7 @@ namespace UnitTestGroup14
         public void updateCauHoiBTBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(CauHoiBTBaiHocDAOTestRewrite.updateCauHoiBTBaiHoc(new CauHoiBTBaiHocDTO()), Is.True);
 
         }
 
@@ -56,6 +60,7 @@ namespace UnitTestGroup14
         public void selectAllCauHoiBTBaiHocTest()
         {
             //TODO Write this test
+            Assert.That(CauHoiBTBaiHocDAOTestRewrite.selectAllCauHoiBTBaiHoc(), Is.True);
 
         }
 
@@ -63,6 +68,9 @@ namespace UnitTestGroup14
         public void selectCauHoiBTBaiHocByIDCauHoiTest()
         {
             //TODO Write this test
+            CauHoiBTBaiHocDTO obj = new CauHoiBTBaiHocDTO();
+            obj.IDCauHoi = 1;
+            Assert.That(CauHoiBTBaiHocDAOTestRewrite.selectCauHoiBTBaiHocByIDCauHoi(obj.IDCauHoi), Is.True);
 
         }
 
@@ -70,6 +78,9 @@ namespace UnitTestGroup14
         public void selectCauHoiBTBaiHocByIDBaiTapTest()
         {
             //TODO Write this test
+            CauHoiBTBaiHocDTO obj = new CauHoiBTBaiHocDTO();
+            obj.IDCauHoi = 1;
+            Assert.That(CauHoiBTBaiHocDAOTestRewrite.selectCauHoiBTBaiHocByIDBaiHoc(obj.IDCauHoi), Is.True);
 
         }
 
