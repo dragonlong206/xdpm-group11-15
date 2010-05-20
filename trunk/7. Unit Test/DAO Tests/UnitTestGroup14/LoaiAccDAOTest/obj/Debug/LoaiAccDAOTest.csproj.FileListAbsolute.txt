@@ -6,3 +6,11 @@ D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\bin
 D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\obj\Debug\ResolveAssemblyReference.cache
 D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\obj\Debug\LoaiAccDAOTest.dll
 D:\Document\XDPM\trunk\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\obj\Debug\LoaiAccDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\bin\Debug\LoaiAccDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\bin\Debug\LoaiAccDAOTest.pdb
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\bin\Debug\Dto.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\bin\Debug\nunit.framework.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\bin\Debug\nunit.mocks.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\obj\Debug\ResolveAssemblyReference.cache
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\obj\Debug\LoaiAccDAOTest.dll
+D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\LoaiAccDAOTest\obj\Debug\LoaiAccDAOTest.pdb
