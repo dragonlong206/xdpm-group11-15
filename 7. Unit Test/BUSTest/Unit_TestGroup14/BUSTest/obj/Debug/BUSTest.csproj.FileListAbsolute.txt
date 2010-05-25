@@ -40,3 +40,9 @@ C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\bin
 C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\obj\Debug\BUSTest.dll
 C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\obj\Debug\BUSTest.pdb
+C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll
+C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.pdb
+C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\nunit.framework.xml
+C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\obj\Debug\BUSTest.dll
+C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\obj\Debug\BUSTest.pdb

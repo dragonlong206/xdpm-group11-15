@@ -1,15 +1,470 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-05-15" time="23:04:18">
-  <environment nunit-version="2.5.4.10098" clr-version="2.0.50727.3053" os-version="Microsoft Windows NT 5.1.2600 Service Pack 3" platform="Win32NT" cwd="C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug" machine-name="VAN_SUONG" user="van_suong" user-domain="VAN_SUONG" />
+<test-results name="C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll" total="83" errors="33" failures="28" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-05-20" time="14:44:48">
+  <environment nunit-version="2.5.5.10112" clr-version="2.0.50727.4927" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug" machine-name="PVHUY-PC" user="pvhuy" user-domain="pvhuy-PC" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll" executed="True" result="Failure" success="False" time="0.775" asserts="0">
     <results>
-      <test-suite type="Namespace" name="BUSTest" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+      <test-suite type="Namespace" name="BUSTest" executed="True" result="Failure" success="False" time="0.769" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="ChuongBUSTests" executed="True" result="Failure" success="False" time="0.000" asserts="0">
+          <test-suite type="TestFixture" name="AccountBUSTests" executed="True" result="Failure" success="False" time="0.307" asserts="0">
             <results>
-              <test-case name="BUSTest.ChuongBUSTests.selectChuongByIDMonHocTest" executed="True" result="Error" success="False" time="0.000" asserts="1">
+              <test-case name="BUSTest.AccountBUSTests.deleteAccountTest" executed="True" result="Success" success="True" time="0.151" asserts="2" />
+              <test-case name="BUSTest.AccountBUSTests.insertAccountTest" executed="True" result="Failure" success="False" time="0.037" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.AccountBUSTests.insertAccountTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\AccountBUSTests.cs:line 19
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.AccountBUSTests.selectAccountByEmailTest" executed="True" result="Failure" success="False" time="0.007" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: <Dto.AccountDTO>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.AccountBUSTests.selectAccountByEmailTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\AccountBUSTests.cs:line 70
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.AccountBUSTests.selectAccountByIDACTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: <Dto.AccountDTO>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.AccountBUSTests.selectAccountByIDACTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\AccountBUSTests.cs:line 62
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.AccountBUSTests.selectAccountByLACTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: <Dto.AccountDTO>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.AccountBUSTests.selectAccountByLACTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\AccountBUSTests.cs:line 55
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.AccountBUSTests.selectAllAccountTest" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: <Dto.AccountDTO>
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.AccountBUSTests.selectAllAccountTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\AccountBUSTests.cs:line 46
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.AccountBUSTests.updateAccountTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.AccountBUSTests.updateAccountTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\AccountBUSTests.cs:line 37
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BaiHocBUSTests" executed="True" result="Failure" success="False" time="0.090" asserts="0">
+            <results>
+              <test-case name="BUSTest.BaiHocBUSTests.deleteBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.BaiHocBUSTests.insertBaiHocAutoIncreaseTest" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.BaiHocBUSTests.insertBaiHocAutoIncreaseTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiHocBUSTests.cs:line 25
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiHocBUSTests.insertBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="BUSTest.BaiHocBUSTests.selectAllBaiHocTest" executed="True" result="Error" success="False" time="0.046" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiHocDAO.selectAllBaiHoc()
+at BUSTest.BaiHocBUSMock.selectAllBaiHoc() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiHocBUSMock.cs:line 51
+at BUSTest.BaiHocBUSTests.selectAllBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiHocBUSTests.cs:line 50
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiHocBUSTests.selectBaiHocByIDBaiHocTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiHocDAO.selectBaiHocByIDBaiHoc(Int32 IDBaiHoc)
+at BUSTest.BaiHocBUSMock.selectBaiHocByIDBaiHoc(Int32 IDBaiHoc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiHocBUSMock.cs:line 61
+at BUSTest.BaiHocBUSTests.selectBaiHocByIDBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiHocBUSTests.cs:line 58
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiHocBUSTests.selectBaiHocByIDChuongTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiHocDAO.selectBaiHocByIDChuong(Int32 IDChuong)
+at BUSTest.BaiHocBUSMock.selectBaiHocByIDChuong(Int32 IDChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiHocBUSMock.cs:line 70
+at BUSTest.BaiHocBUSTests.selectBaiHocByIDChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiHocBUSTests.cs:line 66
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiHocBUSTests.selectIDvaTenBaiHocByIDChuongTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiHocDAO.selectIDvaTenBaiHocByIDChuong(Int32 IDChuong)
+at BUSTest.BaiHocBUSMock.selectIDvaTenBaiHocByIDChuong(Int32 IDChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiHocBUSMock.cs:line 77
+at BUSTest.BaiHocBUSTests.selectIDvaTenBaiHocByIDChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiHocBUSTests.cs:line 74
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiHocBUSTests.updateBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BaiTapChuongBUSTests" executed="True" result="Failure" success="False" time="0.025" asserts="0">
+            <results>
+              <test-case name="BUSTest.BaiTapChuongBUSTests.deleteBaiTapChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.BaiTapChuongBUSTests.insertBaiTapChuongTest" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.BaiTapChuongBUSTests.insertBaiTapChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapChuongBUSTests.cs:line 17
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapChuongBUSTests.selectAllBaiTapChuongTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapChuongDAO.selectAllBaiTapChuong()
+at BUSTest.BaiTapChuongBUSMock.selectAllBaiTapChuong() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapChuongBUSMock.cs:line 43
+at BUSTest.BaiTapChuongBUSTests.selectAllBaiTapChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapChuongBUSTests.cs:line 41
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapChuongBUSTests.selectBaiTapChuongByIDChuongTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapChuongDAO.selectBaiTapChuongByIDChuong(Int32 ID)
+at BUSTest.BaiTapChuongBUSMock.selectBaiTapChuongByIDChuong(Int32 ID) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapChuongBUSMock.cs:line 60
+at BUSTest.BaiTapChuongBUSTests.selectBaiTapChuongByIDChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapChuongBUSTests.cs:line 57
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapChuongBUSTests.selectBaiTapChuongByIDTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapChuongDAO.selectBaiTapChuongByID(Int32 IDBaiTap)
+at BUSTest.BaiTapChuongBUSMock.selectBaiTapChuongByID(Int32 IDBaiTapChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapChuongBUSMock.cs:line 53
+at BUSTest.BaiTapChuongBUSTests.selectBaiTapChuongByIDTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapChuongBUSTests.cs:line 49
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapChuongBUSTests.updateBaiTapChuongTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.BaiTapChuongBUSTests.updateBaiTapChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapChuongBUSTests.cs:line 33
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BaiTapCuaBaiHocBUSTests" executed="True" result="Failure" success="False" time="0.040" asserts="0">
+            <results>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.deleteBaiTapCuaBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.BaiTapCuaBaiHocBUSTests.deleteBaiTapCuaBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 25
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.insertBaiTapCuaBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.BaiTapCuaBaiHocBUSTests.insertBaiTapCuaBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 17
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.selectAllBaiTapCuaBaiHocByIDBaiHocTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapCuaBaiHocDAO.selectAllBaiTapCuaBaiHocByIDBaiHoc(Int32 ID)
+at BUSTest.BaiTapCuaBaiHocBUSMock.selectAllBaiTapCuaBaiHocByIDBaiHoc(Int32 ID) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapCuaBaiHocBUSMock.cs:line 61
+at BUSTest.BaiTapCuaBaiHocBUSTests.selectAllBaiTapCuaBaiHocByIDBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 59
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.selectAllBaiTapCuaBaiHocTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapCuaBaiHocDAO.selectAllBaiTapCuaBaiHoc()
+at BUSTest.BaiTapCuaBaiHocBUSMock.selectAllBaiTapCuaBaiHoc() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapCuaBaiHocBUSMock.cs:line 43
+at BUSTest.BaiTapCuaBaiHocBUSTests.selectAllBaiTapCuaBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 42
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.selectBaiTapCuaBaiHocByIDBaiHoc2Test" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapCuaBaiHocDAO.selectBaiTapCuaBaiHocByIDBaiHoc2(Int32 IDBaiHoc)
+at BUSTest.BaiTapCuaBaiHocBUSMock.selectBaiTapCuaBaiHocByIDBaiHoc2(Int32 IDBaiTap) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapCuaBaiHocBUSMock.cs:line 75
+at BUSTest.BaiTapCuaBaiHocBUSTests.selectBaiTapCuaBaiHocByIDBaiHoc2Test() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 76
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.selectBaiTapCuaBaiHocByIDBaiHocTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapCuaBaiHocDAO.selectBaiTapCuaBaiHocByID(Int32 IDBaiTap)
+at BUSTest.BaiTapCuaBaiHocBUSMock.selectBaiTapCuaBaiHocByID(Int32 IDBaiTapCuaBaiHoc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapCuaBaiHocBUSMock.cs:line 53
+at BUSTest.BaiTapCuaBaiHocBUSTests.selectBaiTapCuaBaiHocByIDBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 68
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.selectBaiTapCuaBaiHocByIDTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IBaiTapCuaBaiHocDAO.selectBaiTapCuaBaiHocByID(Int32 IDBaiTap)
+at BUSTest.BaiTapCuaBaiHocBUSMock.selectBaiTapCuaBaiHocByID(Int32 IDBaiTapCuaBaiHoc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\BaiTapCuaBaiHocBUSMock.cs:line 53
+at BUSTest.BaiTapCuaBaiHocBUSTests.selectBaiTapCuaBaiHocByIDTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 50
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.BaiTapCuaBaiHocBUSTests.updateBaiTapCuaBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.BaiTapCuaBaiHocBUSTests.updateBaiTapCuaBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\BaiTapCuaBaiHocBUSTests.cs:line 33
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CauHoiBTBaiHocBUSTests" executed="True" result="Failure" success="False" time="0.028" asserts="0">
+            <results>
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.deleteCauHoiBTBaiHocByIDBaiTapTest" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.deleteCauHoiBTBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CauHoiBTBaiHocBUSTests.deleteCauHoiBTBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTBaiHocBUSTests.cs:line 24
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.insertCauHoiBTBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.selectAllBaiHocTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICauHoiBTBaiHocDAO.selectCauHoiBTBaiHocByIDBaiTap(Int32 IDBaiTap)
+at BUSTest.CauHoiBTBaiHocBUSMock.selectCauHoiBTBaiHocByIDBaiTap(Int32 IDBaiTap) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CauHoiBTBaiHocBUSMock.cs:line 51
+at BUSTest.CauHoiBTBaiHocBUSTests.selectAllBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTBaiHocBUSTests.cs:line 48
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.selectCauHoiBTBaiHocByIDBaiTapTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICauHoiBTBaiHocDAO.selectCauHoiBTBaiHocByIDBaiTap(Int32 IDBaiTap)
+at BUSTest.CauHoiBTBaiHocBUSMock.selectCauHoiBTBaiHocByIDBaiTap(Int32 IDBaiTap) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CauHoiBTBaiHocBUSMock.cs:line 51
+at BUSTest.CauHoiBTBaiHocBUSTests.selectCauHoiBTBaiHocByIDBaiTapTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTBaiHocBUSTests.cs:line 56
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.selectCauHoiBTBaiHocByIDCauHoiTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICauHoiBTBaiHocDAO.selectCauHoiBTBaiHocByIDCauHoi(Int32 IDCauHoi)
+at BUSTest.CauHoiBTBaiHocBUSMock.selectCauHoiBTBaiHocByIDCauHoi(Int32 IDCauHoi) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CauHoiBTBaiHocBUSMock.cs:line 59
+at BUSTest.CauHoiBTBaiHocBUSTests.selectCauHoiBTBaiHocByIDCauHoiTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTBaiHocBUSTests.cs:line 64
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTBaiHocBUSTests.updateCauHoiBTBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CauHoiBTBaiHocBUSTests.updateCauHoiBTBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTBaiHocBUSTests.cs:line 40
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CauHoiBTChuongBUSTests" executed="True" result="Failure" success="False" time="0.036" asserts="0">
+            <results>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.deleteCauHoiBTChuongByIDBaiTapTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CauHoiBTChuongBUSTests.deleteCauHoiBTChuongByIDBaiTapTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTChuongBUSTests.cs:line 34
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.deleteCauHoiBTChuongTest" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CauHoiBTChuongBUSTests.deleteCauHoiBTChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTChuongBUSTests.cs:line 26
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.insertCauHoiBTChuongTest" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CauHoiBTChuongBUSTests.insertCauHoiBTChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTChuongBUSTests.cs:line 18
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.selectCauHoiBTChuongByIDBaiTapTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICauHoiBTChuongDAO.selectCauHoiBTChuongByIDBaiTap(Int32 IDBaiTap)
+at BUSTest.CauHoiBTChuongBUSMock.selectCauHoiBTChuongByIDBaiTap(Int32 IDBaiTap) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CauHoiBTChuongBUSMock.cs:line 59
+at BUSTest.CauHoiBTChuongBUSTests.selectCauHoiBTChuongByIDBaiTapTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTChuongBUSTests.cs:line 62
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.selectCauHoiBTChuongByIDCauHoiTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICauHoiBTChuongDAO.selectCauHoiBTChuongByIDCauHoi(Int32 IDCauHoi)
+at BUSTest.CauHoiBTChuongBUSMock.selectCauHoiBTChuongByIDCauHoi(Int32 IDCauHoi) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CauHoiBTChuongBUSMock.cs:line 66
+at BUSTest.CauHoiBTChuongBUSTests.selectCauHoiBTChuongByIDCauHoiTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTChuongBUSTests.cs:line 70
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.selectCauHoiBTChuongByIDChuongTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICauHoiBTChuongDAO.selectCauHoiBTChuongByIDChuong(Int32 IDChuong)
+at BUSTest.CauHoiBTChuongBUSMock.selectCauHoiBTChuongByIDChuong(Int32 IDChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CauHoiBTChuongBUSMock.cs:line 51
+at BUSTest.CauHoiBTChuongBUSTests.selectCauHoiBTChuongByIDChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CauHoiBTChuongBUSTests.cs:line 54
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CauHoiBTChuongBUSTests.updateCauHoiBTChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="ChuongBUSTests" executed="True" result="Failure" success="False" time="0.024" asserts="0">
+            <results>
+              <test-case name="BUSTest.ChuongBUSTests.deleteChuongTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.ChuongBUSTests.deleteChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\ChuongBUSTests.cs:line 25
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.ChuongBUSTests.insertChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+              <test-case name="BUSTest.ChuongBUSTests.selectAllChuongTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IChuongDAO.selectAllChuong()
+at BUSTest.ChuongBUSMock.selectAllChuong() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\ChuongBUSMock.cs:line 43
+at BUSTest.ChuongBUSTests.selectAllChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\ChuongBUSTests.cs:line 41
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.ChuongBUSTests.selectChuongByIDChuongTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IChuongDAO.selectChuongByIDChuong(Int32 IDChuong)
+at BUSTest.ChuongBUSMock.selectChuongByIDChuong(Int32 IDChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\ChuongBUSMock.cs:line 53
+at BUSTest.ChuongBUSTests.selectChuongByIDChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\ChuongBUSTests.cs:line 49
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.ChuongBUSTests.selectChuongByIDMonHocTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
                 <failure>
                   <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
                   <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
@@ -17,11 +472,294 @@ at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg
 at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
 at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
 at BUSTest.IChuongDAO.selectChuongByIDMonHoc(Int32 IDMonHoc)
-at BUSTest.ChuongBUSMock.selectChuongByIDMonHoc(Int32 IDMonHoc) in C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\ChuongBUSMock.cs:line 60
-at BUSTest.ChuongBUSTests.selectChuongByIDMonHocTest() in C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\ChuongBUSTests.cs:line 57
+at BUSTest.ChuongBUSMock.selectChuongByIDMonHoc(Int32 IDMonHoc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\ChuongBUSMock.cs:line 60
+at BUSTest.ChuongBUSTests.selectChuongByIDMonHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\ChuongBUSTests.cs:line 57
 ]]></stack-trace>
                 </failure>
               </test-case>
+              <test-case name="BUSTest.ChuongBUSTests.updateChuongTest" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentBaiHocBUSTests" executed="True" result="Failure" success="False" time="0.036" asserts="0">
+            <results>
+              <test-case name="BUSTest.CommentBaiHocBUSTests.deleteCommentBaiHocTest" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentBaiHocBUSTests.deleteCommentBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiHocBUSTests.cs:line 24
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiHocBUSTests.insertCommentBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.CommentBaiHocBUSTests.selectAllCommetBaiHocTest" executed="True" result="Failure" success="False" time="0.013" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentBaiHocBUSTests.selectAllCommetBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiHocBUSTests.cs:line 40
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiHocBUSTests.selectCommentBaiHocByIDBaiHocTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentBaiHocDAO.selectCommentBaiHocByIDBaiHoc(Int32 IDBaiHoc)
+at BUSTest.CommentBaiHocBUSMock.selectCommentBaiHocByIDBaiHoc(Int32 IDBaiHoc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentBaiHocBUSMock.cs:line 51
+at BUSTest.CommentBaiHocBUSTests.selectCommentBaiHocByIDBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiHocBUSTests.cs:line 48
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiHocBUSTests.selectCommentBaiHocByIDCommentTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentBaiHocDAO.selectCommentBaiHocByIDComment(Int32 IDComment)
+at BUSTest.CommentBaiHocBUSMock.selectCommentBaiHocByIDComment(Int32 IDComment) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentBaiHocBUSMock.cs:line 59
+at BUSTest.CommentBaiHocBUSTests.selectCommentBaiHocByIDCommentTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiHocBUSTests.cs:line 56
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiHocBUSTests.updateCommentBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentBaiTapBaiHocBUSTests" executed="True" result="Failure" success="False" time="0.024" asserts="0">
+            <results>
+              <test-case name="BUSTest.CommentBaiTapBaiHocBUSTests.deleteCommentBaiTapBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentBaiTapBaiHocBUSTests.deleteCommentBaiTapBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapBaiHocBUSTests.cs:line 24
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapBaiHocBUSTests.insertCommentBaiTapBaiHocTest" executed="True" result="Failure" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentBaiTapBaiHocBUSTests.insertCommentBaiTapBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapBaiHocBUSTests.cs:line 16
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapBaiHocBUSTests.selectAllCommetBaiHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentBaiTapBaiHocBUSTests.selectAllCommetBaiHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapBaiHocBUSTests.cs:line 40
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapBaiHocBUSTests.selectCommentBaiTapBaiHocByIDBaiTapBaiHocTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="BUSTest.CommentBaiTapBaiHocBUSTests.selectCommentBaiTapBaiHocByIDCommentTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentBaiTapBaiHocDAO.selectCommentBaiTapBaiHocByIDComment(Int32 IDComment)
+at BUSTest.CommentBaiTapBaiHocBUSMock.selectCommentBaiTapBaiHocByIDComment(Int32 IDComment) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentBaiTapBaiHocBUSMock.cs:line 59
+at BUSTest.CommentBaiTapBaiHocBUSTests.selectCommentBaiTapBaiHocByIDCommentTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapBaiHocBUSTests.cs:line 56
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapBaiHocBUSTests.updateCommentBaiTapBaiHocTest" executed="True" result="Success" success="True" time="0.000" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentBaiTapChuongBUSTests" executed="True" result="Failure" success="False" time="0.024" asserts="0">
+            <results>
+              <test-case name="BUSTest.CommentBaiTapChuongBUSTests.deleteCommentBaiTapChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.CommentBaiTapChuongBUSTests.insertCommentBaiTapChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.CommentBaiTapChuongBUSTests.selectAllCommetChuongTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentBaiTapChuongDAO.selectAllCommentBaiTapChuong()
+at BUSTest.CommentBaiTapChuongBUSMock.selectAllCommetBaiTapChuong() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentBaiTapChuongBUSMock.cs:line 44
+at BUSTest.CommentBaiTapChuongBUSTests.selectAllCommetChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapChuongBUSTests.cs:line 41
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapChuongBUSTests.selectCommentBaiTapChuongByIDBaiTapChuongTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentBaiTapChuongDAO.selectCommentBaiTapChuongByIDBTChuong(Int32 IDBTChuong)
+at BUSTest.CommentBaiTapChuongBUSMock.selectCommentBaiTapChuongByIDBTChuong(Int32 IDChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentBaiTapChuongBUSMock.cs:line 53
+at BUSTest.CommentBaiTapChuongBUSTests.selectCommentBaiTapChuongByIDBaiTapChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapChuongBUSTests.cs:line 49
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapChuongBUSTests.selectCommentBaiTapChuongByIDCommentTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentBaiTapChuongDAO.selectCommentBaiTapChuongByIDComment(Int32 IDComment)
+at BUSTest.CommentBaiTapChuongBUSMock.selectCommentBaiTapChuongByIDComment(Int32 IDComment) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentBaiTapChuongBUSMock.cs:line 61
+at BUSTest.CommentBaiTapChuongBUSTests.selectCommentBaiTapChuongByIDCommentTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapChuongBUSTests.cs:line 57
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentBaiTapChuongBUSTests.updateCommentBaiTapChuongTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentBaiTapChuongBUSTests.updateCommentBaiTapChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentBaiTapChuongBUSTests.cs:line 33
+]]></stack-trace>
+                </failure>
+              </test-case>
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="CommentChuongBUSTests" executed="True" result="Failure" success="False" time="0.025" asserts="0">
+            <results>
+              <test-case name="BUSTest.CommentChuongBUSTests.deleteCommentChuongTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentChuongBUSTests.deleteCommentChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentChuongBUSTests.cs:line 24
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentChuongBUSTests.insertCommentChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.CommentChuongBUSTests.selectAllCommetChuongTest" executed="True" result="Failure" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[  Expected: not null
+  But was:  null
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.CommentChuongBUSTests.selectAllCommetChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentChuongBUSTests.cs:line 40
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentChuongBUSTests.selectCommentChuongByIDChuongTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentChuongDAO.selectCommentChuongByIDChuong(Int32 IDChuong)
+at BUSTest.CommentChuongBUSMock.selectCommentChuongByIDChuong(Int32 IDChuong) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentChuongBUSMock.cs:line 51
+at BUSTest.CommentChuongBUSTests.selectCommentChuongByIDChuongTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentChuongBUSTests.cs:line 48
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentChuongBUSTests.selectCommentChuongByIDCommentTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ICommentChuongDAO.selectCommentChuongByIDComment(Int32 IDComment)
+at BUSTest.CommentChuongBUSMock.selectCommentChuongByIDComment(Int32 IDComment) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\CommentChuongBUSMock.cs:line 59
+at BUSTest.CommentChuongBUSTests.selectCommentChuongByIDCommentTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\CommentChuongBUSTests.cs:line 56
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.CommentChuongBUSTests.updateCommentChuongTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="LoaiAccBUSTests" executed="True" result="Failure" success="False" time="0.020" asserts="0">
+            <results>
+              <test-case name="BUSTest.LoaiAccBUSTests.deleteLoaiAccTest" executed="True" result="Failure" success="False" time="0.002" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.LoaiAccBUSTests.deleteLoaiAccTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\LoaiAccBUSTests.cs:line 24
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.LoaiAccBUSTests.insertLoaiAccTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.LoaiAccBUSTests.selectAllLoaiAccTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ILoaiAccDAO.selectAllLoaiAcc()
+at BUSTest.LoaiAccBUSMock.selectAllLoaiAcc() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\LoaiAccBUSMock.cs:line 43
+at BUSTest.LoaiAccBUSTests.selectAllLoaiAccTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\LoaiAccBUSTests.cs:line 40
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.LoaiAccBUSTests.selectLoaiAccByIDLoaiAccTest" executed="True" result="Error" success="False" time="0.001" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.ILoaiAccDAO.selectLoaiAccByIDLoaiAcc(Int32 IDLoaiAcc)
+at BUSTest.LoaiAccBUSMock.selectLoaiAccByIDLoaiAcc(Int32 IDLoaiAcc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\LoaiAccBUSMock.cs:line 53
+at BUSTest.LoaiAccBUSTests.selectLoaiAccByIDLoaiAccTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\LoaiAccBUSTests.cs:line 48
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.LoaiAccBUSTests.updateLoaiAccTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="MonHocBUSTests" executed="True" result="Failure" success="False" time="0.019" asserts="0">
+            <results>
+              <test-case name="BUSTest.MonHocBUSTests.deleteMonHocTest" executed="True" result="Failure" success="False" time="0.001" asserts="2">
+                <failure>
+                  <message><![CDATA[  Expected: False
+  But was:  True
+]]></message>
+                  <stack-trace><![CDATA[at BUSTest.MonHocBUSTests.deleteMonHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\MonHocBUSTests.cs:line 25
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.MonHocBUSTests.insertMonHocTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="BUSTest.MonHocBUSTests.selectAllMonHocTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IMonHocDAO.selectAllMonHoc()
+at BUSTest.MonHocBUSMock.selectAllMonHoc() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\MonHocBUSMock.cs:line 43
+at BUSTest.MonHocBUSTests.selectAllMonHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\MonHocBUSTests.cs:line 41
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.MonHocBUSTests.selectMonHocByIDMonHocTest" executed="True" result="Error" success="False" time="0.002" asserts="1">
+                <failure>
+                  <message><![CDATA[System.InvalidCastException : Return argument has an invalid type.]]></message>
+                  <stack-trace><![CDATA[at System.Runtime.Remoting.Proxies.RealProxy.ValidateReturnArg(Object arg, Type paramType)
+at System.Runtime.Remoting.Proxies.RealProxy.PropagateOutParameters(IMessage msg, Object[] outArgs, Object returnValue)
+at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+at BUSTest.IMonHocDAO.selectMonHocByIDMonHoc(Int32 IDMonHoc)
+at BUSTest.MonHocBUSMock.selectMonHocByIDMonHoc(Int32 IDMonHoc) in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSMock\MonHocBUSMock.cs:line 53
+at BUSTest.MonHocBUSTests.selectMonHocByIDMonHocTest() in C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\BUSTest\MonHocBUSTests.cs:line 49
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case name="BUSTest.MonHocBUSTests.updateMonHocTest" executed="True" result="Success" success="True" time="0.001" asserts="2" />
             </results>
           </test-suite>
         </results>

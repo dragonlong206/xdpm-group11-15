@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1062]BUSTest.CauHoiBTChuongBUSTests.insertCauHoiBTChuongTest</TopNode>
-  <SelectedNode>[0-1095]BUSTest.ChuongBUSTests.selectChuongByIDMonHocTest</SelectedNode>
+  <TopNode>[0-1096]C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll</TopNode>
+  <SelectedNode>[0-1096]C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1096]C:\Documents and Settings\van_suong\Desktop\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll" Expanded="true" />
+    <Node UniqueName="[0-1096]C:\Users\pvhuy\Desktop\New folder\7. Unit Test\BUSTest\Unit_TestGroup14\BUSTest\bin\Debug\BUSTest.dll" Expanded="true" />
     <Node UniqueName="[0-1097]BUSTest" Expanded="true" />
-    <Node UniqueName="[0-1047]BUSTest.AccountBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1038]BUSTest.BaiHocBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1007]BUSTest.BaiTapChuongBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1022]BUSTest.BaiTapCuaBaiHocBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1014]BUSTest.CauHoiBTBaiHocBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1061]BUSTest.CauHoiBTChuongBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1089]BUSTest.ChuongBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1075]BUSTest.CommentBaiHocBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1031]BUSTest.CommentBaiTapBaiHocBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1082]BUSTest.CommentBaiTapChuongBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1000]BUSTest.CommentChuongBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1069]BUSTest.LoaiAccBUSTests" Expanded="true" />
-    <Node UniqueName="[0-1055]BUSTest.MonHocBUSTests" Expanded="true" />
   </Nodes>
 </VisualState>
