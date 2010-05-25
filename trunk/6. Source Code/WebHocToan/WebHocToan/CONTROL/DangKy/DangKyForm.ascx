@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="DangKyForm.ascx.cs" Inherits="CONTROL_DangKy_DangKyForm" %>
+
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
 <ContentTemplate>
 
@@ -37,21 +38,8 @@
     <asp:Label ID="lbDangKy" runat="server" Text="" Width="120"></asp:Label>
     <asp:Button ID="btnDangKy" runat="server" Text="Đăng Ký Hoàn Tất" 
                 onclick="btnDangKy_Click" />
-                
-        
-        
-    
-    
+                  
 </div>
-    
-    
-
-
-
-
-
-
-
 
 </ContentTemplate>
 </asp:UpdatePanel>
