@@ -28,6 +28,9 @@ public partial class VIEW_ADMIN_admin : System.Web.UI.Page
             case "ThemAccount":
                 ThemAccount1.Visible = true;
                 break;
+            case "CapNhatAccount":
+                CapNhatAccount1.Visible = true;
+                break;
             case "DanhSachBaiGiang":
                 DanhSachBaiGiang1.Visible = true;
                 break;

@@ -16,8 +16,8 @@
 	<script src="MASTERPAGE/jquery.treeview.js" type="text/javascript"></script>
 	
 	<script type="text/javascript" src="MASTERPAGE/demo.js"></script>
-
-
+	<script type="text/javascript" src="MASTERPAGE/ASCIIMathML.js"></script>
+<script type="text/javascript" src="ASCIIMathML.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -81,5 +81,4 @@
 <!--  Free CSS Template by TemplateMo.com  -->
     </form>
 </body>
-</html>
 </html>
