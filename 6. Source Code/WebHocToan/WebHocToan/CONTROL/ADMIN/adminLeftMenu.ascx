@@ -7,6 +7,7 @@
                 	<ul>
                         <li><a href="?ava=DanhSachAccount">Danh Sách Account</a></li>
                         <li><a href="?ava=ThemAccount">Thêm Account</a></li>
+                        <li><a href="?ava=CapNhatAccount">Cập Nhật Account</a></li>
            			 </ul> 
                 </li>
                 <li><span>Quản Lý Bài Giảng</span>
