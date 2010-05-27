@@ -2,64 +2,156 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Xml;
 using Dto;
-using NUnit.Framework;
-using NUnit.Mocks;
 using System.Collections;
+
+
 namespace UnitTestGroup14
 {
-    public class CommentBaiHocDAOTestRewrite
+    public class CommentBaiHocDAO
     {
-        public static Boolean insertCommentBaiHoc(Dto.CommentBaiHocDTO bh)
-        {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ICommentBaiHocDAOMock));
-            ICommentBaiHocDAOMock ILADobj = (ICommentBaiHocDAOMock)controller.MockInstance as ICommentBaiHocDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("insertCommentBaiHoc", true, null);
-            return ILADobj.insertCommentBaiHoc(new CommentBaiHocDTO());
-        }
-        public static Boolean deleteCommentBaiHoc(System.Int32 IDComment)
-        {
-            DynamicMock controller = new DynamicMock(typeof(ICommentBaiHocDAOMock));
-            ICommentBaiHocDAOMock ILADobj = (ICommentBaiHocDAOMock)controller.MockInstance as ICommentBaiHocDAOMock;
-            controller.ExpectAndReturn("deleteCommentBaiHoc", true, null);
-            return ILADobj.deleteCommentBaiHoc(IDComment);
+        private ISqlDataAccessHelper _sqlDataAccessHelper;
 
-        }
-        public static Boolean updateCommentBaiHoc(Dto.CommentBaiHocDTO bh)
+        public CommentBaiHocDAO(ISqlDataAccessHelper sqlDataAccessHelper)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ICommentBaiHocDAOMock));
-            ICommentBaiHocDAOMock ILADobj = (ICommentBaiHocDAOMock)controller.MockInstance as ICommentBaiHocDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("updateCommentBaiHoc", true, null);
-            return ILADobj.updateCommentBaiHoc(new CommentBaiHocDTO());
-        }
-        public static ArrayList selectAllCommentBaiHoc()
-        {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ICommentBaiHocDAOMock));
-            ICommentBaiHocDAOMock ILADobj = (ICommentBaiHocDAOMock)controller.MockInstance as ICommentBaiHocDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("selectAllCommentBaiHoc", true, null);
-            return ILADobj.selectAllCommentBaiHoc();
+            _sqlDataAccessHelper = sqlDataAccessHelper;
         }
 
-        public static CommentBaiHocDTO selectCommentBaiHocByIDComment(System.Int32 IDComment)
+        public Boolean insertCommentBaiHoc(CommentBaiHocDTO cmBaiHocDto)
         {
-            DynamicMock controller = new DynamicMock(typeof(ICommentBaiHocDAOMock));
-            ICommentBaiHocDAOMock ILADobj = (ICommentBaiHocDAOMock)controller.MockInstance as ICommentBaiHocDAOMock;
-            controller.ExpectAndReturn("selectCommentBaiHocByIDComment", true, null);
-            return ILADobj.selectCommentBaiHocByIDComment(IDComment);
+            Boolean result = true;
+            try
+            {
+                string SQLqurey = "insert into CommentBaiHoc(IDCommen, IDAcc, IDBaiHoc, NoiDung, NgayGio) values (@IDComment, @IDAcc, @IDBaiHoc, @NoiDung, @NgayGio)";
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                //Add paramter here
+
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(SQLqurey, sqlParams);
+                if (n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            return result;
         }
-        public static ArrayList selectCommentBaiHocByIDBaiHoc(System.Int32 IDBaiHoc)
+
+        public  Boolean deleteCommentBaiHoc(int IDComment)
         {
-            DynamicMock controller = new DynamicMock(typeof(ICommentBaiHocDAOMock));
-            ICommentBaiHocDAOMock ILADobj = (ICommentBaiHocDAOMock)controller.MockInstance as ICommentBaiHocDAOMock;
-            controller.ExpectAndReturn("selectCommentBaiHocByIDBaiHoc", true, null);
-            return ILADobj.selectCommentBaiHocByIDBaiHoc(IDBaiHoc);
+            Boolean result = true;
+            try
+            {
+                string SQLqurey = "delete from CommentBaiHoc Where IDComment = @IDComment";
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(SQLqurey,sqlParams);
+                if (n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            return result;
         }
-       
+
+        public  Boolean updateCommentBaiHoc(CommentBaiHocDTO cmBaiHocDto)
+        {
+            Boolean result = true;
+            try
+            {
+                string SQLqurey = "update CommentBaiHoc Set IDAcc = @IDAcc, IDBaiHoc = @IDBaiHoc, IDNoiDung = @NoiDung, NgayGioi = @NgayGio Where IDComment = @IDComment";
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(SQLqurey, sqlParams);
+                if (n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            return result;
+
+        }
+
+        public List<CommentBaiHocDTO> selectAllCommentBaiHoc()
+        {
+            List<CommentBaiHocDTO> List = null;
+            try
+            {
+                string SQLqurey = "Select * from CommentBaiHoc";
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(SQLqurey);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
+            return List;
+        }
+
+        //lay Comment theo loai IDComment
+        public  CommentBaiHocDTO selectCommentBaiHocByIDComment(int IDComment)
+        {
+            CommentBaiHocDTO cmBaiHocDto = null;
+
+            try
+            {
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from CommentBaiHoc Where IDComment = @IDComment";
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(SQLqurey, sqlParams);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
+            return cmBaiHocDto;
+            //Khi lap trinh chung ta kiem tra co duoc thay du lieu hay khong bang cach 
+            // So sanh neu ID != 0 hay NoiDungBaiHoc!=Null (ham tao) de kiem tra
+        }
+
+        //lay danh sach cau hoi BaiHoc theo IDBaiHoc
+        public  List<CommentBaiHocDTO> selectCommentBaiHocByIDBaiHoc(int IDBaiHoc)
+        {
+            List<CommentBaiHocDTO> List = null;
+            try
+            {
+                string SQLqurey = "Select * from CommentBaiHoc where IDBaiHoc = @IDBaiHoc";
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(SQLqurey, sqlParams);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+
+            return List;
+        }
+
     }
 }
