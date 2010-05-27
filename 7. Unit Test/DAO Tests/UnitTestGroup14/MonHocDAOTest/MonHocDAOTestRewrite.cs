@@ -2,57 +2,169 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Xml;
 using Dto;
-using NUnit.Framework;
-using NUnit.Mocks;
 using System.Collections;
+
 
 namespace UnitTestGroup14
 {
-    public class MonHocDAOTestRewrite
+    public class MonHocDAO
     {
-        public static Boolean insertMonHoc(MonHocDTO obj)
+        ISqlDataAccessHelper _sqlDataAccessHelper;
+        /// <summary>
+        /// Creates a new <see cref="MonHocDAO"/> instance.
+        /// </summary>	
+        public MonHocDAO(ISqlDataAccessHelper sqlDataAccessHelper)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(IMonHocDAOMock));
-            IMonHocDAOMock ILADobj = (IMonHocDAOMock)controller.MockInstance as IMonHocDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("insertMonHoc", true, null);
-            return ILADobj.insertMonHoc(new MonHocDTO());
+            //Add your init for this class
+            _sqlDataAccessHelper = sqlDataAccessHelper;
         }
 
-        public static Boolean deleteMonHoc(String IDAcc)
+
+        public System.Boolean insertMonHoc(Dto.MonHocDTO MonHocDto)
         {
-            DynamicMock controller = new DynamicMock(typeof(IMonHocDAOMock));
-            IMonHocDAOMock ILADobj = (IMonHocDAOMock)controller.MockInstance as IMonHocDAOMock;
-            controller.ExpectAndReturn("deleteAcount", true, null);
-            return ILADobj.deleteMonHoc(IDAcc);
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-        public static Boolean updateMonHoc(MonHocDTO acc)
+
+        public System.Boolean deleteMonHoc(System.Int32 IDMonHoc)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(IMonHocDAOMock));
-            IMonHocDAOMock ILADobj = (IMonHocDAOMock)controller.MockInstance as IMonHocDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("updateMonHoc", true, null);
-            return ILADobj.updateMonHoc(new MonHocDTO());
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-        public static ArrayList selectAllMonHoc()
+
+        public System.Boolean updateMonHoc(Dto.MonHocDTO MonHocDto)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(IMonHocDAOMock));
-            IMonHocDAOMock ILADobj = (IMonHocDAOMock)controller.MockInstance as IMonHocDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("updateMonHoc", true, null);
-            return ILADobj.selectAllMonHoc();
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-        public static MonHocDTO selectMonHocByIDMonHoc(int IDMonHoc)
+
+        public List<MonHocDTO> selectAllMonHoc()
         {
-             DynamicMock controller = new DynamicMock(typeof(IMonHocDAOMock));
-             IMonHocDAOMock ILADobj = (IMonHocDAOMock)controller.MockInstance as IMonHocDAOMock;
-             controller.ExpectAndReturn("selectMonHocByIDMonHoc", true, null);
-             return ILADobj.selectMonHocByIDMonHoc(IDMonHoc);
+
+            List<MonHocDTO> result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-     
+
+        public Dto.MonHocDTO selectMonHocByIDMonHoc(System.Int32 IDMonHoc)
+        {
+
+            Dto.MonHocDTO result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery, sqlParams);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
     }
 }
