@@ -10,10 +10,14 @@ using System.Collections;
 using Util;
 
 
+
 namespace Dao
 {
+
+
     public class BaiTapCuaBaiHocDAO
     {
+
         public static Boolean insertBaiTapCuaBaiHoc(BaiTapCuaBaiHocDTO btcbhDto,ref int IDBaiTapBaiHoc)
         {
             Boolean result = true;
@@ -167,6 +171,51 @@ namespace Dao
                 dr.Close();
 
 
+
+                // B5: Dong ket noi CSDL
+                connection.Close();
+            }
+            catch (SqlException ex)
+            {
+
+            }
+
+            return List;
+        }
+        public static ArrayList selectBaiTapBaiHocByIDBaiHoc(int IDBaiHoc)
+        {
+            ArrayList List = new ArrayList();
+            try
+            {
+                SqlConnection connection;
+                // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
+                connection = SqlDataAccessHelper.getConnection();
+                // B3: Tao chuoi strSQL thao tac CSDL
+                string SQLqurey = "Select * from BaiTapCuaBaiHoc, CauHoiBTBaiHoc where BaiTapCuaBaiHoc.IDBaiTap = CauHoiBTBaiHoc.IDBaiTap and BaiTapCuaBaiHoc.IDBaiHoc = @IDBaiHoc";
+                SqlCommand cmd = new SqlCommand(SQLqurey, connection);
+
+                cmd.Parameters.Add("@IDBaiHoc", SqlDbType.Int);
+                cmd.Parameters["@IDBaiHoc"].Value = IDBaiHoc;
+
+                SqlDataReader dr;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    BaiTapBaiHocDTO btbh = new BaiTapBaiHocDTO();
+                    btbh.IDBaiTap = (int)dr["IDBaiTap"];
+                    btbh.TenBaiTap = (string)dr["TenBaiTap"];
+                    btbh.NoiDungBaiTap = (string)dr["NoiDungBaiTap"];
+                    btbh.IDBaiHoc = (int)dr["IDBaiHoc"];
+                    btbh.CauHoiA = (string)dr["CauHoiA"];
+                    btbh.CauHoiB = (string)dr["CauHoiB"];
+                    btbh.CauHoiC = (string)dr["CauHoiC"];
+                    btbh.CauHoiD = (string)dr["CauHoiD"];
+                    btbh.CauTraLoi = (string)dr["CauTraLoi"];
+
+                    List.Add(btbh);
+                }
+                // B5: Dong ket noi CSDL
+                dr.Close();
 
                 // B5: Dong ket noi CSDL
                 connection.Close();
