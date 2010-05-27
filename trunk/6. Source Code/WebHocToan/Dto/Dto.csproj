@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="AccountDTO.cs" />
     <Compile Include="BaiHocDTO.cs" />
+    <Compile Include="BaiTapBaiHocDTO.cs" />
     <Compile Include="BaiTapChuongDTO.cs" />
     <Compile Include="BaiTapCuaBaiHocDTO.cs" />
     <Compile Include="CauHoiBTBaiHocDTO.cs" />
