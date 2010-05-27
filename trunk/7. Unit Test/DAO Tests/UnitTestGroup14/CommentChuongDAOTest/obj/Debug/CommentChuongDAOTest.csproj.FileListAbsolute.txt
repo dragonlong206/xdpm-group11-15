@@ -22,3 +22,11 @@ D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGrou
 D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\ResolveAssemblyReference.cache
 D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.dll
 D:\TRAINING_MANUAL\11 Xay Dung Phan Mem\Nhom\7. Unit Test\DAO Tests\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.pdb
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\CommentChuongTest.dll
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\CommentChuongTest.pdb
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\nunit.framework.dll
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\nunit.mocks.dll
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\bin\Debug\nunit.framework.xml
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\ResolveAssemblyReference.cache
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.dll
+C:\SPM-SourceCode\UnitTestGroup14\CommentChuongDAOTest\obj\Debug\CommentChuongTest.pdb
