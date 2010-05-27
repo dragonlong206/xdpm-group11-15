@@ -1,0 +1,5 @@
+D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\bin\Debug\Dto.dll
+D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\bin\Debug\Dto.pdb
+D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\obj\Debug\Dto.dll
+D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\obj\Debug\Dto.pdb
