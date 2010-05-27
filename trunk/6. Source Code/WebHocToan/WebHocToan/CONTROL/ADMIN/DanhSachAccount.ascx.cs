@@ -48,11 +48,30 @@ public partial class CONTROL_ADMIN_DanhSachAccount : System.Web.UI.UserControl
     #endregion
     protected void  grvAccount_RowDeleting(object sender, GridViewDeleteEventArgs e)
     {
+        bool result = false;
 
+        result = AccountBUS.deleteAccount(grvAccount.Rows[e.RowIndex].Cells[1].Text);
+        string text = grvAccount.Rows[e.RowIndex].Cells[1].Text;
+
+        BindGridView(1);
+
+        if (result == true)
+        {
+            msgBox1.alert("Xóa Thành Công");
+        }
+        else
+        {
+            msgBox1.alert("Xóa IDBaiGiang" + text + " Thất Bại ");
+        }
     }
     protected void grvAccount_RowEditing(object sender, GridViewEditEventArgs e)
     {
-
+        int index = Int32.Parse(drlLoaiAccount.SelectedItem.Value);
+        string text = grvAccount.Rows[e.NewEditIndex].Cells[1].Text;
+        string url = "admin.aspx?ava=CapNhatAccount&IDAccount=" + text + "&IDLoaiAccount=" + index;
+        Response.Redirect(url);
+        //this is comment
+       
     }
     protected void drlLoaiAccount_SelectedIndexChanged(object sender, EventArgs e)
     {
