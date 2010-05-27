@@ -5,8 +5,9 @@
             <p>Administrator Pages.</p>   
 
       <div class="column_four_section">
-			<h1><a href="#" target="_parent">Đăng Ký Tài Khoản</a></h1>
+			<h1><a href="#" target="_parent">Thêm Tài Khoản</a></h1>
             <p>Bạn có thể dùng tài khoản Username: <strong>demo</strong> & Password: <strong>demo</strong> để đăng nhập.</p>
+   để đăng nhập.</p>
             
             
     <p>
@@ -15,7 +16,14 @@
         <asp:Label ID="lbtb2" runat="server" Text="." Visible=false></asp:Label>
     
     </p>
-            
+                    Chọn loại Account:&nbsp;&nbsp;&nbsp;
+                        <asp:DropDownList ID="drlLoaiAccount" runat="server" AutoPostBack="True" 
+                            onselectedindexchanged="drlLoaiAccount_SelectedIndexChanged">
+                        </asp:DropDownList>
+    
+    </p>
+    <br />       
+    <br /> 
     <asp:Label ID="lbUsername" runat="server" Text="Username:" Width="120"></asp:Label>
     <asp:TextBox ID="txtUsername" runat="server" Width="170" > </asp:TextBox>
     <asp:Label ID="msgUsername" runat="server" Text="" ></asp:Label>
