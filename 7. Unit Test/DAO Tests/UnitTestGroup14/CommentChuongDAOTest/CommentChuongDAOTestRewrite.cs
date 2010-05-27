@@ -2,66 +2,199 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Xml;
 using Dto;
-using NUnit.Framework;
-using NUnit.Mocks;
 using System.Collections;
+
 
 namespace UnitTestGroup14
 {
-    public class CommentChuongDAOTestRewrite
+    public class CommentChuongDAO
     {
-        public static Boolean insertCommentChuong(Dto.CommentChuongDTO bh)
+        ISqlDataAccessHelper _sqlDataAccessHelper;
+        /// <summary>
+        /// Creates a new <see cref="CommentChuongDAO"/> instance.
+        /// </summary>	
+        public CommentChuongDAO(ISqlDataAccessHelper sqlDataAccessHelper)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ICommentChuongDAOMock));
-            ICommentChuongDAOMock ILADobj = (ICommentChuongDAOMock)controller.MockInstance as ICommentChuongDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("insertCommentChuong", true, null);
-            return ILADobj.insertCommentChuong(new CommentChuongDTO());
-        }
-        public static Boolean deleteCommentChuong(System.Int32 IDComment)
-        {
-            DynamicMock controller = new DynamicMock(typeof(ICommentChuongDAOMock));
-            ICommentChuongDAOMock ILADobj = (ICommentChuongDAOMock)controller.MockInstance as ICommentChuongDAOMock;
-            controller.ExpectAndReturn("deleteCommentChuong", true, null);
-            return ILADobj.deleteCommentChuong(IDComment);
-
-        }
-        public static Boolean updateCommentChuong(Dto.CommentChuongDTO bh)
-        {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ICommentChuongDAOMock));
-            ICommentChuongDAOMock ILADobj = (ICommentChuongDAOMock)controller.MockInstance as ICommentChuongDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("updateCommentChuong", true, null);
-            return ILADobj.updateCommentChuong(new CommentChuongDTO());
-        }
-        public static ArrayList selectAllCommentChuong()
-        {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ICommentChuongDAOMock));
-            ICommentChuongDAOMock ILADobj = (ICommentChuongDAOMock)controller.MockInstance as ICommentChuongDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("selectAllCommentChuong", true, null);
-            return ILADobj.selectAllCommentChuong();
+            //Add your init for this class
+            _sqlDataAccessHelper = sqlDataAccessHelper;
         }
 
-        public static CommentChuongDTO selectCommentChuongByIDComment(System.Int32 IDComment)
-        {
-            DynamicMock controller = new DynamicMock(typeof(ICommentChuongDAOMock));
-            ICommentChuongDAOMock ILADobj = (ICommentChuongDAOMock)controller.MockInstance as ICommentChuongDAOMock;
-            controller.ExpectAndReturn("selectCommentChuongByIDComment", true, null);
-            return ILADobj.selectCommentChuongByIDComment(IDComment);
-        }
-        public static ArrayList selectCommentChuongByIDChuong(System.Int32 IDComment)
-        {
-            DynamicMock controller = new DynamicMock(typeof(ICommentChuongDAOMock));
-            ICommentChuongDAOMock ILADobj = (ICommentChuongDAOMock)controller.MockInstance as ICommentChuongDAOMock;
-            controller.ExpectAndReturn("selectCommentChuongByIDChuong", true, null);
-            return ILADobj.selectCommentChuongByIDChuong(IDComment);
-        }
-       
 
+        public System.Boolean insertCommentChuong(Dto.CommentChuongDTO cmChuongDto)
+        {
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
+
+        public System.Boolean deleteCommentChuong(System.Int32 IDComment)
+        {
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
+
+        public System.Boolean updateCommentChuong(Dto.CommentChuongDTO cmChuongDto)
+        {
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
+
+        public List<CommentChuongDTO> selectAllCommentChuong()
+        {
+
+            List<CommentChuongDTO> result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
+
+        public Dto.CommentChuongDTO selectCommentChuongByIDComment(System.Int32 IDComment)
+        {
+
+            Dto.CommentChuongDTO result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery, sqlParams);
+                if(dt != null)
+                {
+                    //Todo
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
+
+        public List<CommentChuongDTO> selectCommentChuongByIDChuong(System.Int32 IDChuong)
+        {
+
+            List<CommentChuongDTO> result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery, sqlParams);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
     }
 }
