@@ -2,57 +2,170 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Xml;
 using Dto;
-using NUnit.Framework;
-using NUnit.Mocks;
 using System.Collections;
+
 
 namespace UnitTestGroup14
 {
-    public class LoaiAccDAOTestRewrite
+    public class LoaiAccDAO
     {
-        public static Boolean insertLoaiAcc(LoaiAccDTO obj)
+        ISqlDataAccessHelper _sqlDataAccessHelper;
+        /// <summary>
+        /// Creates a new <see cref="LoaiAccDAO"/> instance.
+        /// </summary>	
+        public LoaiAccDAO(ISqlDataAccessHelper sqlDataAccessHelper)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ILoaiAccDAOMock));
-            ILoaiAccDAOMock ILADobj = (ILoaiAccDAOMock)controller.MockInstance as ILoaiAccDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("insertLoaiAcc", true, null);
-            return ILADobj.insertLoaiAcc(new LoaiAccDTO());
+            //Add your init for this class
+            _sqlDataAccessHelper = sqlDataAccessHelper;
         }
 
-        public static Boolean deleteLoaiAcc(String IDAcc)
+
+        public System.Boolean insertLoaiAcc(Dto.LoaiAccDTO LoaiAccDto)
         {
-            DynamicMock controller = new DynamicMock(typeof(ILoaiAccDAOMock));
-            ILoaiAccDAOMock ILADobj = (ILoaiAccDAOMock)controller.MockInstance as ILoaiAccDAOMock;
-            controller.ExpectAndReturn("deleteAcount", true, null);
-            return ILADobj.deleteLoaiAcc(IDAcc);
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-        public static Boolean updateLoaiAcc(LoaiAccDTO acc)
+
+        public System.Boolean deleteLoaiAcc(System.Int32 IDLoaiAcc)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ILoaiAccDAOMock));
-            ILoaiAccDAOMock ILADobj = (ILoaiAccDAOMock)controller.MockInstance as ILoaiAccDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("updateLoaiAcc", true, null);
-            return ILADobj.updateLoaiAcc(new LoaiAccDTO());
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n ==  0)
+                {
+                    result = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-        public static ArrayList selectAllLoaiAcc()
+
+        public System.Boolean updateLoaiAcc(Dto.LoaiAccDTO LoaiAccDto)
         {
-            //Create mock object of DAO
-            DynamicMock controller = new DynamicMock(typeof(ILoaiAccDAOMock));
-            ILoaiAccDAOMock ILADobj = (ILoaiAccDAOMock)controller.MockInstance as ILoaiAccDAOMock;
-            //Set return value is true
-            controller.ExpectAndReturn("updateLoaiAcc", true, null);
-            return ILADobj.selectAllLoaiAcc();
+
+            System.Boolean result = true;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                int n = _sqlDataAccessHelper.ExecuteNonQuery(sqlQuery, sqlParams);
+                if(n == 0)
+                {
+                    result = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-        public static LoaiAccDTO selectLoaiAccByIDLoaiAcc(int IDLoaiAcc)
+
+        public List<LoaiAccDTO> selectAllLoaiAcc()
         {
-             DynamicMock controller = new DynamicMock(typeof(ILoaiAccDAOMock));
-             ILoaiAccDAOMock ILADobj = (ILoaiAccDAOMock)controller.MockInstance as ILoaiAccDAOMock;
-             controller.ExpectAndReturn("selectLoaiAccByIDLoaiAcc", true, null);
-             return ILADobj.selectLoaiAccByIDLoaiAcc(IDLoaiAcc);
+
+            List<LoaiAccDTO> result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
         }
-     
+
+        public Dto.LoaiAccDTO selectLoaiAccByIDLoaiAcc(System.Int32 IDLoaiAcc)
+        {
+
+            Dto.LoaiAccDTO result = null;
+
+
+            try
+            {
+
+                string sqlQuery = string.Empty;
+
+                List<SqlParameter> sqlParams = new List<SqlParameter>();
+
+                //Todo
+                DataTable dt = _sqlDataAccessHelper.ExecuteQuery(sqlQuery, sqlParams);
+                if(dt != null)
+                {
+                    //Todo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return result;
+
+        }
     }
 }
