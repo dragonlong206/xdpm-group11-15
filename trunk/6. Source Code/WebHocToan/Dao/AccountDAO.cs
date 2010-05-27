@@ -94,7 +94,7 @@ namespace Dao
                 // B1 & B2: Tao chuoi ket noi, mo ket noi bang doi tuong ket noi
                 connection = SqlDataAccessHelper.getConnection();
                 // B3: Tao chuoi strSQL thao tac CSDL
-                string SQLqurey = "update Account Set Pass = @Pass, IDLoaiAcc = @IDLoaiAcc, Email = @Email, TrangThai = @TrangThai Where IDAcc = @IDAcc";
+                string SQLqurey = "update Account Set Pass = '@Pass', IDLoaiAcc = '@IDLoaiAcc', Email = '@Email', TrangThai = '@TrangThai' Where IDAcc = '@IDAcc'";
                 SqlCommand cmd = new SqlCommand(SQLqurey, connection);
 
                 cmd.Parameters.Add("@Pass", SqlDbType.NVarChar);
