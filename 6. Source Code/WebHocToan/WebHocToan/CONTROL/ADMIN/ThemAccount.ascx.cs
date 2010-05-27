@@ -22,9 +22,15 @@ public partial class CONTROL_ADMIN_ThemAccount : System.Web.UI.UserControl
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (!IsPostBack)
+       if (!IsPostBack)
         {
+            ArrayList list1 = new ArrayList();
+            list1 = LoaiAccBUS.selectAllLoaiAcc();
 
+            drlLoaiAccount.DataTextField = "TenLoaiAcc";
+            drlLoaiAccount.DataValueField = "IDLoaiAcc";
+            drlLoaiAccount.DataSource = list1;
+            drlLoaiAccount.DataBind();
 
             msgUsername.ForeColor = System.Drawing.Color.Red;
             msgPassword.ForeColor = System.Drawing.Color.Red;
@@ -156,7 +162,7 @@ public partial class CONTROL_ADMIN_ThemAccount : System.Web.UI.UserControl
             accDTO.Pass = txtPassword.Text;
             accDTO.Email = txtEmail.Text;
             accDTO.TrangThai = true;
-            accDTO.IDLoaiAcc = 3;
+            accDTO.IDLoaiAcc = Int32.Parse(drlLoaiAccount.SelectedItem.Value.ToString()) ;
             bool result = AccountBUS.insertAccount(accDTO);
             if (result)
             {
@@ -185,5 +191,9 @@ public partial class CONTROL_ADMIN_ThemAccount : System.Web.UI.UserControl
                 lbtb2.Visible = true;
             }
         }
+    }
+    protected void drlLoaiAccount_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
     }
 }
