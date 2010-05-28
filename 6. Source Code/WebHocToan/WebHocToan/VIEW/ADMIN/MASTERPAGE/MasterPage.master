@@ -34,9 +34,10 @@
         <ul>
             <li><a href="../index.aspx"  class="current">Trang Chủ</a></li>            
             <li><a href="#">Tài Liệu</a></li>
-            <li><a href="nghenhac.aspx">Nghe Nhạc</a></li>  
+            <li><a href="../music.aspx">Nghe Nhạc</a></li>  
+            <li><a href="../game.aspx">Game Relax</a></li> 
             <li><a href="#">Hỏi Đáp</a></li> 
-            <li><a href="#" class="last">Liên Hệ</a></li>                     
+            <li><a href="../lienhe.aspx" class="last">Liên Hệ</a></li>                     
            
         </ul> 
     </div>

@@ -96,6 +96,22 @@ public partial class CONTROL_ADMIN_CapNhatBaiTap : System.Web.UI.UserControl
                 txtD.Text = chbtbhDto.CauHoiD.ToString();
                 drlDapAn.Text = chbtbhDto.CauTraLoi.ToString();
             }
+            else
+            {
+                chbBaiTap.Checked = true;
+                ArrayList list = new ArrayList();
+                list = ChuongBUS.selectChuongByIDMonHoc(1);
+
+                drlChuong.DataTextField = "TenChuong";
+                drlChuong.DataValueField = "IDChuong";
+                drlChuong.DataSource = list;
+                drlChuong.DataBind();
+
+                FillDropDownListBaiHoc(1);
+
+                FillDropDownListNoiDung(1);
+
+            }
         }
     }
     protected void drlMonHoc_SelectedIndexChanged(object sender, EventArgs e)
