@@ -16,6 +16,11 @@
                            </tr>
                            <tr>
                                <td>
+                                   <asp:Label ID="Label4" runat="server" Font-Bold="true" Text='<%# "Nội dung bài tập:  " + DataBinder.Eval(Container.DataItem, "NoiDungBaiTap")%>'></asp:Label>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>
                                    <asp:Label ID="lblChoice1" runat="server" Text='<%# "A. " + DataBinder.Eval(Container.DataItem, "CauHoiA") %>'></asp:Label>
                                </td>
                                
