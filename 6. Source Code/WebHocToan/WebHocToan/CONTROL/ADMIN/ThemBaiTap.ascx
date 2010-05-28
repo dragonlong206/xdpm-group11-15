@@ -39,11 +39,11 @@
             Bài tập không null</asp:RequiredFieldValidator>
     <br />
     Nhập Nội Dung:<br />
+            <CE:Editor ID="Editor1" runat="server">
+            </CE:Editor>
             <br />
-            <asp:TextBox ID="txtNoiDung" runat="server" Height="150px" TextMode="MultiLine" 
-                Width="499px"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                ControlToValidate="txtNoiDung" ErrorMessage="RequiredFieldValidator">Nội 
+                ControlToValidate="Editor1" ErrorMessage="RequiredFieldValidator">Nội 
             dung bài tập không null</asp:RequiredFieldValidator>
     <br />
             Đáp Án A:
