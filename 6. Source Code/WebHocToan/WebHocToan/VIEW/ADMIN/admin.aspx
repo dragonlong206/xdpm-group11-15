@@ -10,11 +10,11 @@
 <%@ Register src="../../CONTROL/ADMIN/ThemBaiTap.ascx" tagname="ThemBaiTap" tagprefix="uc8" %>
 <%@ Register Src="../../CONTROL/ADMIN/CapNhatBaiGiang.ascx" TagName="CapNhatBaiGiang" TagPrefix="uc9" %>
 <%@ Register Src="../../CONTROL/ADMIN/CapNhatBaiTap.ascx" TagName="CapNhatBaiTap" TagPrefix="uc10" %>
-
+<%@ Register src=".././../CONTROL/LimitAccessAdmin.ascx" tagname="LimitAccessAdmin" tagprefix="uc11" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cpRight" Runat="Server">
 
-
+    <uc11:LimitAccessAdmin ID="LimitAccess1" runat="server" Visible=false />
     <uc10:CapNhatBaiTap ID="CapNhatBaiTap1" runat="server" Visible ="false" />
     <uc9:CapNhatBaiGiang ID="CapNhatBaiGiang1" runat="server" Visible="false" />
     <uc8:ThemBaiTap ID="ThemBaiTap1" runat="server" Visible=false />
