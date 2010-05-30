@@ -25,6 +25,7 @@ public partial class CONTROL_ADMIN_CapNhatBaiTap : System.Web.UI.UserControl
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Page.SmartNavigation = true;
         MonHoc = Request.QueryString["monhoc"];
         BaiHoc = Request.QueryString["baihoc"];
         Chuong = Request.QueryString["chuong"];

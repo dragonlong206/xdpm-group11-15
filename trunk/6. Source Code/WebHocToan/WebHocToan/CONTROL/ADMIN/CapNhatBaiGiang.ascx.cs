@@ -21,6 +21,7 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
     
     protected void Page_Load(object sender, EventArgs e)
     {
+        Page.SmartNavigation = true;
         idBaiHoc = Request.QueryString["IDBaiHoc"];
         idChuong = Request.QueryString["IDChuong"];
         if (!IsPostBack)
@@ -36,23 +37,33 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
             if (idChuong != null)
             {
                 FillDropDownListChuong(Int32.Parse(idChuong.ToString()));
-                FillDropDownList(Int32.Parse(idChuong));
+                FillDropDownListBaiGiang(Int32.Parse(idChuong));
             }
             if (idBaiHoc != null)
             {
+
                 BaiHocDTO bhDto = new BaiHocDTO();
                 bhDto = BaiHocBUS.selectBaiHocByIDBaiHoc(Int32.Parse(idBaiHoc));
                 FillEditor(bhDto);
+
+                drlBaiGiang.SelectedValue = idBaiHoc;
             }
+            
             else
             {
                 ArrayList list = new ArrayList();
-                list = ChuongBUS.selectChuongByIDMonHoc(1);
+                list = ChuongBUS.selectChuongByIDMonHoc(Int32.Parse(drlMonHoc.SelectedItem.Value.ToString()));
 
                 drlChuong.DataTextField = "TenChuong";
                 drlChuong.DataValueField = "IDChuong";
                 drlChuong.DataSource = list;
                 drlChuong.DataBind();
+
+                FillDropDownListBaiGiang(Int32.Parse(drlChuong.SelectedItem.Value.ToString()));
+
+                BaiHocDTO bhDto = new BaiHocDTO();
+                bhDto = BaiHocBUS.selectBaiHocByIDBaiHoc(Int32.Parse(drlBaiGiang.SelectedItem.Value.ToString()));
+                FillEditor(bhDto);
             }
 
         }
@@ -60,15 +71,13 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
     }
     private void FillEditor(BaiHocDTO bhDto)
     {
-
-        //BaiHocDTO bhDto = new BaiHocDTO();
-
-        //msgBox1.alert(drlBaiGiang.SelectedItem.Value.ToString());
         txtBaiGiangMoi.Text = bhDto.TenBaiHoc;
+        if (Editor1.Text != "")
+            Editor1.Text = "";
         Editor1.Text = bhDto.NoiDung;
 
     }
-    private void FillDropDownList(int ID)
+    private void FillDropDownListBaiGiang(int ID)
     {
       
         ArrayList List = new ArrayList();
@@ -84,9 +93,7 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
     {
 
         ArrayList List = new ArrayList();
-        ChuongDTO cDto = new ChuongDTO();
-        cDto = ChuongBUS.selectChuongByIDChuong(ID);
-        List.Add(cDto);
+        List = ChuongBUS.selectChuongByIDMonHoc(ID);
         drlChuong.DataTextField = "TenChuong";
         drlChuong.DataValueField = "IDChuong";
         drlChuong.DataSource = List;
@@ -94,9 +101,19 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
 
 
     }
+    protected void drlMonHoc_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ArrayList list = new ArrayList();
+        list = ChuongBUS.selectChuongByIDMonHoc(Int32.Parse(drlMonHoc.SelectedItem.Value.ToString()));
+
+        drlChuong.DataTextField = "TenChuong";
+        drlChuong.DataValueField = "IDChuong";
+        drlChuong.DataSource = list;
+        drlChuong.DataBind();
+    }
     protected void drlChuong_SelectedIndexChanged(object sender, EventArgs e)
     {
-        FillDropDownList(Int32.Parse(drlChuong.SelectedItem.Value.ToString()));
+        FillDropDownListBaiGiang(Int32.Parse(drlChuong.SelectedItem.Value.ToString()));
     }
     protected void drlBaiGiang_SelectedIndexChanged(object sender, EventArgs e)
     {
@@ -125,43 +142,5 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
             msgBox1.alert(" Cập nhật thất bại ");
         }
     }
-    protected void drlMonHoc_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        ArrayList list = new ArrayList();
-        list = ChuongBUS.selectChuongByIDMonHoc(Int32.Parse(drlMonHoc.SelectedItem.Value.ToString()));
 
-        drlChuong.DataTextField = "TenChuong";
-        drlChuong.DataValueField = "IDChuong";
-        drlChuong.DataSource = list;
-        drlChuong.DataBind();
-
-    }
-    protected void drlChuong_Load(object sender, EventArgs e)
-    {
-        //FillDropDownList(Int32.Parse(drlChuong.SelectedItem.Value.ToString()));
-    }
-    protected void drlMonHoc_Load(object sender, EventArgs e)
-    {
-        //ArrayList list = new ArrayList();
-        //list = ChuongBUS.selectChuongByIDMonHoc(Int32.Parse(drlMonHoc.SelectedItem.Value.ToString()));
-
-        //drlChuong.DataTextField = "TenChuong";
-        //drlChuong.DataValueField = "IDChuong";
-        //drlChuong.DataSource = list;
-        //drlChuong.DataBind();
-    }
-    protected void Editor1_Load(object sender, EventArgs e)
-    {
-
-    }
-    protected void drlBaiGiang_Load(object sender, EventArgs e)
-    {
-        //BaiHocDTO bhDto = new BaiHocDTO();
-        //bhDto = BaiHocBUS.selectBaiHocByIDBaiHoc(Int32.Parse(drlBaiGiang.SelectedItem.Value.ToString()));
-        //FillEditor(bhDto);
-    }
-    protected void drlChuong_Init(object sender, EventArgs e)
-    {
-        FillDropDownList(1);
-    }
 }
