@@ -18,6 +18,7 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Page.SmartNavigation = true;
         if (!IsPostBack)
         {
             ArrayList list1 = new ArrayList();
