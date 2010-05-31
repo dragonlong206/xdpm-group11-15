@@ -78,7 +78,33 @@ public partial class VIEW_index : System.Web.UI.Page
                     Error1.Visible = true;
                 }
                 break;
+            case "BaiTapTuLuan":
 
+                if (!QuanLySessionCookie.CheckLoggedin())
+                {
+                    LimitAccess1.Visible = true;
+                    break;
+                }
+
+
+                if (result)
+                {
+                   BaiHocDTO bhDTO = BaiHocBUS.selectBaiHocByIDBaiHoc(iIDBaiHoc);
+                    if (bhDTO.IDBaiHoc >= 0 && bhDTO.TenBaiHoc != "")
+                    {
+                        BaiTapTuLuan1.Visible = true;
+                    }
+
+                    else
+                    {
+                        Error1.Visible = true;
+                    }
+                }
+                else
+                {
+                    Error1.Visible = true;
+                }
+                break;
             case "DangKy":
                 DangKy1.Visible = true;
                 break;

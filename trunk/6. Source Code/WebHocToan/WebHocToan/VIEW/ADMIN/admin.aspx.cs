@@ -16,8 +16,34 @@ using Bus;
 public partial class VIEW_ADMIN_admin : System.Web.UI.Page
 {
     string ava;
+    public void check()
+    {
+        string user2;
+        if(!QuanLySessionCookie.CheckLoggedin())
+                {
+                    Response.Redirect("../index.aspx");
+                }
+                else
+                {
+                    user2 = (string)(Session["gdusername"]);
+
+                    int loaiacc;
+                    
+                    AccountDTO acc = new AccountDTO();
+                    acc = AccountBUS.selectAccountByIDAC(user2);
+
+                    loaiacc = acc.IDLoaiAcc;
+
+                    if (loaiacc != 1)
+                    {
+                        Response.Redirect("../index.aspx");
+                    }                    
+                }   
+    }
     protected void Page_Load(object sender, EventArgs e)
     {
+        check();
+
         ava = Request.QueryString["ava"];
 
         string user;
@@ -26,256 +52,43 @@ public partial class VIEW_ADMIN_admin : System.Web.UI.Page
         switch (ava)
         {
             case "DanhSachAccount":
-                if(!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-                    
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        DanhSachAccount1.Visible = true;
-                    }
-                    else
-                    {
-                         LimitAccess1.Visible = true;
-                    }
-                }    
+                DanhSachAccount1.Visible = true;   
                 break;
             case "ThemAccount":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        ThemAccount1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }    
-               
+                ThemAccount1.Visible = true;
                 break;
             //case "CapNhatAccount":
             //  CapNhatAccount1.Visible = true;
             //break;
             case "DanhSachBaiGiang":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        DanhSachBaiGiang1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
-
+                DanhSachBaiGiang1.Visible = true;
                 break;
             case "CapNhatBaiGiang":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        CapNhatBaiGiang1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
-
+                CapNhatBaiGiang1.Visible = true;
                 break;
             case "ThemBaiGiang":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        ThemBaiGiang1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
+                ThemBaiGiang1.Visible = true;
                 break;
             case "DanhSachBaiTap":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        DanhSachBaiTap1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
-
+                DanhSachBaiTap1.Visible = true;
                 break;                
             case "ThemBaiTap":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        ThemBaiTap1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
+                ThemBaiTap1.Visible = true;
                 break;                
             case "CapNhatBaiTap":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        CapNhatBaiTap1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
-
+                CapNhatBaiTap1.Visible = true;
+                break;
+            case "DanhSachBaiTapTuLuan":
+                DanhSachBaiTapTuLuan1.Visible = true;
+                break;
+            case "ThemBaiTapTuLuan":
+                ThemBaiTapTuLuan1.Visible = true;
+                break;
+            case "CapNhatBaiTapTuLuan":
+                CapNhatBaiTapTuLuan1.Visible = true;
                 break;
             case "DanhSachComment":
-                if (!QuanLySessionCookie.CheckLoggedin())
-                {
-                    LimitAccess1.Visible = true;
-                    break;
-                }
-                else
-                {
-                    user = (string)(Session["gdusername"]);
-
-                    int loaiacc;
-
-                    AccountDTO acc = new AccountDTO();
-                    acc = AccountBUS.selectAccountByIDAC(user);
-
-                    loaiacc = acc.IDLoaiAcc;
-
-                    if (loaiacc == 1)
-                    {
-                        DanhSachComment1.Visible = true;
-                    }
-                    else
-                    {
-                        LimitAccess1.Visible = true;
-                    }
-                }
-
+                    DanhSachComment1.Visible = true;
                 break;
             default:
                 adminWelcome1.Visible = true;
