@@ -133,8 +133,8 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
           
         }
         if (kq == true && kq2 == true)
-            MsgBox1.alert("Nhập Thành Công");
+            MsgBox1.alert("Đã Thêm Thành Công");
         else
-            MsgBox1.alert("Nhập Thất Bại");
+            MsgBox1.alert("Thêm Thất Bại");
     }
 }
