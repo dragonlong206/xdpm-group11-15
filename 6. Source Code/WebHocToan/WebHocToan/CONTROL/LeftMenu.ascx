@@ -23,7 +23,8 @@
                                         <li><span><%#Eval("TenBaiHoc")%></span>
                                         <ul>    
                                             <li><a href="?ava=LyThuyet&IDBaiHoc=<%#Eval("IDBaiHoc")%>">- Lý Thuyết</a></li>
-                                            <li><a href="?ava=BaiTap&IDBaiHoc=<%#Eval("IDBaiHoc")%>">- Bài Tập</a></li>
+                                            <li><a href="?ava=BaiTap&IDBaiHoc=<%#Eval("IDBaiHoc")%>">- Bài Tập Trắc Nghiệm</a></li>
+                                            <li><a href="?ava=BaiTapTuLuan&IDBaiHoc=<%#Eval("IDBaiHoc")%>">- Bài Tập Tự Luận</a></li>
                                         </ul>
                                         </li>
                                     </ItemTemplate>
