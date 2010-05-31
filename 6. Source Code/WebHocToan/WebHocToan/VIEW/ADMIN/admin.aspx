@@ -10,11 +10,15 @@
 <%@ Register src="../../CONTROL/ADMIN/ThemBaiTap.ascx" tagname="ThemBaiTap" tagprefix="uc8" %>
 <%@ Register Src="../../CONTROL/ADMIN/CapNhatBaiGiang.ascx" TagName="CapNhatBaiGiang" TagPrefix="uc9" %>
 <%@ Register Src="../../CONTROL/ADMIN/CapNhatBaiTap.ascx" TagName="CapNhatBaiTap" TagPrefix="uc10" %>
-<%@ Register src=".././../CONTROL/LimitAccessAdmin.ascx" tagname="LimitAccessAdmin" tagprefix="uc11" %>
+<%@ Register Src="../../CONTROL/ADMIN/ThemBaiTapTuLuan.ascx" TagName="ThemBaiTapTuLuan" TagPrefix="uc11" %>
+<%@ Register Src="../../CONTROL/ADMIN/DanhSachBaiTapTuLuan.ascx" TagName="DanhSachBaiTapTuLuan" TagPrefix="uc12" %>
+<%@ Register Src="../../CONTROL/ADMIN/CapNhatBaiTapTuLuan.ascx" TagName="CapNhatBaiTapTuLuan" TagPrefix="uc13" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cpRight" Runat="Server">
 
-    <uc11:LimitAccessAdmin ID="LimitAccess1" runat="server" Visible=false />
+    <uc13:CapNhatBaiTapTuLuan ID="CapNhatBaiTapTuLuan1" runat="server" Visible ="false" />
+    <uc12:DanhSachBaiTapTuLuan ID="DanhSachBaiTapTuLuan1" runat="server" Visible="false" />
+    <uc11:ThemBaiTapTuLuan ID="ThemBaiTapTuLuan1" runat="server" Visible=false />
     <uc10:CapNhatBaiTap ID="CapNhatBaiTap1" runat="server" Visible ="false" />
     <uc9:CapNhatBaiGiang ID="CapNhatBaiGiang1" runat="server" Visible="false" />
     <uc8:ThemBaiTap ID="ThemBaiTap1" runat="server" Visible=false />

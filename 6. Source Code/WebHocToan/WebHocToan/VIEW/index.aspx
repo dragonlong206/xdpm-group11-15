@@ -9,13 +9,14 @@
 <%@ Register src="../CONTROL/Error.ascx" tagname="Error" tagprefix="uc5" %>
 
 <%@ Register src="../CONTROL/DangKy/DangKy.ascx" tagname="DangKy" tagprefix="uc6" %>
-
+<%@ Register src="../CONTROL/BaiTapTuLuan.ascx" tagname="BaiTapTuLuan" tagprefix="uc7" %>
 
 
 
 <%-- Add content controls here --%>
 <asp:Content ID="Content1" ContentPlaceHolderID="cpRight" Runat="Server">
 
+    <uc7:BaiTapTuLuan ID="BaiTapTuLuan1" runat="server" Visible=false />
     <uc6:DangKy ID="DangKy1" runat="server" Visible=false />
     <uc5:Error ID="Error1" runat="server" Visible=false />
     <uc4:Welcome ID="Welcome1" runat="server" Visible=false />
