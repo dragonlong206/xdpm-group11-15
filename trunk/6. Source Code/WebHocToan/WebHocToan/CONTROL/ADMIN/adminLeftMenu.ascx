@@ -2,7 +2,7 @@
 
 <div class="column_one_section">
         	<h1>Module Management </h1>
-            <ul id="red" class="treeview-red">
+            <ul >
                 <li><span>Quản Lý Account</span>
                 	<ul>
                         <li><a href="?ava=DanhSachAccount">Danh Sách Account</a></li>
@@ -17,14 +17,20 @@
                         <li><a href="?ava=ThemBaiGiang">Thêm Bài Giảng</a></li>
            			</ul> 
                 </li>
-                <li><span>Quản Lý Bài Tập</span>
+                <li><span>Quản Lý Bài Tập Trắc Nghiệm</span>
                 	<ul>
-                        <li><a href="?ava=DanhSachBaiTap">Danh Sách Bài Tập</a></li>
-                        <li><a href="?ava=CapNhatBaiTap">Câp Nhật Bài Tập</a></li>
-                        <li><a href="?ava=ThemBaiTap">Thêm Bài Tập</a></li>
+                        <li><a href="?ava=DanhSachBaiTap">Danh Sách Bài Tập TN</a></li>
+                        <li><a href="?ava=CapNhatBaiTap">Câp Nhật Bài Tập TN</a></li>
+                        <li><a href="?ava=ThemBaiTap">Thêm Bài Tập TN</a></li>
            			</ul> 
                 </li>
-                	
+                 <li><span>Quản Lý Bài Tập Tự Luận</span>
+                	<ul>
+                        <li><a href="?ava=DanhSachBaiTapTuLuan">Danh Sách Bài Tập Tự Luận</a></li>
+                        <li><a href="?ava=CapNhatBaiTapTuLuan">Câp Nhật Bài Tập Tự Luận</a></li>
+                        <li><a href="?ava=ThemBaiTapTuLuan">Thêm Bài Tập Tự Luận</a></li>
+           			</ul> 
+                </li>	
                 <li><span>Quản Lý Comment</span>
                 	<ul>
                         <li><a href="?ava=DanhSachComment">Danh Sách Comment</a></li>
@@ -39,7 +45,7 @@
         <div class="column_one_section">
         
         	<h1>Site Setting</h1>
-            <ul id="blue" class="treeview-red">
+            <ul >
                 <li><span>Quản Lý Template</span>
                 	<ul>
                         <li><a href="#">Đổi Template</a></li>
