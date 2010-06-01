@@ -18,7 +18,6 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Page.SmartNavigation = true;
         if (!IsPostBack)
         {
             ArrayList list1 = new ArrayList();
@@ -100,7 +99,7 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
 
             BaiTapCuaBaiHocDTO btcbhDto = new BaiTapCuaBaiHocDTO();
             btcbhDto.IDBaiHoc = Int32.Parse(drlBaiHoc.SelectedItem.Value.ToString());
-            btcbhDto.NoiDungBaiTap = Editor1.Text;
+            btcbhDto.NoiDungBaiTap = TextBox1.Text;
             btcbhDto.TenBaiTap = txtTenBaiTap.Text;
 
             int IDBaiTapBaiHoc = 0;
@@ -121,7 +120,7 @@ public partial class CONTROL_ADMIN_ThemBaiTap : System.Web.UI.UserControl
 
             BaiTapChuongDTO btChuongDto = new BaiTapChuongDTO();
             btChuongDto.IDChuong = Int32.Parse(drlChuong.SelectedItem.Value.ToString());
-            btChuongDto.NoiDungBaiTap = Editor1.Text;
+            btChuongDto.NoiDungBaiTap = TextBox1.Text;
             btChuongDto.TenBaiTap = txtTenBaiTap.Text;
 
             int IDBaiTapChuong = 0;
