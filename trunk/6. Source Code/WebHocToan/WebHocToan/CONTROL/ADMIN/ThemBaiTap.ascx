@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ThemBaiTap.ascx.cs" Inherits="CONTROL_ADMIN_ThemBaiTap" %>
 <%@ Register Assembly="msgBox" Namespace="BunnyBear" TagPrefix="cc1" %>
-<%@ Register Assembly="CuteEditor" Namespace="CuteEditor" TagPrefix="CE" %>
+
 
 <div class="column_four_section">
 			<h1><a href="#" target="_parent">Thêm Bài Tập</a></h1>
@@ -39,12 +39,9 @@
             Bài tập không null</asp:RequiredFieldValidator>
     <br />
     Nhập Nội Dung:<br />
-            <CE:Editor ID="Editor1" runat="server">
-            </CE:Editor>
             <br />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
-                ControlToValidate="Editor1" ErrorMessage="RequiredFieldValidator">Nội 
-            dung bài tập không null</asp:RequiredFieldValidator>
+            <asp:TextBox ID="TextBox1" runat="server" Height="77px" TextMode="MultiLine" 
+                Width="494px"></asp:TextBox>
     <br />
             Đáp Án A:
             <br />
