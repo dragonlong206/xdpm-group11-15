@@ -7,3 +7,12 @@ D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dao\bin\Debug\Util.pdb
 D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
 D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.dll
 D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.pdb
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\bin\Debug\Dao.dll
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\bin\Debug\Dao.pdb
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\bin\Debug\Dto.dll
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\bin\Debug\Util.dll
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\bin\Debug\Dto.pdb
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\bin\Debug\Util.pdb
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.dll
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dao\obj\Debug\Dao.pdb

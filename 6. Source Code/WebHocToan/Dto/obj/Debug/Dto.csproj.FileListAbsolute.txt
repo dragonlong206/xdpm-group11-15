@@ -3,3 +3,8 @@ D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\bin\Debug\Dto.pdb
 D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\obj\Debug\ResolveAssemblyReference.cache
 D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\obj\Debug\Dto.dll
 D:\Document\XDPM_LOP10\trunk\6. Source Code\WebHocToan\Dto\obj\Debug\Dto.pdb
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dto\bin\Debug\Dto.dll
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dto\bin\Debug\Dto.pdb
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dto\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dto\obj\Debug\Dto.dll
+C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Dto\obj\Debug\Dto.pdb
