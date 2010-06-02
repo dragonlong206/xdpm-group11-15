@@ -8,3 +8,8 @@ C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Util\bin\Debug\U
 C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Util\obj\Debug\Util.dll
 C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Util\obj\Debug\Util.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\bin\Debug\Util.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\bin\Debug\Util.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\obj\Debug\Util.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\obj\Debug\Util.pdb
