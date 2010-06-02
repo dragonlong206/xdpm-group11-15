@@ -49,6 +49,7 @@
     <Compile Include="BaiHocBUS.cs" />
     <Compile Include="BaiTapChuongBUS.cs" />
     <Compile Include="BaiTapCuaBaiHocBUS.cs" />
+    <Compile Include="BaiTapTuLuanBUS.cs" />
     <Compile Include="CauHoiBTBaiHocBUS.cs" />
     <Compile Include="CauHoiBTChuongBUS.cs" />
     <Compile Include="ChuongBUS.cs" />

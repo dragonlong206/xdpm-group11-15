@@ -49,6 +49,7 @@
     <Compile Include="BaiHocDAO.cs" />
     <Compile Include="BaiTapChuongDAO.cs" />
     <Compile Include="BaiTapCuaBaiHocDAO.cs" />
+    <Compile Include="BaiTapTuLuanDAO.cs" />
     <Compile Include="CauHoiBTBaiHocDAO.cs" />
     <Compile Include="CauHoiBTChuongDAO.cs" />
     <Compile Include="ChuongDAO.cs" />

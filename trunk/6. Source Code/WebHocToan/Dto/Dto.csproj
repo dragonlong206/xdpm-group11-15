@@ -50,6 +50,7 @@
     <Compile Include="BaiTapBaiHocDTO.cs" />
     <Compile Include="BaiTapChuongDTO.cs" />
     <Compile Include="BaiTapCuaBaiHocDTO.cs" />
+    <Compile Include="BaiTapTuLuanDTO.cs" />
     <Compile Include="CauHoiBTBaiHocDTO.cs" />
     <Compile Include="CauHoiBTChuongDTO.cs" />
     <Compile Include="ChuongDTO.cs" />
