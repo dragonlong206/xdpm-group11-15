@@ -20,3 +20,14 @@ C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Bus\bin\Debug\Ut
 C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
 C:\Users\pvhuy\Desktop\New folder (3)\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Util.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Util.pdb
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
+D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb

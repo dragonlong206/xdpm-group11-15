@@ -21,7 +21,7 @@ public partial class VIEW_ADMIN_admin : System.Web.UI.Page
         string user2;
         if(!QuanLySessionCookie.CheckLoggedin())
                 {
-                    Response.Redirect("../index.aspx");
+                    //Response.Redirect("../index.aspx");
                 }
                 else
                 {
@@ -36,7 +36,7 @@ public partial class VIEW_ADMIN_admin : System.Web.UI.Page
 
                     if (loaiacc != 1)
                     {
-                        Response.Redirect("../index.aspx");
+                     Response.Redirect("../index.aspx");
                     }                    
                 }   
     }
