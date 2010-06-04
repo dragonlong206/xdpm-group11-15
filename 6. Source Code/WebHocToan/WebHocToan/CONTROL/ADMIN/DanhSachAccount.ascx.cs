@@ -64,6 +64,7 @@ public partial class CONTROL_ADMIN_DanhSachAccount : System.Web.UI.UserControl
             msgBox1.alert("Xóa IDBaiGiang" + text + " Thất Bại ");
         }
     }
+
     protected void grvAccount_RowEditing(object sender, GridViewEditEventArgs e)
     {
         int index = Int32.Parse(drlLoaiAccount.SelectedItem.Value);

@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections;
 using System.Configuration;
 using System.Data;
@@ -12,8 +12,6 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Xml;
 
-
-using System.Collections;
 using Bus;
 using Dto;
 
@@ -53,6 +51,7 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
 
             BindGridView(1);
         }
+      
     }
     protected void drlChuong_SelectedIndexChanged(object sender, EventArgs e)
     {
@@ -96,6 +95,15 @@ public partial class CONTROL_ADMIN_DanhSachBaiGiang : System.Web.UI.UserControl
         drlChuong.DataSource = list;
         drlChuong.DataBind();
 
-        BindGridView(1);
+        if (drlMonHoc.SelectedIndex == 0)
+        {
+            BindGridView(1);
+        }
+        else
+        {
+            drlMonHoc.SelectedIndex = 1;
+            BindGridView(2);
+        }
+
     }
 }

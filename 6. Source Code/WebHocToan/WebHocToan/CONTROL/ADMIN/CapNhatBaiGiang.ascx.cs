@@ -124,12 +124,12 @@ public partial class CONTROL_ADMIN_CapNhatBaiGiang : System.Web.UI.UserControl
     }
     protected void btnCapNhat_Click(object sender, EventArgs e)
     {
-        int id = Int32.Parse(drlBaiGiang.SelectedItem.Value.ToString());
+        int id = Int32.Parse(idBaiHoc.ToString());
         Boolean result = false;
 
         BaiHocDTO bhDto = new BaiHocDTO();
         bhDto.IDBaiHoc = id; 
-        bhDto.IDChuong = Int32.Parse(drlChuong.SelectedItem.Value.ToString());
+        bhDto.IDChuong = Int32.Parse(idChuong.ToString());
         bhDto.NoiDung = Editor1.Text;
         bhDto.TenBaiHoc = txtBaiGiangMoi.Text;
         result = BaiHocBUS.updateBaiHoc(bhDto);
