@@ -13,3 +13,8 @@ D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\bin\Debug\Util.pdb
 D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
 D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\obj\Debug\Util.dll
 D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Util\obj\Debug\Util.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Util\bin\Debug\Util.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Util\bin\Debug\Util.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Util\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Util\obj\Debug\Util.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Util\obj\Debug\Util.pdb
