@@ -31,3 +31,14 @@ D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\bin\Debug\Util.pdb
 D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
 D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
 D:\Document\XDPM_NEW_10\trunk\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Bus.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Util.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Dao.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Dto.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\bin\Debug\Util.pdb
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.dll
+C:\Users\Administrator\Desktop\6. Source Code\WebHocToan\Bus\obj\Debug\Bus.pdb
