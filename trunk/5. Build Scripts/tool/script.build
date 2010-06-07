@@ -9,16 +9,16 @@
 	<property name="attachment.path" value="" dynamic="true"/>
 	<property name="project.hoc.toan.lop.10"
 		value=".\project.hoc.toan.lop.10" />
-	<property name="project.hoc.toan.lop.10.Unittest"
-		value=".\project.hoc.toan.lop.10.Unittest" />
+	
 	<tstamp property="build.date.time" pattern="dd-MM-yyyy.HHmm" verbose="true"/>
-	<property name="filename" value="${project.hoc.toan.lop.10.Unittest}\TestUnit\" />
-	<property name="project.hoc.toan.lop.10.external.test.report.name" value="project.hoc.toan.lop.10.external.test.report-${build.date.time}.xml" />
-	<property name="project.hoc.toan.lop.10.external.test.report" value="${log.dir}\${project.hoc.toan.lop.10.external.test.report.name}" />
+	
 	
 	<property name="project.hoc.toan.lop.10.build"
 		value=".\project.hoc.toan.lop.10.build" />
 	
+	<property name="solution.name" value="WebHocToan.sln" />
+	
+	<property name="solution.path" value="${project.hoc.toan.lop.10.build}\${solution.name}" />
 	
 	<property name="project.config" value="Debug"/>   	
 	<property name="svn.path" value=".\tool\svn.exe"/>
@@ -31,16 +31,26 @@
     	<call target="sleep" />
     	<echo message = "test.unit is finish"/>
     </target> 
-	<!-- checkout source tu google code --> 
+	<target name="build.solution" depends="get.source.project">
+    	<echo message="${solution.path}" />	    	
+    	<if test="${file::exists(solution.path)}">
+    		
+    		<exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" commandline="${solution.path} /t:Clean /p:Configuration=${project.config} /v:q" workingdir="." />
+    		<exec program="${framework::get-framework-directory(framework::get-target-framework())}\msbuild.exe" commandline="${solution.path} /t:Rebuild /p:Configuration=${project.config} /v:q" workingdir="." />
+    		
+    		<echo message = "build.solution is finish"/>
+			
+    	</if>
+    </target> 
     <target name="get.source.project" depends="build.init">
     	<if test="${directory::exists(project.hoc.toan.lop.10)}">
     		<exec program="${svn.path}" commandline= "cleanup ${project.hoc.toan.lop.10}"></exec>
     		<exec program="${svn.path}" commandline= "update ${source.url} ${project.hoc.toan.lop.10}"></exec>
     	</if>    	
-    	<ifnot test="${directory::exists(project.hoc.toan.lop.10)}">
+    	<if test="${directory::exists(project.hoc.toan.lop.10)}">
     		<mkdir dir="${project.hoc.toan.lop.10}" />	
     		<exec program="${svn.path}" commandline="checkout ${source.url} ${project.hoc.toan.lop.10}"/>
-    	</ifnot>    	
+    	</if>    	
     	<copy todir="${project.hoc.toan.lop.10.build}">
     		<fileset basedir="${project.hoc.toan.lop.10}">
     			<include name="**/*"/>
@@ -49,7 +59,9 @@
     	<echo message = "get.source.project is ok"/>
     </target> 
 	<target name="build.init" depends="cleanup">
-    	<mkdir dir="${log.dir}" />	
+    	<mkdir dir="${log.dir}" />		
+		
+		
     	<mkdir dir="${project.hoc.toan.lop.10.build}" />
     	<mkdir dir="${log.dir}" />
     	<echo message = "build.init is ok"/>
@@ -74,7 +86,7 @@
 		</delete>
 		<echo message="cleanup is ok" />	
     </target> 
-	<target name="buildutil" depends="get.source.project" >
+	<target name="buildutil" depends="build.solution">
 	<mkdir dir="Bin" />
     <csc target="library" output=".\Bin\util.dll">
       <sources>
@@ -113,15 +125,11 @@
     	<echo message="sleep is ok" />	
     	<call target = "build.all"/>
     </target> 
-    <target name="test.unit"  description="runs unit tests">
+    <target name="test.unit" depends="buildbus" description="runs unit tests">
     	<!-- duyệt qua từng file trong thư mục có đường dẫn là giá trị của filename -->
-		<if test="${directory::exists(project.hoc.toan.lop.10.Unittest)}">
-    		<exec program="${svn.path}" commandline= "cleanup ${project.hoc.toan.lop.10.Unittest}"></exec>
-    		<exec program="${svn.path}" commandline= "update ${source.url} ${project.hoc.toan.lop.10.Unittest}"></exec>
-    	</if>  
 		<ifnot test="${directory::exists(project.hoc.toan.lop.10.Unittest)}">
     		<mkdir dir="${project.hoc.toan.lop.10.Unittest}" />	
-    		<exec program="${svn.path}" commandline="checkout ${source2.url} ${project.hoc.toan.lop.10.Unittest}"></exec>
+    		<exec program="${svn.path}" commandline="checkout ${source2.url} ${project.hoc.toan.lop.10.Unittest}"/>
     	</ifnot>
     	<foreach property="filename" item="File">
     		<in>
@@ -131,7 +139,7 @@
     		</in>
     		<do>
     			<!-- sử dụng NUnit để chạy các file test -->
-    			<exec program=".\tool\net-2.0\nunit-console.exe">
+    			<exec program=".\net-2.0\nunit-console.exe">
     				<arg value="${filename}" />
     				<arg value="/xml:${project.hoc.toan.lop.10.external.test.report}" />
     			</exec>
