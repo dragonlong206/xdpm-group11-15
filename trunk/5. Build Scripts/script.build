@@ -113,7 +113,7 @@
     	<echo message="sleep is ok" />	
     	<call target = "build.all"/>
     </target> 
-    <target name="test.unit"  description="runs unit tests">
+    <target name="test.unit" depends="buildbus"  description="runs unit tests">
     	<!-- duyệt qua từng file trong thư mục có đường dẫn là giá trị của filename -->
 		<if test="${directory::exists(project.hoc.toan.lop.10.Unittest)}">
     		<exec program="${svn.path}" commandline= "cleanup ${project.hoc.toan.lop.10.Unittest}"></exec>
